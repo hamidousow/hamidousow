@@ -1,0 +1,31 @@
+#navigation {
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    box-shadow: $boxShadow;
+
+    a {
+        text-decoration: none;
+    }
+
+    #homeLogo, .linkNav {
+        text-transform: uppercase;
+        color: $clr-grey;
+        letter-spacing: $space2;
+    }
+
+    #homeLogo {
+        font-weight: $bold;
+    }
+
+    #menu {
+        display: inline-flex;
+        gap: 5em;        
+    }
+
+    .linkNav {
+        color: $clr-grey;
+        font-weight: $regular;
+    }
+}
