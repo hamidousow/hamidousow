@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,6 +54,50 @@ table {
 }
 
 body {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+body {
   background: #15181f;
+}
+
+#navigation {
+  padding: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-shadow: 0px 0px 13px 0px #0000008f;
+          box-shadow: 0px 0px 13px 0px #0000008f;
+}
+
+#navigation a {
+  text-decoration: none;
+}
+
+#navigation #homeLogo, #navigation .linkNav {
+  text-transform: uppercase;
+  color: #dddddd;
+  letter-spacing: 2px;
+}
+
+#navigation #homeLogo {
+  font-weight: 900;
+}
+
+#navigation #menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 5em;
+}
+
+#navigation .linkNav {
+  color: #dddddd;
+  font-weight: 500;
 }
 /*# sourceMappingURL=index.css.map */

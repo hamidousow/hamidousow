@@ -7,6 +7,7 @@ function App() {
     <>
     <Switch>
       <Route path="/" exact component={Home}/>
+      
       <Route component={NotFound}/>
     </Switch>
     </>

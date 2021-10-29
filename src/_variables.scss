@@ -1,0 +1,18 @@
+// colors 
+$clr-black: #15181f;
+$clr-grey: #dddddd;
+
+//box-shadow
+$boxShadow: 0px 0px 13px 0px #0000008f;
+
+//responsive font-size
+$title-size: clamp(25px, 3vw, 50px);
+$text-size: clamp(19px, 2vw, 30px);
+
+//fonts weight
+$light: 300;
+$regular: 500;
+$bold: 900;
+
+//letter-spacing
+$space2: 2px;

@@ -1,3 +1,5 @@
 @import './reset/reset.scss';
-@import './stylesVariables';
+@import './globalStyles';
+@import './variables';
 @import './home/home';
+@import './nav/nav';
