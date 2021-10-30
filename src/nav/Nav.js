@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import HomeLogo from '../logo/HomeLogo';
 
@@ -22,15 +22,26 @@ const Nav = () => {
         }
     ]
 
+    const [mobileMenu, setMobileMenu] = useState(false);
+
+    const toggleMenu = () => {
+        setMobileMenu(!mobileMenu)
+    }    
+
     return (
-        <nav id="navigation">
-            <HomeLogo/>
-            <ul id="menu">
-                {menu.map((navlink) => (
-                    <NavLink className={navlink.className} exact to={navlink.link}> {navlink.text} </NavLink>
-                ))}
-            </ul>            
+        <>
+        <nav className="navigation">
+            <div id="navContent">
+                <HomeLogo />
+                <span id="btnBurger" onClick={toggleMenu}></span>
+                <ul className={mobileMenu ? "menu active" : "menu" }>
+                    {menu.map((navlink) => (
+                        <NavLink className={navlink.className} exact to={navlink.link} onClick={toggleMenu}> {navlink.text} </NavLink>
+                    ))}
+                </ul>
+            </div>
         </nav>
+        </>
     );
 };
 

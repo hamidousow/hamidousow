@@ -1,12 +1,26 @@
-#navigation {
-    padding: 1.5em;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+.navigation {
+    //padding: 1.5em 0;
+    display: flex;    
+    align-items: center;
     box-shadow: $boxShadow;
+    position: fixed;    
+    //height: 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: $clr-black;
+    
+    #navContent {        
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5em;
+    }
 
     a {
         text-decoration: none;
+        width: fit-content;
     }
 
     #homeLogo, .linkNav {
@@ -19,13 +33,92 @@
         font-weight: $bold;
     }
 
-    #menu {
-        display: inline-flex;
-        gap: 5em;        
+    .menu {
+        display: flex;
+        gap: 5em; 
+        flex-basis: auto;
+        flex-grow: 1;
+        justify-content: flex-end;       
     }
 
     .linkNav {
         color: $clr-grey;
         font-weight: $regular;
+        padding: .5em;
+        position: relative;
+        transition: .5s all;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            background: $clr-grey;
+        }
+
+        &:hover::after {
+            height: 1px;
+            width: 100%;            
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
     }
+
+    #btnBurger {
+        display: none;
+    }    
 }
+
+.mobileMenu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        flex-wrap: wrap;
+
+        #navContent {
+            flex-wrap: inherit;
+        }
+        
+        .menu {
+            display: none;
+            transition: .5s;
+        }
+
+        .menu.active {
+            display: flex;
+            flex-basis: 100%;        
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2em; 
+            height: calc(100vh - 78px);           
+        }
+
+        #btnBurger {
+            display: block;
+            height: 20px;
+            width: 50px;
+            position: relative;
+            cursor: pointer;
+
+            &::before, &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background: $clr-grey;
+            }
+
+            &::before {
+                top: 0;
+            }
+
+            &::after {
+                bottom: 0;
+            }
+        }
+    } 
+}
+
