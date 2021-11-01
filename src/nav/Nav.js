@@ -13,7 +13,7 @@ const Nav = () => {
         {
             text: "about",
             className: "linkNav",
-            link: "/"
+            link: "/about"
         },
         {
             text: "contact",
