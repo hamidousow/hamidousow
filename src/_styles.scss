@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import './variables';
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.bigTitle {
+    color: $clr-grey;
+    font-size: $bigTitle;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 110%;  
+}
+
+.smallTitle {
+    color: $clr-grey;
+    font-size: $smallTitle;
+    text-transform: uppercase;
+}
+
+.text {
+    color: $clr-grey;
+    font-size: $text-size;
+    line-height: 125%;    
+}
+
+.callToAction {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+}
+
+
+
+

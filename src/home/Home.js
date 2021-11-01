@@ -1,12 +1,13 @@
 import React from 'react';
-import HeroSection from '../heroSection/HeroSection';
+import HomeSection from '../homeSection/HomeSection';
+
 import Nav from '../nav/Nav';
 
 const Home = () => {
     return (
         <>
             <Nav/>
-            <HeroSection/>                       
+            <HomeSection/>                      
         </>
     );
 };

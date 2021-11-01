@@ -1,0 +1,46 @@
+.heroSection, .section {    
+    display: flex;
+    flex-direction: column; 
+    padding: 0 2em;   
+}
+
+.heroSection {
+    height: calc(100vh - 5em);
+    margin-top: 5em;
+
+    .bigTitle {
+        margin: 4em 0;
+    }
+
+    .leftContent {
+        justify-content: center;
+    }
+}
+
+.section {
+    margin-bottom: 2em;
+
+    .bigTitle {
+        margin: 2em 0;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+        
+        .leftContent {        
+            display: flex;
+            flex-direction: column;   
+        }       
+    }
+}
+
+.ImgSection {
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
