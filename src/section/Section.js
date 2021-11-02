@@ -15,7 +15,7 @@ class Section extends Component {
                             <img src={sectionContent.section.img.src} className={sectionContent.section.img.className}/>
                         </div>
                     </div> 
-                </section>
+                </section>                
             </>
         )
     }   
