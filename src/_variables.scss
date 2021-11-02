@@ -8,8 +8,11 @@ $boxShadow: 0px 0px 13px 0px #0000008f;
 
 //responsive font-size
 $bigTitle: clamp(25px, 3vw, 50px);
-$smallTitle: clamp(16px, 3vw, 35px); 
-$text-size: clamp(15px, 2vw, 23px);
+$smallTitle: clamp(13px, 3vw, 25px); 
+$text-size: clamp(12px, 2vw, 21px);
+$smallText: clamp(12px, 2vw, 16px);
+$bigNumber: clamp(100px, 15vw, 200px);
+// $cardTitle: clamp()
 
 //fonts weight
 $light: 300;

@@ -5,6 +5,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+    background: $clr-black;
 }
 
 .bigTitle {
@@ -15,14 +16,16 @@ body {
     line-height: 110%;  
 }
 
-.smallTitle {
+.smallTitle, .text, .cardSubtitle {
     color: $clr-grey;
+}
+
+.smallTitle {    
     font-size: $smallTitle;
     text-transform: uppercase;
 }
 
-.text {
-    color: $clr-grey;
+.text {    
     font-size: $text-size;
     line-height: 125%;    
 }
@@ -33,6 +36,8 @@ body {
     right: 0;
     text-transform: uppercase;
 }
+
+
 
 
 

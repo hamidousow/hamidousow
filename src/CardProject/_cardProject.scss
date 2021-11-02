@@ -1,0 +1,58 @@
+.containerCards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3em;
+
+    .card {
+        width: 100%;
+        position: relative;
+        margin: auto;
+    }
+
+    .cardContent {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        flex-direction: row;
+        column-gap: 1em;
+        flex-wrap: wrap;
+}
+    }
+
+    .projectNumber {
+        font-size: $bigNumber;
+        font-weight: 900;
+        width: fit-content;
+    }
+
+    .cardRichText {        
+        display: flex;
+        justify-content: center;
+        flex-direction: column;        
+        
+        .cardTitle {
+            font-size: $smallTitle;
+            color: $clr-grey; //color pink or an other one
+            text-transform: uppercase;
+            margin-bottom: 0.5em;
+        }
+
+        .cardSubtitle {
+            font-size: $smallText;
+        }
+    } 
+    
+    .cardContainerImage {
+        height: 45vmin;
+        width: 90%;
+        background: lightgrey;
+        opacity: .5; 
+        margin: 0 auto;
+        position: relative;
+        right: 0;
+        bottom: 2em;         
+    }
+
+
+
+
