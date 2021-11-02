@@ -1,0 +1,27 @@
+.heroSection {
+    display: flex;
+    flex-direction: column; 
+    padding: 0 2em;
+    height: calc(100vh - 5em);
+    margin-top: 5em;
+
+    .bigTitle {
+        margin: 4em 0;
+    }
+
+    .leftContent {
+        justify-content: center;
+    }
+
+    .ImgSection {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+

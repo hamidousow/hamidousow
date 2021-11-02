@@ -1,31 +1,4 @@
-[
-    {
-        "section": {
-            "id": "heroSection",
-            "className": "heroSection",
-            "title": {
-                "text": "Design & Web Developpeur.",
-                "className": "bigTitle"
-            }, 
-            "paragraphe": {
-                "text": [],
-                "className": ""
-            },      
-            "img": { 
-                "src": "./img/heroImg.svg",
-                "className": "ImgSection"                    
-            }            
-        },
-        "content": {
-            "className": "content"
-        },
-        "leftContent": {
-            "className": "leftContent"
-        },
-        "rightContent": {
-            "className": "rightContent"
-        }        
-    },       
+[          
     {
         "section": {
             "id": "about",

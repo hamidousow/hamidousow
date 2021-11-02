@@ -1,0 +1,26 @@
+.section {
+    
+    display: flex;
+    flex-direction: column;   
+    padding: 2em; 
+    margin-bottom: 2em;
+
+    .bigTitle {
+        margin: 2em 0;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+        
+        .leftContent {        
+            display: flex;
+            flex-direction: column;   
+        }       
+    }
+
+    .ImgSection {
+        display: block;
+        width: 100%;
+    }
+}
