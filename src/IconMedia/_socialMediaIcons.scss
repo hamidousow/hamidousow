@@ -1,0 +1,18 @@
+.socialMediaIcons {
+    
+    .containerIcons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        justify-items: center;
+
+        a {
+            text-decoration: inherit;
+        }
+
+        .iconMedia {
+            color: $clr-grey;
+            text-decoration: none;
+        }
+    }
+}
