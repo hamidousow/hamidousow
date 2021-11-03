@@ -23,14 +23,28 @@ const Nav = () => {
     ]
 
     const [mobileMenu, setMobileMenu] = useState(false);
+    const [navOpacity, setNavOpacity] = useState(false);    
 
     const toggleMenu = () => {
         setMobileMenu(!mobileMenu)
+        setNavOpacity(true);
+        
+    }  
+
+    const changeNavBackground = () => {
+        if(window.scrollY >= 50) {
+            setNavOpacity(true);
+        }
+        else {
+            setNavOpacity(false);
+        }
     }    
+    
+    window.addEventListener('scroll', changeNavBackground);
 
     return (
         <>
-        <nav className="navigation">
+        <nav className={navOpacity ? "navigation active" : "navigation"} >
             <div id="navContent">
                 <HomeLogo />
                 <span id="btnBurger" onClick={toggleMenu}></span>

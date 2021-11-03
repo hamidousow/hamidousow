@@ -1,14 +1,10 @@
-.navigation {
-    //padding: 1.5em 0;
+.navigation {    
     display: flex;    
     align-items: center;
-    box-shadow: $boxShadow;
-    position: fixed;    
-    //height: 70px;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background: $clr-black;
     z-index: 10;
     
     #navContent {        
@@ -16,7 +12,7 @@
         width: 100%;
         align-items: center;
         justify-content: space-between;
-        padding: 1.5em;
+        padding: 1.5em 2em;
     }
 
     a {
@@ -31,7 +27,10 @@
     }
 
     #homeLogo {
-        font-weight: $bold;
+        img {
+            display: block;
+            height: 30px;
+        }
     }
 
     .menu {
@@ -68,6 +67,11 @@
     #btnBurger {
         display: none;
     }    
+}
+
+.navigation.active {
+    box-shadow: $boxShadow;
+    background: $clr-black;
 }
 
 .mobileMenu {

@@ -4,7 +4,7 @@ const HomeLogo = () => {
     return (
         <>
         <a href="#" id="homeLogo">
-            Hamidou SOW
+            <img src="../img/myLogo.png"/>
         </a>           
         </>
     );
