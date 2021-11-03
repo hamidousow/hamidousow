@@ -1,21 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const CardProject = () => {
-    return (
-        <div className="card" data-component="card">
-            {/* <span className="projectNumber">01</span> */}
-            <div className="cardContent">
-                <p className="projectNumber outlines">01</p>                
-                <div className="cardRichText">
-                    <h2 className="cardTitle gradient-title">Titre du projet</h2>
-                    <h3 className="cardSubtitle">Subtitle</h3>                     
-                </div>
-                <div className="cardContainerImage">
-                    <img className="cardImg" src="./img/nisaa-header.jpg" alt="femme souriante prennant soin d'elle"/>
-                </div>
-            </div>           
-        </div>
-    );
+class CardProject extends Component {
+    render() {
+        const { cardContent } = this.props;
+        return (        
+            <div className="card" data-component="card">            
+                <div className="cardContent">
+                    <p className={cardContent.content.cardNumber.className}>{cardContent.content.cardNumber.number}</p>                
+                    <div className="cardRichText">
+                        <h2 className={cardContent.content.cardTitle.className}>{cardContent.content.cardTitle.text}</h2>
+                        <h3 className={cardContent.content.cardSubtitle.className}>{cardContent.content.cardSubtitle.text}</h3>                     
+                    </div>
+                    <div className="cardContainerImage">
+                        <img className={cardContent.content.cardImg.className} src={cardContent.content.cardImg.source} alt={cardContent.content.cardImg.alt}/>
+                    </div>
+                </div>           
+            </div>
+        );
+    }
 };
 
 export default CardProject;

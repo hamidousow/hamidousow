@@ -1,0 +1,74 @@
+[
+    {
+        "content": {
+            "cardNumber": {
+                "number": "01",
+                "className": "projectNumber outlines"
+            },
+
+            "cardTitle": {
+                "text": "Nisaa box",
+                "className": "cardTitle gradient-title"
+            },
+
+            "cardSubtitle": {
+                "text": "Web design",
+                "className": "cardSubtitle"
+            },
+
+            "cardImg": {
+                "className": "cardImg",
+                "source": "./img/nisaa-header.jpg",
+                "alt": "femme souriante prennant soin d'elle"
+            }
+        }
+    },
+    {
+        "content": {
+            "cardNumber": {
+                "number": "02",
+                "className": "projectNumber outlines"
+            },
+
+            "cardTitle": {
+                "text": "miae",
+                "className": "cardTitle gradient-title"
+            },
+
+            "cardSubtitle": {
+                "text": "Web design",
+                "className": "cardSubtitle"
+            },
+
+            "cardImg": {
+                "className": "cardImg",
+                "source": "./img/miae-header.jpg",
+                "alt": "high five between a woman and a man"
+            }
+        }
+    },
+    {
+        "content": {
+            "cardNumber": {
+                "number": "03",
+                "className": "projectNumber outlines"
+            },
+
+            "cardTitle": {
+                "text": "homme de métier",
+                "className": "cardTitle gradient-title"
+            },
+
+            "cardSubtitle": {
+                "text": "Web design",
+                "className": "cardSubtitle"
+            },
+
+            "cardImg": {
+                "className": "cardImg",
+                "source": "./img/hdm-header.jpg",
+                "alt": "high five between a woman and a man"
+            }
+        }
+    }
+]
