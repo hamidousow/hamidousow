@@ -23,24 +23,35 @@ const Nav = () => {
     ]
 
     const [mobileMenu, setMobileMenu] = useState(false);
-    const [navOpacity, setNavOpacity] = useState(false);    
+    const [navOpacity, setNavOpacity] = useState(false);
+    const [scroll, setScroll] = useState(false);    
 
     const toggleMenu = () => {
         setMobileMenu(!mobileMenu)
-        setNavOpacity(true);
-        
+        setNavOpacity(true);        
     }  
 
     const changeNavBackground = () => {
         if(window.scrollY >= 50) {
             setNavOpacity(true);
-        }
+        }        
+
         else {
             setNavOpacity(false);
         }
-    }    
+    } 
     
+    const disableBodyScroll = () => {
+        if(setMobileMenu == true) {
+            setScroll(true);
+        }
+        else {
+            setScroll(false);
+        }
+    }
+
     window.addEventListener('scroll', changeNavBackground);
+    window.addEventListener('scroll', disableBodyScroll);
 
     return (
         <>

@@ -78,7 +78,8 @@
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {    
+
     .navigation {
         flex-wrap: wrap;
 
@@ -125,5 +126,10 @@
             }
         }
     } 
+
+    .navigation.menuActive {
+        height: 100vh;
+        overflow: hidden;
+    }
 }
 
