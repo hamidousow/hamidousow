@@ -3,7 +3,7 @@ import React from 'react';
 const CallToAction = () => {
     return (
         <>
-            <div className="callToAction"> start </div>
+            <div className="callToAction"> <a href="#about"> start </a> </div>
         </>
     );
 };

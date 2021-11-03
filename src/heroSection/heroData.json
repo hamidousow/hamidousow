@@ -4,12 +4,12 @@
             "id": "heroSection",
             "className": "heroSection",
             "title": {
-                "text": "Design & Web Developpeur.",
+                "text": "I am Hamidou",
                 "className": "bigTitle"
             }, 
             "paragraphe": {
-                "text": [""],
-                "className": ""
+                "text": "developer & ui / ux designer",
+                "className": "smallTitle"
             },      
             "img": { 
                 "src": "./img/heroImg.svg",

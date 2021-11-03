@@ -1,16 +1,27 @@
 .heroSection {
     display: flex;
+    justify-content: center;
     flex-direction: column; 
     padding: 0 2em;
     height: calc(100vh - 5em);
     margin-top: 5em;
 
-    .bigTitle {
-        margin: 4em 0;
+    .content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4em;
     }
 
     .leftContent {
         justify-content: center;
+
+        .bigTitle {
+            margin-bottom: 6px;
+        }
+
+        .text {
+            text-transform: uppercase;
+        }
     }
 
     .ImgSection {
