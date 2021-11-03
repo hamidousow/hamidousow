@@ -6,18 +6,16 @@ $clr-cyan: #54c4c2;
 $clr-purple: #bd54c5;
 $clr-yellow: #dfc349;
 
-
-
 //box-shadow
 $boxShadow: 0px 0px 13px 0px #0000008f;
 
 //responsive font-size
-$bigTitle: clamp(25px, 3vw, 50px);
-$smallTitle: clamp(13px, 3vw, 25px); 
+$bigTitle: clamp(32px, 3vw, 50px);
+$smallTitle: clamp(14px, 3vw, 25px); 
 $text-size: clamp(12px, 2vw, 21px);
 $smallText: clamp(12px, 2vw, 16px);
 $bigNumber: clamp(100px, 15vw, 200px);
-// $cardTitle: clamp()
+$callToAction: clamp(11px, 1vw, 16px);
 
 //fonts weight
 $light: 300;
