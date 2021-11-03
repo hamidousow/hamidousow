@@ -1,12 +1,19 @@
 .containerCards {
     display: flex;
     flex-direction: column;
-    row-gap: 3em;
+    row-gap: 3em;   
 
     .card {
         width: 100%;
         position: relative;
         margin: auto;
+        cursor: pointer;
+        
+        &:hover {
+            .cardImg {            
+                filter: brightness(0.7);
+            }
+        }
     }
 
     .cardContent {
@@ -16,42 +23,58 @@
         flex-direction: row;
         column-gap: 1em;
         flex-wrap: wrap;
+    }
 }
-    }
 
-    .projectNumber {
-        font-size: $bigNumber;
-        font-weight: 900;
-        width: fit-content;
-    }
+.projectNumber {
+    font-size: $bigNumber;
+    font-weight: 900;
+    width: fit-content; 
+}
 
-    .cardRichText {        
-        display: flex;
-        justify-content: center;
-        flex-direction: column;        
-        
-        .cardTitle {
-            font-size: $smallTitle;
-            color: $clr-grey; //color pink or an other one
-            text-transform: uppercase;
-            margin-bottom: 0.5em;
-        }
+.outlines {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $clr-grey;
+    font-weight: bold;
+    color: transparent; 
+    z-index: -1;   
+}
 
-        .cardSubtitle {
-            font-size: $smallText;
-        }
-    } 
+.cardRichText {        
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    padding-bottom: 1.2em;       
     
-    .cardContainerImage {
-        height: 45vmin;
-        width: 90%;
-        background: lightgrey;
-        opacity: .5; 
-        margin: 0 auto;
-        position: relative;
-        right: 0;
-        bottom: 2em;         
+    .cardTitle {
+        font-size: $smallTitle;
+        font-weight: bold;
+        color: $clr-grey; //color pink or an other one
+        text-transform: uppercase;
+        margin-bottom: 0.5em;
     }
+
+    .cardSubtitle {
+        font-size: $smallText;
+    }
+} 
+
+.cardContainerImage {
+    height: 45vmin;
+    width: 90%;
+    background: lightgrey;    
+    margin: 0 auto;
+    position: relative;
+    right: 0;
+    bottom: 2em; 
+    overflow: hidden;      
+    
+    .cardImg {
+        width: 100%;
+        filter: saturate(0);
+        
+    }   
+}
 
 
 
