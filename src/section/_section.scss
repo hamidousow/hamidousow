@@ -5,8 +5,19 @@
     padding: 2em; 
     margin-bottom: 2em;
 
-    .bigTitle {
-        margin: 2em 0;
+    .wrapTitles {
+        position: relative;
+        margin: 2em 0;  
+    
+        .bigOutlineTitle {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);            
+            text-transform: uppercase;
+            font-size: clamp(70px, 4vw, 200px);
+            left: 45px;
+            z-index: -1;
+        }
     }
     
     .content {

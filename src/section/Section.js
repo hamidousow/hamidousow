@@ -6,7 +6,10 @@ class Section extends Component {
         return (
             <>
                 <section id={sectionContent.section.id} className={sectionContent.section.className}> 
-                    <h1 className={sectionContent.section.title.className}>{sectionContent.section.title.text}</h1>
+                    <div className="wrapTitles">
+                        <h1 className={sectionContent.section.title.className}>{sectionContent.section.title.text}</h1>
+                        <span className="bigOutlineTitle outlines">{sectionContent.section.title.text}</span>
+                    </div>
                     <div className={sectionContent.content.className}>          
                         <div className={sectionContent.leftContent.className}>
                             <p className={sectionContent.section.paragraphe.className}>{sectionContent.section.paragraphe.text}</p>           
