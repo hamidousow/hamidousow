@@ -1,12 +1,13 @@
 import React from 'react';
+import SocialMediaIcons from '../IconMedia/SocialMediaIcons';
 
-const Footer = () => {
+
+const Footer = () => {  
+
     return (
         <footer className="section">
             <div className="content">
-                <div className="containerIcons">
-                    
-                </div>
+                <SocialMediaIcons/>
             </div>
         </footer>
     );
