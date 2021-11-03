@@ -5,6 +5,7 @@ import heroData from '../heroSection/heroData.json';
 import Section from '../section/Section';
 import sectionData from '../section/sectionData.json';
 import CardProject from '../CardProject/CardProject';
+import cardData from '../CardProject/cardData.json';
 import Contact from '../contact/Contact';
 import Footer from '../Footer/Footer';
 
@@ -20,7 +21,9 @@ const Home = () => {
             })}
             <section className="section">
                 <div className="containerCards">
-                    <CardProject/>
+                    {cardData.map((cardItem, index) => {
+                        return <CardProject cardContent={cardItem}/>
+                    })}                    
                 </div>
             </section>
             <Contact/>

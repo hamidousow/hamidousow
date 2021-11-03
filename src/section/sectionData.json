@@ -5,7 +5,7 @@
             "className": "section",
             "title": {
                 "text": "about",
-                "className": "bigTitle"
+                "className": "bigTitle gradient-title"
             }, 
             "paragraphe": {
                 "text": ["My  name's Hamidou SOW, i'm a french web designer and front-end developer.",
