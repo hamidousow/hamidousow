@@ -1,7 +1,10 @@
 .containerButton {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;    
+    flex-basis: 100%;
+    flex-grow: 1;
+    justify-content: space-around; 
+    margin: 3em 0;   
 }
 
 .button {

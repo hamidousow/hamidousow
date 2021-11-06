@@ -1,7 +1,8 @@
 .containerCards {
     display: flex;
     flex-direction: column;
-    row-gap: 3em;   
+    row-gap: 3em;  
+    
 
     .card {
         width: 100%;
@@ -38,7 +39,7 @@
     font-weight: bold;
     color: transparent; 
     z-index: 1; 
-    opacity: .4;  
+    opacity: .3;  
 }
 
 .cardRichText {        
@@ -61,7 +62,7 @@
 } 
 
 .cardContainerImage {
-    height: 45vmin;
+    height: 49vmin;
     width: 90%;
     background: lightgrey;    
     margin: 0 auto;
@@ -76,6 +77,19 @@
         filter: saturate(0);
         
     }   
+}
+
+@media screen and (min-width: 768px) {
+
+    .containerCards {
+        margin: auto;
+    }
+
+    .card {
+        max-width: 1000px;        
+    }
+    
+    
 }
 
 

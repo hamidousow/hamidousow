@@ -4,24 +4,18 @@
     flex-direction: column;   
     padding: 2em; 
     margin-bottom: 2em;
-
-    .wrapTitles {
-        position: relative;
-        margin: 2em 0;  
     
-        .bigOutlineTitle {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);            
-            text-transform: uppercase;
-            font-size: clamp(70px, 4vw, 200px);
-            left: 45px;
-            z-index: -1;
+    .content {
+        flex-direction: column;
+        display: flex;
+
+        .wrapContent {
+            display: flex;
+            flex-direction: column;
         }
     }
     
-    .content {
-        display: flex;
+    .content-reverse {        
         flex-direction: column-reverse;
         
         .leftContent {        
@@ -34,4 +28,49 @@
         display: block;
         width: 100%;
     }
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+
+        .content {
+            flex-direction: column;
+            display: flex;
+    
+            .wrapContent {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .leftContent, .rightContent {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        padding: 5em 4em;
+        min-height: 90vh;
+        justify-content: center;
+
+        .content {
+            max-width: 1600px;
+            //align-self: center;
+        }
+
+        .wrapContent {
+            flex-direction: inherit;
+        }
+    }
+}
+
+@media screen and (min-width: 991px) {
+
+    .section {
+        padding: 5em 6em;
+    }
+    
 }
