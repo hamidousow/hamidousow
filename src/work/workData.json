@@ -1,0 +1,14 @@
+[          
+    {
+        "section": {
+            "id": "work",
+            "title": {
+                "text": "work"
+            },                  
+            "img": { 
+                "src": "./img/heroImg.svg",
+                "className": "ImgSection"                    
+            }            
+        }               
+    }
+]

@@ -8,6 +8,21 @@ body {
     background: $clr-black;
 }
 
+.wrapTitles {
+    position: relative;
+    margin: 2em 0 4em;  
+
+    .bigOutlineTitle {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);            
+        text-transform: uppercase;
+        font-size: $bigOutlineTitle;
+        left: 45px;
+        z-index: -1;
+    }
+}
+
 .bigTitle {
     color: $clr-grey;
     font-size: $bigTitle;

@@ -1,29 +1,18 @@
 [
-    {
-        "section": {
-            "id": "heroSection",
-            "className": "heroSection",
-            "title": {
-                "text": "I am Hamidou",
-                "className": "bigTitle"
-            }, 
-            "paragraphe": {
-                "text": "developer & ui / ux designer",
-                "className": "smallTitle"
-            },      
-            "img": { 
-                "src": "./img/heroImg.svg",
-                "className": "ImgSection"                    
-            }            
-        },
-        "content": {
-            "className": "content"
-        },
-        "leftContent": {
-            "className": "leftContent"
-        },
-        "rightContent": {
-            "className": "rightContent"
+    {        
+        "id": "heroSection",
+        "className": "heroSection",
+        "title": {
+            "text": "I am Hamidou",
+            "className": "bigTitle"
+        }, 
+        "paragraphe": {
+            "text": "developer & ui / ux designer",
+            "className": "smallTitle"
+        },      
+        "img": { 
+            "src": "./img/heroImg.svg",
+            "className": "ImgSection"                    
         }
     }            
 ]
