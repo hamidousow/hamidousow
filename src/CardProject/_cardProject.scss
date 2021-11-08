@@ -8,13 +8,6 @@
         width: 100%;
         position: relative;
         margin: auto;
-        cursor: pointer;
-        
-        &:hover {
-            .cardImg {            
-                filter: brightness(0.7);
-            }
-        }
     }
 
     .cardContent {
@@ -70,12 +63,18 @@
     right: 0;
     bottom: 2em; 
     overflow: hidden; 
-    box-shadow: $boxShadow;     
+    box-shadow: $boxShadow; 
+    cursor: pointer; 
+    
+    &:hover {
+        .cardImg {            
+            filter: brightness(0.7);
+        }
+    }
     
     .cardImg {
         width: 100%;
         filter: saturate(0);
-        
     }   
 }
 
@@ -88,8 +87,6 @@
     .card {
         max-width: 1000px;        
     }
-    
-    
 }
 
 
