@@ -11,9 +11,11 @@ class CardProject extends Component {
                         <h2 className={cardContent.content.cardTitle.className}>{cardContent.content.cardTitle.text}</h2>
                         <h3 className={cardContent.content.cardSubtitle.className}>{cardContent.content.cardSubtitle.text}</h3>                     
                     </div>
-                    <div className="cardContainerImage">
-                        <img className={cardContent.content.cardImg.className} src={cardContent.content.cardImg.source} alt={cardContent.content.cardImg.alt}/>
-                    </div>
+                    <a href={cardContent.content.cardLink}>
+                        <div className="cardContainerImage">
+                            <img className={cardContent.content.cardImg.className} src={cardContent.content.cardImg.source} alt={cardContent.content.cardImg.alt}/>
+                        </div>
+                    </a>
                 </div>           
             </div>
         );

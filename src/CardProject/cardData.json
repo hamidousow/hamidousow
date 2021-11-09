@@ -20,7 +20,9 @@
                 "className": "cardImg",
                 "source": "./img/nisaa-header.jpg",
                 "alt": "femme souriante prennant soin d'elle"
-            }
+            },
+
+            "cardLink": "./Nisaa"
         }
     },
     {
@@ -44,7 +46,9 @@
                 "className": "cardImg",
                 "source": "./img/miae-header.jpg",
                 "alt": "high five between a woman and a man"
-            }
+            },
+
+            "cardLink": "./miae"
         }
     },
     {
