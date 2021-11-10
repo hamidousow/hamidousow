@@ -2,9 +2,9 @@
     
     .containerIcons {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        justify-items: center;
+        flex-direction: row;        
+        //justify-items: center;        
+        column-gap: 2em;
 
         a {
             text-decoration: inherit;
@@ -13,6 +13,29 @@
         .iconMedia {
             color: $clr-grey;
             text-decoration: none;
+            font-size: 2.2em;
         }
     }
 }
+
+.heroSection {
+    position: relative;
+    
+    .socialMediaIcons {
+        position: absolute;
+        bottom: 4em;
+        right: 2em;
+
+        .containerIcons {            
+            justify-content: flex-end;
+            column-gap: 2em; 
+        }
+    }
+}
+
+footer {
+    .containerIcons {
+        justify-content: center;
+    }
+}
+
