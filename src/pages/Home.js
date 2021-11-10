@@ -11,11 +11,11 @@ import Section from '../components/section/Section';
 const Home = () => {
     return (
         <>
-            <Nav/>                        
-            <main>
-                {heroData.map((heroItems, index) => {
+            <Nav/> 
+            {heroData.map((heroItems, index) => {
                     return <HeroSection heroContent={heroItems}/>
                 })}
+            <main>
                 <Section sectionTitle={"about"}>
                     <About/>
                 </Section>
@@ -25,7 +25,6 @@ const Home = () => {
                 <Section sectionTitle={"contact"}>
                     <Contact/>
                 </Section>
-                
             </main>
             <Footer/>
         </>
