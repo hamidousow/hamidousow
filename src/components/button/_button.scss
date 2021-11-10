@@ -3,7 +3,8 @@
     flex-direction: row;
     flex-basis: 100%;
     flex-grow: 1;
-    justify-content: space-around; 
+    justify-content: center;
+    column-gap: 4em; 
     margin: 3em 0;   
 }
 
@@ -17,4 +18,5 @@
     color: $clr-green;
     background: transparent;
     border: 1px solid $clr-green;
+    cursor: pointer;
 }
