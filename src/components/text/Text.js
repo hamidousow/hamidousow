@@ -4,7 +4,6 @@ class Text extends Component {
     render() {
         const textContent = this.props;
         return <p className="text">{textContent.text}</p>
-        
     }
 }
 

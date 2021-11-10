@@ -1,12 +1,12 @@
 import React from 'react';
-import Nav from "../nav/Nav";
-import HeroSection from '../heroSection/HeroSection';
-import heroData from '../heroSection/heroData.json';
-import About from '../about/About';
-import Contact from '../contact/Contact';
-import Footer from '../Footer/Footer';
-import Work from '../work/Work';
-import Section from '../components/Section';
+import Nav from "../components/nav/Nav";
+import HeroSection from '../components/heroSection/HeroSection';
+import heroData from '../components/heroSection/heroData.json';
+import About from '../components/about/About';
+import Contact from '../components/contact/Contact';
+import Footer from '../components/footer/Footer';
+import Work from '../components/work/Work';
+import Section from '../components/section/Section';
 
 const Home = () => {
     return (

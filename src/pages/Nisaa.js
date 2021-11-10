@@ -1,9 +1,9 @@
 import React from 'react';
-import Nav from '../nav/Nav';
-import Header from '../header/Header';
+import Nav from '../components/nav/Nav';
+import Header from '../components/header/Header';
 import { nisaaData } from '../data/nisaaData';
-import Section from '../components/Section';
-import RichText from '../components/RichText';
+import Section from '../components/section/Section';
+import RichText from '../components/richText/RichText';
 
 const Nisaa = () => {
     return (
