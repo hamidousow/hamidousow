@@ -1,5 +1,5 @@
 import React from 'react';
-import RichText from '../components/RichText';
+import RichText from '../richText/RichText';
 import { aboutData } from './aboutData';
 
 const About = () => {

@@ -23,8 +23,7 @@ const Nav = () => {
     ]
 
     const [mobileMenu, setMobileMenu] = useState(false);
-    const [navOpacity, setNavOpacity] = useState(false);
-    const [scroll, setScroll] = useState(false);    
+    const [navOpacity, setNavOpacity] = useState(false);   
 
     const toggleMenu = () => {
         setMobileMenu(!mobileMenu)
@@ -41,17 +40,8 @@ const Nav = () => {
         }
     } 
     
-    const disableBodyScroll = () => {
-        if(setMobileMenu == true) {
-            setScroll(true);
-        }
-        else {
-            setScroll(false);
-        }
-    }
 
     window.addEventListener('scroll', changeNavBackground);
-    window.addEventListener('scroll', disableBodyScroll);
 
     return (
         <>

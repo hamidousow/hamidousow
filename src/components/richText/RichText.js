@@ -7,7 +7,7 @@ const RichText = (props) => {
             <p className="text">{props.text}</p>
         </div>
         <div className="rightContent">
-            <img className="ImgContent"/>
+            <img className="ImgContent" alt={props.alt}/>
         </div>
         {props.children}
         </>

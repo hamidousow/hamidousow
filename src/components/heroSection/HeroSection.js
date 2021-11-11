@@ -1,5 +1,5 @@
 import React from 'react';
-import CallToAction from '../callToAction/CallToAction';
+//import SocialMediaIcons from '../IconMedia/SocialMediaIcons';
 
 const HeroSection = () => {
     return (
@@ -13,10 +13,10 @@ const HeroSection = () => {
                     <p className="smallTitle">developer & ui / ux designer</p>          
                 </div>
                 <div className="rightContent">
-                    <img src="" className="ImgSection"/>
+                    <img src="" className="ImgSection" alt="Hamidou SOW"/>
                 </div>
             </div>
-            <CallToAction/> 
+            {/* <SocialMediaIcons/> */}
         </header>
         </>
     )

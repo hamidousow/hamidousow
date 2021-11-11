@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../button/Button';
-import buttonData from '../button/buttonData.json';
-import RichText from '../components/RichText';
+//import buttonData from '../button/buttonData.json';
+import RichText from '../richText/RichText';
 import { contactData } from '../contact/contactData';
 
 const Contact = () => {
@@ -9,9 +9,8 @@ const Contact = () => {
         <>
         <RichText text={contactData.text}/>
         <div className="containerButton">
-            {buttonData.map((buttonItems, index) => {
-                return <Button buttonContent={buttonItems}/>
-            })} 
+            <Button text={'cv online'}/>
+            <Button text={'hire me'}/>
         </div>
         </>
     );
