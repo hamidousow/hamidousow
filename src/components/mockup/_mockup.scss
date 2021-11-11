@@ -1,0 +1,42 @@
+$clr-nisaa: #F0D0B9;
+
+.sectionMockup {
+    position: relative;
+
+    figure {
+        margin: 2em 0;
+    }
+
+    &::after {
+        content: " ";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 2em;
+        z-index: -1;
+        clip-path: inset(10em 5em 0 0);
+        background: $clr-nisaa;
+    }
+    // .containerMockup {
+    //     display: flex;
+    //     flex-direction: column;
+    //     row-gap: 3em; 
+    // }
+
+    .mockup img {
+        display: block;
+        width: 100%;
+        box-shadow: $boxShadow;
+    }
+
+    .mockupFull {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 45%;
+        }
+    }     
+}

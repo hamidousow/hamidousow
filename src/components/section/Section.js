@@ -11,7 +11,6 @@ const Section = (props) => {
                 <div className="wrapContent">
                 {props.children}
                 </div>
-                
             </div>
         </section>
     );
