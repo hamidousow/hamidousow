@@ -16,27 +16,50 @@ $clr-nisaa: #F0D0B9;
         left: 0;
         bottom: 2em;
         z-index: -1;
-        clip-path: inset(10em 5em 0 0);
+        clip-path: inset(10em 5em 5em 0);
         background: $clr-nisaa;
+    }    
+
+    .mockup {
+        display: flex;
     }
-    // .containerMockup {
-    //     display: flex;
-    //     flex-direction: column;
-    //     row-gap: 3em; 
-    // }
 
     .mockup img {
         display: block;
         width: 100%;
+        height: 100%;
         box-shadow: $boxShadow;
     }
 
-    .mockupFull {
-        display: flex;
+    //mockup full page desktop
+    .mockupFull {        
         justify-content: space-between;
 
         img {
             width: 45%;
+            //height: 100%;
         }
-    }     
+
+        img:nth-child(2) {
+            margin-top: 2em;
+        }  
+    } 
+    
+    //mockup mobile
+    .mockupMobile {
+        justify-content: space-between;
+
+        img {
+            width: 30%;
+            height: 100%;
+        }
+    }
+}
+
+.sectionMoreDetails {
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
