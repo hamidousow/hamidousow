@@ -7,6 +7,7 @@ import Contact from '../components/contact/Contact';
 import Footer from '../components/footer/Footer';
 import Work from '../components/work/Work';
 import Section from '../components/section/Section';
+import WrapTitle from '../components/wrapTitle/WrapTitle';
 
 const Home = () => {
     return (
@@ -16,13 +17,16 @@ const Home = () => {
                     return <HeroSection heroContent={heroItems}/>
                 })}
             <main>
-                <Section sectionTitle={"about"}>
+                <Section className={"section"}>
+                    <WrapTitle sectionTitle={"about"}/>
                     <About/>
                 </Section>
-                <Section sectionTitle={"work"}>
+                <Section className={"section"}>
+                    <WrapTitle sectionTitle={"work"}/>
                     <Work/>                   
                 </Section>
-                <Section sectionTitle={"contact"}>
+                <Section className={"section"}>
+                    <WrapTitle sectionTitle={"contact"}/>
                     <Contact/>
                 </Section>
             </main>
