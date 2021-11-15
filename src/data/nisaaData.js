@@ -19,6 +19,10 @@ export const nisaaData = {
             "Nisaa is a box concept for womens who wants take care abour themself, spirituality and physically.",
             "The project was to redesign the website to create a better user experience. I redefine the colors appropriate to the environment and the elements disposition to make the website more agreable to work with."
         ]        
+    },
+
+    viewMore: {
+        link: "./"
     }
 }
 
