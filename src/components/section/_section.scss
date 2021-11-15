@@ -1,13 +1,12 @@
-.section {
-    
+.section {    
     display: flex;
     flex-direction: column;   
     padding: 2em; 
-    margin-bottom: 2em;
+    margin-bottom: 2em;   
     
     .content {
         flex-direction: column;
-        display: flex;
+        display: flex;        
 
         .wrapContent {
             display: flex;
@@ -30,13 +29,27 @@
     }
 }
 
+//project section introduction 
+
+.section.intro {
+    min-height: 50vh;
+    justify-content: center;
+}
+
 @media screen and (min-width: 768px) {
-    .section {
+    .section {        
+        padding: 5em 4em;        
+        justify-content: center;        
+
+        .wrapContent {
+            flex-direction: inherit;
+        }       
 
         .content {
             flex-direction: column;
             display: flex;
             row-gap: 5em;
+            max-width: 1600px;
     
             .wrapContent {
                 display: flex;
@@ -47,23 +60,6 @@
             .leftContent, .rightContent {
                 width: 50%;
             }
-        }
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .section {
-        padding: 5em 4em;
-        //min-height: 90vh;
-        justify-content: center;
-
-        .content {
-            max-width: 1600px;
-            //align-self: center;
-        }
-
-        .wrapContent {
-            flex-direction: inherit;
         }
     }
 }
