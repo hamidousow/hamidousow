@@ -1,0 +1,19 @@
+.viewMore {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+
+    .title {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+}
