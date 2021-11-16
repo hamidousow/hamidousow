@@ -28,6 +28,7 @@
 
     .rightContent {
         position: relative;
+        overflow: hidden;
 
         &::after {
             content: "";
@@ -42,7 +43,7 @@
             #dfc349 40%, 
             #bd54c5 60%, 
             #54c47d 80%);
-            background-size: 300% auto;
+            background-size: 200% auto;
             animation: shine 30s linear infinite;
             @keyframes shine {
             to {
