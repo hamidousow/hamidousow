@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from "../components/nav/Nav";
 import HeroSection from '../components/heroSection/HeroSection';
-import heroData from '../components/heroSection/heroData.json';
+//import heroData from '../components/heroSection/heroData.json';
 import About from '../components/about/About';
 import Contact from '../components/contact/Contact';
 import Footer from '../components/footer/Footer';
@@ -12,10 +12,8 @@ import WrapTitle from '../components/wrapTitle/WrapTitle';
 const Home = () => {
     return (
         <>
-            <Nav/> 
-            {heroData.map((heroItems, index) => {
-                    return <HeroSection heroContent={heroItems}/>
-                })}
+            <Nav/>           
+            <HeroSection/>           
             <main>
                 <Section className={"section"}>
                     <WrapTitle sectionTitle={"about"}/>
