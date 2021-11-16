@@ -1,12 +1,12 @@
 import React from 'react';
-import SocialMediaIcons from '../IconMedia/SocialMediaIcons';
+//import SocialMediaIcons from '../IconMedia/SocialMediaIcons';
 import heroImg from '../../images/pp-min.png';
-import CallToAction from '../callToAction/CallToAction';
+//import CallToAction from '../callToAction/CallToAction';
 
 const HeroSection = () => {
     return (
         <>            
-        <header id="heroSection" className="heroSection">
+        <header id="home" className="heroSection">
             <div className="content">          
                 <div className="leftContent">
                     <h1 className="bigTitle">
