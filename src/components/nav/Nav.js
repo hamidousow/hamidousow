@@ -1,26 +1,8 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import HomeLogo from '../logo/HomeLogo';
 
 const Nav = () => {
-
-    const menu = [
-        {
-            text: "work",
-            className: "linkNav",
-            link: "/"
-        },
-        {
-            text: "about",
-            className: "linkNav",
-            link: "/about"
-        },
-        {
-            text: "contact",
-            className: "linkNav",
-            link: "/"
-        }
-    ]
 
     const [mobileMenu, setMobileMenu] = useState(false);
     const [navOpacity, setNavOpacity] = useState(false);   
@@ -47,12 +29,19 @@ const Nav = () => {
         <>
         <nav className={navOpacity ? "navigation active" : "navigation"} >
             <div id="navContent">
+                {/* <Link to="home" smooth={true} duration={1000} > */}
                 <HomeLogo />
                 <span id="btnBurger" onClick={toggleMenu}></span>
-                <ul className={mobileMenu ? "menu active" : "menu" }>
-                    {menu.map((navlink) => (
-                        <NavLink className={navlink.className} exact to={navlink.link} onClick={toggleMenu}> {navlink.text} </NavLink>
-                    ))}
+                <ul className={mobileMenu ? "menu active" : "menu" }>                                       
+                    <Link className="linkNav" to="about" smooth={true} duration={1000} onClick={toggleMenu}>
+                        <li>About</li>
+                    </Link> 
+                    <Link className="linkNav" to="work" smooth={true} duration={1000} onClick={toggleMenu}>
+                        <li>Work</li>
+                    </Link> 
+                    <Link className="linkNav" to="contact" smooth={true} duration={1000} onClick={toggleMenu}>
+                        <li>Contact</li>
+                    </Link> 
                 </ul>
             </div>
         </nav>

@@ -12,7 +12,7 @@
         width: 100%;
         align-items: center;
         justify-content: space-between;
-        padding: 1.5em 2em;
+        padding: 1em 2em;
     }
 
     a {
@@ -24,12 +24,13 @@
         text-transform: uppercase;
         color: $clr-grey;
         letter-spacing: $space2;
+        cursor: pointer;
     }
 
     #homeLogo {
         img {
             display: block;
-            height: 30px;
+            height: 25px;
         }
     }
 

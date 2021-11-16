@@ -1,5 +1,4 @@
 import React from 'react';
-import BigTitle from '../bigTitle/BigTitle';
 
 const WrapTitle = (props) => {
     return (
