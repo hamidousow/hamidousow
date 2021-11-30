@@ -11,7 +11,7 @@ const Contact = () => {
             <WrapTitle sectionTitle={"contact"} />
             <RichText text={contactData.text}/>
             <div className="containerButton">
-                <Button text={'hire me'} href={"#"}/>
+                <Button text={'hire me'} mailto={"hamidou.sow@hotmail.fr"}/>
                 <Button text={'cv online'} href={"https://hamidousow.github.io/hamidou-cv-online/"}/>
             </div>            
         </Section>
