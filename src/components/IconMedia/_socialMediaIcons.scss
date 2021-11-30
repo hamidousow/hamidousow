@@ -14,6 +14,11 @@
             color: $clr-grey;
             text-decoration: none;
             font-size: 2.2em;
+
+            &:hover {
+                color: $clr-green;
+                transition: .5s all;
+            }
         }
     }
 }
