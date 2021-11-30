@@ -64,9 +64,11 @@
             overflow: hidden; 
             box-shadow: $boxShadow; 
             cursor: pointer; 
+            border-radius: 10px;
         
         &:hover {
-            .cardImg {            
+            
+            .cardImg {
                 filter: brightness(0.7);
             }
         }
