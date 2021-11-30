@@ -5,7 +5,11 @@
     flex-grow: 1;
     justify-content: center;
     column-gap: 4em; 
-    margin: 3em 0;   
+    margin: 3em 0;
+    :nth-child(1) {
+        background: $clr-green;
+        color: $clr-black;
+    }   
 }
 
 .button {
@@ -13,10 +17,31 @@
     padding: 1em .5em;
     width: 110px;
     text-transform: uppercase;
+    text-align: center;    
     font-size: .7em;
     letter-spacing: 1px;
     color: $clr-green;
     background: transparent;
     border: 1px solid $clr-green;
     cursor: pointer;
+    border-radius: 20px;
+}
+
+@media screen and(min-width: 768px) {
+    .button {        
+        padding: 1.5em 1em;
+        width: 160px;        
+        font-size: 1em;
+        letter-spacing: 2px;
+        color: $clr-green;
+        border-radius: 35px;
+        transition: .5s all;
+
+        &:hover {
+            color: $clr-black;
+            background: $clr-grey;
+            border: 1px solid $clr-black;  
+            font-weight: 500;          
+        }
+    }
 }
