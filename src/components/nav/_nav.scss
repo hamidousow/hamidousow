@@ -12,7 +12,7 @@
         width: 100%;
         align-items: center;
         justify-content: space-between;
-        padding: 1em 2em;
+        padding: 1em 5em;
     }
 
     a {
@@ -72,6 +72,10 @@
 @media screen and (max-width: 768px) {    
 
     .navigation {
+
+        #navContent {
+            padding: 1em 2em;
+        }
 
         #menuDesktop {
             display: none;
