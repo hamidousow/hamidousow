@@ -166,13 +166,6 @@ body {
   width: fit-content;
 }
 
-.navigation #homeLogo, .navigation .linkNav {
-  text-transform: uppercase;
-  color: #dddddd;
-  letter-spacing: 2px;
-  cursor: pointer;
-}
-
 .navigation #homeLogo img {
   display: block;
   height: 25px;
@@ -193,7 +186,18 @@ body {
           justify-content: flex-end;
 }
 
-.navigation .linkNav {
+.navigation #btnBurger {
+  display: none;
+}
+
+#homeLogo, .linkNav {
+  text-transform: uppercase;
+  color: #dddddd;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.linkNav {
   color: #dddddd;
   font-weight: 500;
   padding: .5em;
@@ -202,22 +206,11 @@ body {
   transition: .5s all;
 }
 
-.navigation .linkNav::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  background: #dddddd;
+.linkNav:hover {
+  color: #54c47d;
 }
 
-.navigation .linkNav:hover::after {
-  height: 1px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.navigation #btnBurger {
+.menuMobile, .menu.active {
   display: none;
 }
 
@@ -227,42 +220,9 @@ body {
   background: #15181f;
 }
 
-.mobileMenu {
-  display: none;
-}
-
 @media screen and (max-width: 768px) {
-  .navigation {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .navigation #navContent {
-    -ms-flex-wrap: inherit;
-        flex-wrap: inherit;
-  }
-  .navigation .menu {
+  .navigation #menuDesktop {
     display: none;
-    -webkit-transition: .5s;
-    transition: .5s;
-  }
-  .navigation .menu.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 2em;
-    height: calc(100vh - 78px);
   }
   .navigation #btnBurger {
     display: block;
@@ -284,9 +244,51 @@ body {
   .navigation #btnBurger::after {
     bottom: 0;
   }
-  .navigation.menuActive {
-    height: 100vh;
-    overflow: hidden;
+  .menuMobile {
+    display: none;
+  }
+  .menu.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 5em 3em 0;
+    height: calc(100vh - 5em);
+    background: #15181f;
+    -webkit-box-shadow: 0px 0px 10px 0px #0000003b;
+            box-shadow: 0px 0px 10px 0px #0000003b;
+  }
+  .menu.active ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 2em;
+  }
+  .menu.active .containerIcons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: .5em;
+  }
+  .menu.active .containerIcons .iconMedia {
+    font-size: 1.8em;
   }
 }
 
