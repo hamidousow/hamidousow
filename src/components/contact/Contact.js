@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from '../button/Button';
-//import buttonData from '../button/buttonData.json';
 import RichText from '../richText/RichText';
 import { contactData } from '../contact/contactData';
 import WrapTitle from '../wrapTitle/WrapTitle';
@@ -12,8 +11,8 @@ const Contact = () => {
             <WrapTitle sectionTitle={"contact"} />
             <RichText text={contactData.text}/>
             <div className="containerButton">
-                <Button text={'cv online'}/>
-                <Button text={'hire me'}/>
+                <Button text={'hire me'} href={"#"}/>
+                <Button text={'cv online'} href={"https://hamidousow.github.io/hamidou-cv-online/"}/>
             </div>            
         </Section>
     );
