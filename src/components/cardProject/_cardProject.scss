@@ -1,8 +1,7 @@
 .containerCards {
     display: flex;
     flex-direction: column;
-    row-gap: 3em;  
-    
+    row-gap: 3em;
 
     .card {
         width: 100%;
@@ -54,29 +53,38 @@
     }
 } 
 
-.cardContainerImage {
-    height: 49vmin;
-    width: 90%;      
-    margin: 0 auto;
-    // position: relative;
-    right: 0;
-    bottom: 2em; 
-    overflow: hidden; 
-    box-shadow: $boxShadow; 
-    cursor: pointer; 
-    
-    &:hover {
-        transition: .5s; 
+.blockLink {
+    margin: auto;
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+    bottom: 2em;
+
+    .cardContainerImage {
+        height: 50vmin;
+        width: 100%;
+        right: 0;
+        bottom: 2em; 
+        overflow: hidden; 
+        box-shadow: $boxShadow; 
+        cursor: pointer; 
+        border-radius: 10px;
+
         .cardImg {
-            filter: brightness(0.7);
+            width: 100%;
+            filter: saturate(0);
         }
-    }       
+        
+        &:hover {
+            transition: .5s; 
+            .cardImg {
+                filter: brightness(0.7);
+            }
+        }       
+    }
+
 }
 
-.cardImg {
-    width: 100%;
-    filter: saturate(0);
-}
 
 @media screen and (min-width: 768px) {
 

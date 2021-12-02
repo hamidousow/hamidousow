@@ -14,11 +14,11 @@ const About = () => {
                 </p>
                 <br/>
                 <p className="text">
-                Learning at Simplon, throughout this training I had the chance to work on various projects, alone or in a team with the agile method. It was an opportunity to discover new technologies like Sass and React.js, and improve my workteam knowledge.
+                Learning at Simplon, throughout this training I had the chance to work on various projects, alone or in teams with the agile method. It was an opportunity to discover new technologies like Sass and React.js, and improve my workteam knowledge.
                 </p>
                 <br/>
                 <p className="text">
-                Curious and creative in nature, I aspire to make web development my job, to work in a team where kindness is the master, to learn and share our knowledge.
+                Curious and creative, I aspire to make web development my job, work in kindness team, to learn and share our knowledge.
                 </p>
             </RichText>
         </Section>        
