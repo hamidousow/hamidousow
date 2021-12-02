@@ -25,57 +25,5 @@
 
             "cardLink": "https://hamidousow.github.io/bootcamp-coding-slider/"
         }
-    },
-    {
-        "id": "2",
-        "content": {
-            "cardNumber": {
-                "number": "02",
-                "className": "projectNumber outlines"
-            },
-
-            "cardTitle": {
-                "text": "miae",
-                "className": "cardTitle gradient-title"
-            },
-
-            "cardSubtitle": {
-                "text": "Web design",
-                "className": "cardSubtitle"
-            },
-
-            "cardImg": {
-                "className": "cardImg",
-                "source": "./img/miae-header.jpg",
-                "alt": "high five between a woman and a man"
-            },
-
-            "cardLink": "./miae"
-        }
-    },
-    {
-        "id": "3",
-        "content": {
-            "cardNumber": {
-                "number": "03",
-                "className": "projectNumber outlines"
-            },
-
-            "cardTitle": {
-                "text": "homme de métier",
-                "className": "cardTitle gradient-title"
-            },
-
-            "cardSubtitle": {
-                "text": "Web design",
-                "className": "cardSubtitle"
-            },
-
-            "cardImg": {
-                "className": "cardImg",
-                "source": "./img/hdm-header.jpg",
-                "alt": "high five between a woman and a man"
-            }
-        }
-    }
+    }    
 ]

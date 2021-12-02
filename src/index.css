@@ -609,26 +609,28 @@ body {
   font-size: clamp(12px, 2vw, 16px);
 }
 
-/*.cardContainerImage {
-    height: 49vmin;
-    width: 90%;
-    background: lightgrey;    
-    margin: 0 auto;
-    position: relative;
-    right: 0;
-    bottom: 2em; 
-    overflow: hidden; 
-    box-shadow: $boxShadow; 
-    cursor: pointer; 
-    
-    &:hover {
-        .cardImg {            
-            filter: brightness(0.7);
-        }
-    }
-    
-       
-}*/
+.cardContainerImage {
+  height: 49vmin;
+  width: 90%;
+  margin: 0 auto;
+  right: 0;
+  bottom: 2em;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 10px 0px #0000003b;
+          box-shadow: 0px 0px 10px 0px #0000003b;
+  cursor: pointer;
+}
+
+.cardContainerImage:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.cardContainerImage:hover .cardImg {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
 .cardImg {
   width: 100%;
   -webkit-filter: saturate(0);
@@ -970,7 +972,6 @@ footer .containerIcons {
 .blockLink .cardContainerImage {
   height: 49vmin;
   width: 90%;
-  background: lightgrey;
   margin: 0 auto;
   overflow: hidden;
   -webkit-box-shadow: 0px 0px 10px 0px #0000003b;

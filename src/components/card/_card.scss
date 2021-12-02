@@ -54,17 +54,16 @@
 .blockLink {
         position: relative;
         right: 0;
-        bottom: 2em;
+        bottom: 2em;        
 
         .cardContainerImage {
             height: 49vmin;
-            width: 90%;
-            background: lightgrey;    
+            width: 90%;                
             margin: 0 auto;
             overflow: hidden; 
             box-shadow: $boxShadow; 
             cursor: pointer; 
-            border-radius: 10px;
+            border-radius: 10px;           
         
         &:hover {
             
