@@ -11,7 +11,7 @@ const Contact = () => {
             <WrapTitle sectionTitle={"contact"} />
             <RichText>
                 <p className="text">
-                    I'm available now, if you search a ambitious and creative web developer
+                    I'm available now, if you search an ambitious and creative web developer
                 </p>
             </RichText>
 
