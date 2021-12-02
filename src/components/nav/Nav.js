@@ -1,26 +1,9 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
+import SocialMediaIcons from '../IconMedia/SocialMediaIcons';
 import HomeLogo from '../logo/HomeLogo';
 
 const Nav = () => {
-
-    const menu = [
-        {
-            text: "work",
-            className: "linkNav",
-            link: "/"
-        },
-        {
-            text: "about",
-            className: "linkNav",
-            link: "/about"
-        },
-        {
-            text: "contact",
-            className: "linkNav",
-            link: "/"
-        }
-    ]
 
     const [mobileMenu, setMobileMenu] = useState(false);
     const [navOpacity, setNavOpacity] = useState(false);   
@@ -47,15 +30,36 @@ const Nav = () => {
         <>
         <nav className={navOpacity ? "navigation active" : "navigation"} >
             <div id="navContent">
+                {/* <Link to="home" smooth={true} duration={1000} > */}
                 <HomeLogo />
                 <span id="btnBurger" onClick={toggleMenu}></span>
-                <ul className={mobileMenu ? "menu active" : "menu" }>
-                    {menu.map((navlink) => (
-                        <NavLink className={navlink.className} exact to={navlink.link} onClick={toggleMenu}> {navlink.text} </NavLink>
-                    ))}
+                <ul id="menuDesktop" className="menu">
+                    <Link className="linkNav" to="about" smooth={true} duration={1000}>
+                        About
+                    </Link> 
+                    <Link className="linkNav" to="work" smooth={true} duration={1000}>
+                        Work
+                    </Link> 
+                    <Link className="linkNav" to="contact" smooth={true} duration={1000}>
+                        Contact
+                    </Link>
                 </ul>
             </div>
         </nav>
+        <aside className={mobileMenu ? "menu active" : "menuMobile" }>
+            <ul>
+                <Link className="linkNav" to="about" smooth={true} duration={1000} onClick={toggleMenu}>
+                    About
+                </Link> 
+                <Link className="linkNav" to="work" smooth={true} duration={1000} onClick={toggleMenu}>
+                    Work
+                </Link> 
+                <Link className="linkNav" to="contact" smooth={true} duration={1000} onClick={toggleMenu}>
+                    Contact
+                </Link> 
+            </ul>            
+            <SocialMediaIcons/>
+        </aside>
         </>
     );
 };

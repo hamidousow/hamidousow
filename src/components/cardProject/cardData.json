@@ -1,5 +1,6 @@
 [
     {
+        "id": "1",
         "content": {
             "cardNumber": {
                 "number": "01",
@@ -7,25 +8,26 @@
             },
 
             "cardTitle": {
-                "text": "Nisaa box",
+                "text": "Bootcamp slider",
                 "className": "cardTitle gradient-title"
             },
 
             "cardSubtitle": {
-                "text": "Web design",
+                "text": "Front-end developement",
                 "className": "cardSubtitle"
             },
 
             "cardImg": {
                 "className": "cardImg",
-                "source": "./img/nisaa-header.jpg",
-                "alt": "femme souriante prennant soin d'elle"
+                "source": "./img/young-coding.jpg",
+                "alt": "team working on computer in the same place"
             },
 
-            "cardLink": "./Nisaa"
+            "cardLink": "https://hamidousow.github.io/bootcamp-coding-slider/"
         }
     },
     {
+        "id": "2",
         "content": {
             "cardNumber": {
                 "number": "02",
@@ -52,6 +54,7 @@
         }
     },
     {
+        "id": "3",
         "content": {
             "cardNumber": {
                 "number": "03",

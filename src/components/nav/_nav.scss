@@ -12,24 +12,18 @@
         width: 100%;
         align-items: center;
         justify-content: space-between;
-        padding: 1.5em 2em;
+        padding: 1em 5em;
     }
 
     a {
         text-decoration: none;
         width: fit-content;
-    }
-
-    #homeLogo, .linkNav {
-        text-transform: uppercase;
-        color: $clr-grey;
-        letter-spacing: $space2;
-    }
+    }    
 
     #homeLogo {
         img {
             display: block;
-            height: 30px;
+            height: 25px;
         }
     }
 
@@ -39,67 +33,52 @@
         flex-basis: auto;
         flex-grow: 1;
         justify-content: flex-end;       
-    }
-
-    .linkNav {
-        color: $clr-grey;
-        font-weight: $regular;
-        padding: .5em;
-        position: relative;
-        transition: .5s all;
-        
-        &::after {
-            content: "";
-            position: absolute;
-            width: 0;
-            background: $clr-grey;
-        }
-
-        &:hover::after {
-            height: 1px;
-            width: 100%;            
-            bottom: 0;
-            left: 0;
-            right: 0;
-        }
-    }
+    }    
 
     #btnBurger {
         display: none;
     }    
 }
 
+#homeLogo, .linkNav {
+    text-transform: uppercase;
+    color: $clr-grey;
+    letter-spacing: $space2;
+    cursor: pointer;
+}
+
+.linkNav {
+    color: $clr-grey;
+    font-weight: $regular;
+    padding: .5em;
+    position: relative;
+    transition: .5s all;   
+
+    &:hover {
+        color: $clr-green;
+    }    
+}
+
+.menuMobile, .menu.active {
+    display: none;
+}
+
+//background navigation when scrolling 
 .navigation.active {
     box-shadow: $boxShadow;
     background: $clr-black;
 }
 
-.mobileMenu {
-    display: none;
-}
-
 @media screen and (max-width: 768px) {    
 
     .navigation {
-        flex-wrap: wrap;
 
         #navContent {
-            flex-wrap: inherit;
-        }
-        
-        .menu {
-            display: none;
-            transition: .5s;
+            padding: 1em 2em;
         }
 
-        .menu.active {
-            display: flex;
-            flex-basis: 100%;        
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 2em; 
-            height: calc(100vh - 78px);           
+        #menuDesktop {
+            display: none;
         }
 
         #btnBurger {
@@ -127,9 +106,38 @@
         }
     } 
 
-    .navigation.menuActive {
-        height: 100vh;
-        overflow: hidden;
+    .menuMobile {
+        display: none;            
     }
+
+    .menu.active {        
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        display: flex;               
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;        
+        padding: 5em 3em 0;
+        height: calc(100vh - 5em);         
+        background: $clr-black;
+        box-shadow: $boxShadow;
+        
+        ul {
+            display: flex;
+            flex-direction: column;            
+            row-gap: 2em;
+        }
+
+        .containerIcons {
+            flex-direction: row;
+            padding: .5em;
+
+            .iconMedia {
+                font-size: 1.8em;
+            }
+        }
+    }    
 }
 

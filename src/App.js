@@ -1,18 +1,21 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import NotFound from './pages/NotFound';
-import Home from "./pages/Home";
-import Nisaa from "./pages/Nisaa";
+import Work from './components/work/Work';
+import About from './components/about/About';
+import Contact from './components/contact/Contact';
+import Nav from './components/nav/Nav';
+import HeroSection from './components/heroSection/HeroSection';
+import Footer from './components/footer/Footer';
 
 const App = () => {
-  return (    
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={Home}/>      
-        <Route path="/nisaa" exact component={Nisaa}/>      
-        <Route component={NotFound}/>
-      </Switch>
-    </BrowserRouter>    
+  return (
+      <div className="App">
+        <Nav/>
+        <HeroSection/>
+        <About/>
+        <Work/>
+        <Contact/>
+        <Footer/>
+      </div>
   );
 };
 

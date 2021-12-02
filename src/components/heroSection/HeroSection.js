@@ -1,10 +1,12 @@
 import React from 'react';
 //import SocialMediaIcons from '../IconMedia/SocialMediaIcons';
+import heroImg from '../../images/pp-min.png';
+//import CallToAction from '../callToAction/CallToAction';
 
 const HeroSection = () => {
     return (
         <>            
-        <header id="heroSection" className="heroSection">
+        <header id="home" className="heroSection">
             <div className="content">          
                 <div className="leftContent">
                     <h1 className="bigTitle">
@@ -13,10 +15,11 @@ const HeroSection = () => {
                     <p className="smallTitle">developer & ui / ux designer</p>          
                 </div>
                 <div className="rightContent">
-                    <img src="" className="ImgSection" alt="Hamidou SOW"/>
+                    <img src={heroImg} className="heroImg" alt="Hamidou SOW"/>
                 </div>
             </div>
-            {/* <SocialMediaIcons/> */}
+            {/* <SocialMediaIcons/>  */}
+            {/* <CallToAction /> */}
         </header>
         </>
     )
