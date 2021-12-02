@@ -54,12 +54,11 @@
     }
 } 
 
-/*.cardContainerImage {
+.cardContainerImage {
     height: 49vmin;
-    width: 90%;
-    background: lightgrey;    
+    width: 90%;      
     margin: 0 auto;
-    position: relative;
+    // position: relative;
     right: 0;
     bottom: 2em; 
     overflow: hidden; 
@@ -67,13 +66,12 @@
     cursor: pointer; 
     
     &:hover {
-        .cardImg {            
+        transition: .5s; 
+        .cardImg {
             filter: brightness(0.7);
         }
-    }
-    
-       
-}*/
+    }       
+}
 
 .cardImg {
     width: 100%;

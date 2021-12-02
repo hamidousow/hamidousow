@@ -51,7 +51,7 @@ const Nisaa = () => {
                 alt = {"alt"}/> 
                 
                 <span style={{display: 'flex', justifyContent: 'flex-end'}}>
-                    <a className="smallTitle" href="#" style={{width: 'fit-content'}}>all projects</a>
+                    {/* <a className="smallTitle" href="#" style={{width: 'fit-content'}}>all projects</a> */}
                 </span>            
         </Section>         
         <Footer/>
