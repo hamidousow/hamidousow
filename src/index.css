@@ -609,6 +609,10 @@ body {
   font-size: clamp(12px, 2vw, 16px);
 }
 
+.cardRichText .cardSubtitle a {
+  color: #dddddd;
+}
+
 .blockLink {
   margin: auto;
   max-width: 900px;
@@ -734,12 +738,13 @@ body {
   color: #dddddd;
   text-decoration: none;
   font-size: 2.2em;
+  opacity: .5;
+  -webkit-transition: .5s all;
+  transition: .5s all;
 }
 
 .socialMediaIcons .containerIcons .iconMedia:hover {
-  color: #54c47d;
-  -webkit-transition: .5s all;
-  transition: .5s all;
+  opacity: 1;
 }
 
 .heroSection {
