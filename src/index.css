@@ -609,6 +609,10 @@ body {
   font-size: clamp(12px, 2vw, 16px);
 }
 
+.cardRichText .cardSubtitle a {
+  color: #dddddd;
+}
+
 .blockLink {
   margin: auto;
   max-width: 900px;

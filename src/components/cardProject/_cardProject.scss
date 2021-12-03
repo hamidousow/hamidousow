@@ -50,6 +50,9 @@
 
     .cardSubtitle {
         font-size: $smallText;
+        a {
+            color: $clr-grey;            
+        }                
     }
 } 
 
@@ -82,7 +85,6 @@
             }
         }       
     }
-
 }
 
 
