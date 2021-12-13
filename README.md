@@ -4,9 +4,9 @@ A front-end developper and web design.
 
 ## Portfolio
 
-Visit my personnal website [Hamidousow.fr](https://hamidousow.fr) to see the best works I have completed.
+Visit my personnal website [Hamidousow.fr](https://hamidousow.fr)
 
 ### Social Media
 
-You can also follow me on social medias 
+ 
 
