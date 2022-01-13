@@ -1,6 +1,6 @@
 # Hello, I'm Hamidou SOW
 
-A front-end developper and web design.  
+A frontend developper and web design.  
 
 ## Portfolio
 
