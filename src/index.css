@@ -633,6 +633,22 @@ body {
   border-radius: 10px;
 }
 
+.blockLink .cardContainerImage::after {
+  content: "see more details";
+  position: absolute;
+  bottom: 15px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  background-color: #54c47d;
+  font-size: .8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #15181f;
+  padding: .7em 1.5em;
+  border-radius: 5px;
+}
+
 .blockLink .cardContainerImage .cardImg {
   width: 100%;
   -webkit-filter: saturate(0);
