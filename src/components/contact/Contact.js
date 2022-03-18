@@ -11,14 +11,14 @@ const Contact = () => {
             <WrapTitle sectionTitle={"contact"} />
             <RichText>
                 <p className="text">
-                    I'm available now, if you search an ambitious and creative web developer
+                    Des questions ? Contactez moi, je suis disponible.
                 </p>
             </RichText>
 
             <div className="containerButton">
                 {/* <Button text={'contact me'} mailto={"hamidou.sow@hotmail.fr"}/> */}
                 <ButtonMailto className="button" 
-                                text="contact me" 
+                                text="me contacter" 
                                 mailto="mailto:hamidou.sow@hotmail.fr"/>
                 <Button text={'cv online'} href={"https://hamidousow.github.io/hamidou-cv-online/"}/>
             </div>            
