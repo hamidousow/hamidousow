@@ -30,10 +30,9 @@ const Nav = () => {
         <>
         <nav className={navOpacity ? "navigation active" : "navigation"} >
             <div id="navContent">
-                {/* <Link to="home" smooth={true} duration={1000} > */}
                 <HomeLogo />
                 <span id="btnBurger" onClick={toggleMenu}></span>
-                <ul id="menuDesktop" className="menu">
+                <ul id="menuDesktop" className="menu">                     
                     <Link className="linkNav" to="about" smooth={true} duration={1000}>
                         About
                     </Link> 
@@ -48,6 +47,9 @@ const Nav = () => {
         </nav>
         <aside className={mobileMenu ? "menu active" : "menuMobile" }>
             <ul>
+                <Link className="linkNav" to="home" smooth={true} duration={1000} onClick={toggleMenu}>
+                    Home
+                </Link>
                 <Link className="linkNav" to="about" smooth={true} duration={1000} onClick={toggleMenu}>
                     About
                 </Link> 
