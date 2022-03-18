@@ -10,15 +10,16 @@ const About = () => {
             <WrapTitle sectionTitle={"about"}/>
             <RichText>
                 <p className="text">
-                My name is Hamidou SOW, I am a web designer and junior front-end developer. I discovered web development through my experience in web design by integrating my creations. Web development quickly became a passion and a voice to follow for the rest of my professional project.
+                Développeur à l’écoute, agile, créatif avec une appétence pour le design.
                 </p>
                 <br/>
                 <p className="text">
-                Learning at Simplon, throughout this training I had the chance to work on various projects, alone or in teams with the agile method. It was an opportunity to discover new technologies like Sass and React.js, and improve my workteam knowledge.
+                
+                Dans le cadre de ma formation de concepteur développeur d’applications, je souhaite intégrer une équipe qui me permettra de monter en compétences à travers des projets enrichissants.
                 </p>
                 <br/>
                 <p className="text">
-                Curious and creative, I aspire to make web development my job, work in kindness team, to learn and share our knowledge.
+                Je suis disponible dès le mois d’avril pour un premier stage d’une durée de 6 semaines, avec comme perspective d’intégrer l’entreprise accueillante en contrat de professionnalisation.
                 </p>
             </RichText>
         </Section>        
