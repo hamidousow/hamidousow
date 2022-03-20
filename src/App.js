@@ -5,7 +5,8 @@ import Contact from './components/contact/Contact';
 import Nav from './components/nav/Nav';
 import HeroSection from './components/heroSection/HeroSection';
 import Footer from './components/footer/Footer';
-import Formation from './components/formation/Formation';
+//import Formation from './components/formation/Formation';
+import Cv from './components/cv/Cv';
 
 const App = () => {
   return (
@@ -13,7 +14,8 @@ const App = () => {
         <Nav/>
         <HeroSection/>
         <About/>
-        <Formation/>
+        {/* <Formation/> */}
+        <Cv/>
         <Work/>
         <Contact/>
         <Footer/>
