@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../button/Button';
 import RichText from '../richText/RichText';
 import WrapTitle from '../wrapTitle/WrapTitle';
 import Section from '../section/Section';

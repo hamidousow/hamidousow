@@ -7,6 +7,7 @@ import HeroSection from './components/heroSection/HeroSection';
 import Footer from './components/footer/Footer';
 import Formation from './components/formation/Formation';
 import Experience from './components/experience/Experience';
+import Outils from './components/outils/Outils';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <About/>
         <Formation/>
         <Experience/>
+        <Outils/>
         <Work/>
         <Contact/>
         <Footer/>
