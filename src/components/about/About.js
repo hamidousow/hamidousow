@@ -10,7 +10,6 @@ const About = () => {
             <WrapTitle sectionTitle={"about"}/>
             <RichText>
                 <p className="text">
-
                 Développeur à l’écoute, agile, créatif avec une appétence pour le design.
                 </p>
                 <br/>
@@ -21,7 +20,6 @@ const About = () => {
                 <br/>
                 <p className="text">
                 Je suis disponible dès le mois d’avril pour un premier stage d’une durée de 6 semaines, avec comme perspective d’intégrer l’entreprise accueillante en contrat de professionnalisation.
-
                 </p>
             </RichText>
         </Section>        

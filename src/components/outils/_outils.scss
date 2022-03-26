@@ -1,0 +1,20 @@
+.containerIcon {
+    display: flex;
+    justify-content: space-around;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .iconImage {
+        width: 45px;
+        display: block;
+    }
+    
+    .iconTitle {        
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

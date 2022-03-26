@@ -101,6 +101,18 @@ body {
   line-height: 125%;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.light {
+  font-weight: lighter;
+}
+
+.italic {
+  font-style: italic;
+}
+
 .callToAction {
   position: absolute;
   left: 0;
@@ -199,7 +211,8 @@ body {
 
 .linkNav {
   color: #dddddd;
-  font-weight: 500;
+  font-weight: 300;
+  font-size: clamp(12px, 1vw, 16px);
   padding: .5em;
   position: relative;
   -webkit-transition: .5s all;
@@ -220,7 +233,7 @@ body {
   background: #15181f;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .navigation #navContent {
     padding: 1em 2em;
   }
@@ -918,5 +931,45 @@ footer .containerIcons {
   width: 80%;
   display: block;
   margin: auto;
+}
+
+.expContainer .exp-block {
+  margin-bottom: 25px;
+}
+
+.expContainer .exp-block .periode, .expContainer .exp-block .lieu, .expContainer .exp-block .description {
+  margin-left: 1em;
+  margin-top: 5px;
+}
+
+.containerIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.iconContainer .iconImage {
+  width: 45px;
+  display: block;
+}
+
+.iconContainer .iconTitle {
+  text-transform: uppercase;
+  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */

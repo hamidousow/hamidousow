@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../button/Button';
 import RichText from '../richText/RichText';
 import WrapTitle from '../wrapTitle/WrapTitle';
 import Section from '../section/Section';
@@ -15,12 +14,11 @@ const Contact = () => {
                 </p>
             </RichText>
 
-            <div className="containerButton">
-                {/* <Button text={'contact me'} mailto={"hamidou.sow@hotmail.fr"}/> */}
+            <div className="containerButton">                
                 <ButtonMailto className="button" 
                                 text="me contacter" 
                                 mailto="mailto:hamidou.sow@hotmail.fr"/>
-                <Button text={'cv online'} href={"https://hamidousow.github.io/hamidou-cv-online/"}/>
+                {/* <Button text={'cv online'} href={"https://hamidousow.github.io/hamidou-cv-online/"}/> */}
             </div>            
         </Section>
     );
