@@ -101,6 +101,18 @@ body {
   line-height: 125%;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.light {
+  font-weight: lighter;
+}
+
+.italic {
+  font-style: italic;
+}
+
 .callToAction {
   position: absolute;
   left: 0;
@@ -918,5 +930,14 @@ footer .containerIcons {
   width: 80%;
   display: block;
   margin: auto;
+}
+
+.expContainer .exp-block {
+  margin-bottom: 25px;
+}
+
+.expContainer .exp-block .periode, .expContainer .exp-block .lieu, .expContainer .exp-block .description {
+  margin-left: 1em;
+  margin-top: 5px;
 }
 /*# sourceMappingURL=index.css.map */

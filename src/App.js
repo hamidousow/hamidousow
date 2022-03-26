@@ -6,7 +6,8 @@ import Nav from './components/nav/Nav';
 import HeroSection from './components/heroSection/HeroSection';
 import Footer from './components/footer/Footer';
 //import Formation from './components/formation/Formation';
-import Cv from './components/cv/Cv';
+import Formation from './components/formation/Formation';
+import Experience from './components/experience/Experience';
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
         <HeroSection/>
         <About/>
         {/* <Formation/> */}
-        <Cv/>
+        <Formation/>
+        <Experience/>
         <Work/>
         <Contact/>
         <Footer/>

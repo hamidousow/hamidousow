@@ -1,6 +1,6 @@
 import React from 'react';
 import CardProject from '../cardProject/CardProject';
-import cardData from '../cardProject/cardData.json';
+import projectData from '../../data/projectData.json';
 import Section from '../section/Section';
 import WrapTitle from '../wrapTitle/WrapTitle';
 
@@ -9,8 +9,8 @@ const Work = () => {
         <Section className={"section"} id={"work"}>
             <WrapTitle sectionTitle={"work"}/>
             <div className="containerCards">
-                {cardData.map((cardItem, index) => {
-                    return <CardProject key={cardItem.id} cardContent={cardItem}/>
+                {projectData.map((projectItem, index) => {
+                    return <CardProject key={projectItem.id} cardContent={projectItem}/>
                 })}
             </div>                  
         </Section>        
