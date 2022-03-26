@@ -7,9 +7,9 @@ import Article from '../article/Article';
 const Experience = () => {    
     return (
         <>
-        <Section className={"section"} >
+        <Section className={"section"} id={"experience"}>
                 <WrapTitle sectionTitle={"expérience"}/>
-                <div className="expContainer" id="experience">
+                <div className="expContainer" >
                     {experienceData.map((experienceItems, index) => {
                         return <Article key={experienceItems.key.toString()} newData={experienceItems}/>
                     })}

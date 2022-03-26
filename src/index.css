@@ -232,7 +232,7 @@ body {
   background: #15181f;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .navigation #navContent {
     padding: 1em 2em;
   }

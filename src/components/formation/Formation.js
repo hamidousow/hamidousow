@@ -7,9 +7,9 @@ import Article from '../article/Article';
 const Formation = () => {    
     return (
         <>
-        <Section className={"section"} >
+        <Section className={"section"} id={"formation"}>
                 <WrapTitle sectionTitle={"formation"}/>
-                <div className="expContainer" id="formation">
+                <div className="expContainer">
                     {formationData.map((formationItems, index) => {
                         return <Article key={formationItems.key.toString()} newData={formationItems}/>
                     })}
