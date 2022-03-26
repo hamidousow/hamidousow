@@ -15,12 +15,11 @@ const Contact = () => {
                 </p>
             </RichText>
 
-            <div className="containerButton">
-                {/* <Button text={'contact me'} mailto={"hamidou.sow@hotmail.fr"}/> */}
+            <div className="containerButton">                
                 <ButtonMailto className="button" 
                                 text="me contacter" 
                                 mailto="mailto:hamidou.sow@hotmail.fr"/>
-                <Button text={'cv online'} href={"https://hamidousow.github.io/hamidou-cv-online/"}/>
+                {/* <Button text={'cv online'} href={"https://hamidousow.github.io/hamidou-cv-online/"}/> */}
             </div>            
         </Section>
     );

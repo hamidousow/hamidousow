@@ -211,7 +211,8 @@ body {
 
 .linkNav {
   color: #dddddd;
-  font-weight: 500;
+  font-weight: 300;
+  font-size: clamp(12px, 1vw, 16px);
   padding: .5em;
   position: relative;
   -webkit-transition: .5s all;
