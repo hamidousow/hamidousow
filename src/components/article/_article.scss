@@ -1,5 +1,10 @@
-.expContainer {
-    
+.expContainer {    
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    align-self: center;
+    align-content: center;
+
     .exp-block {
         margin-bottom: 25px;     
     

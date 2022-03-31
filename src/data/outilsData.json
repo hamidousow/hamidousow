@@ -13,18 +13,24 @@
     },
     {
         "id": "3",        
+        "src": "../img/postgresql.svg",
+        "title": "postgresql",
+        "alt": "logo postgreSql"
+    },
+    {
+        "id": "4",        
         "src": "../img/javascript-brands.svg",
         "title": "git",
         "alt": "logo java"
     },
     {
-        "id": "4",        
+        "id": "5",        
         "src": "../img/html5-brands.svg",
         "title": "git",
         "alt": "logo java"
     },
     {
-        "id": "5",        
+        "id": "6",        
         "src": "../img/css3-brands.svg",
         "title": "git",
         "alt": "logo java"

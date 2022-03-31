@@ -42,6 +42,9 @@ const Nav = () => {
                     <Link className="linkNav" to="experience" smooth={true} duration={1000}>
                         Expérience
                     </Link> 
+                    <Link className="linkNav" to="outils" smooth={true} duration={1000}>
+                        Outils
+                    </Link> 
                     <Link className="linkNav" to="work" smooth={true} duration={1000}>
                         Work
                     </Link> 
@@ -64,6 +67,9 @@ const Nav = () => {
                 </Link> 
                 <Link className="linkNav" to="experience" smooth={true} duration={1000} onClick={toggleMenu}>
                     Expérience
+                </Link> 
+                <Link className="linkNav" to="outils" smooth={true} duration={1000} onClick={toggleMenu}>
+                    Outils
                 </Link> 
                 <Link className="linkNav" to="work" smooth={true} duration={1000} onClick={toggleMenu}>
                     Work
