@@ -3,18 +3,25 @@
     justify-content: space-around;
 }
 
-.iconContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+#outils .containerIcon {
+    gap: 25px;
+    flex-wrap: wrap;
 
-    .iconImage {
-        width: 45px;
-        display: block;
-    }
+    .iconContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 40px;
     
-    .iconTitle {        
-        text-transform: uppercase;
-        text-align: center;
+        .iconImage {
+            width: 100%;
+            display: block;
+        }
+        
+        .iconTitle {        
+            text-transform: uppercase;
+            text-align: center;
+        }
     }
 }
+

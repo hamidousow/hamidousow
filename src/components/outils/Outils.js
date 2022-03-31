@@ -13,8 +13,8 @@ const Outils = () => {
                 {outilsData.map((outilsItem, index) => {
                     return(
                         
-                            <div id={outilsItem.id} className="iconContainer">
-                                <img src={outilsItem.src} className="iconImage" alt={outilsItem.alt} />
+                            <div key={outilsItem.id} className="iconContainer">
+                                <img key={outilsItem.id} src={outilsItem.src} className="iconImage" alt={outilsItem.alt} />
                                 {/* <h3 className="text iconTitle">{outilsItem.title}</h3> */}
                             </div>                            
                         
