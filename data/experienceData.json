@@ -1,0 +1,50 @@
+[
+    {   
+        "id": 1,        
+        "periode": "2021 - Septembre / Octobre",           
+        "titre": "Web developpeur",
+        "lieu" : "Ayoub ABARJI",
+        "description": "Élaboration, intégration et développement de pages web, d'applications web et web mobile."             
+    },
+
+    {
+        "id": 2,
+        "periode": "2021 - Janvier / Mars",
+        "titre": "Développeur web / Designer web",
+        "lieu" : "Besow Design, freelance",
+        "description": "Création d'un site vitrine pour mon projet de création d’entreprise. Design sur Adobe XD traitements et optimisation des images sur Photoshop. Intégration en langages natifs html - css - js."             
+    },
+
+    {
+        "id": 3,
+        "periode": "2020 - Juin / Juillet",
+        "titre": "Web Designer Stagiaire",
+        "lieu" : "MJC Virolois, Tourcoing",
+        "description": "Refonte et intégration du site de l’association. Création de flyer et d’illustrations."       
+    },      
+    {
+        "id": 3,
+        "periode": "2014 - 2019",
+        "titre": "Animateur centre social et périscolaire",
+        "lieu" : "Divers employeurs (communes, centre de loisirs)",
+        "description": "Organisation et mise en place d'activités pour les enfants. Veuiller à la sécurité des groupes d'enfants et au bon déroulement des divers activités. Aide aux devoirs et garderie."       
+    }      
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

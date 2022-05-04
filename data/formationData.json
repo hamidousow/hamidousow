@@ -1,0 +1,40 @@
+[
+    {    
+        "id": 1,        
+        "periode": "2022",
+        "titre": "Java J2EE",
+        "lieu" : "AFPA, Roubaix",
+        "description": "Construire une application organisée en couches, mettre en oeuvre un framework de persistance des données. Préparer et éxecuter les plans de test ainsi que le deploiement d’une application."             
+    },
+
+    {
+        "id": 2,
+        "periode": "2021",
+        "titre": "MS web développeur Front end",
+        "lieu" : "SIMPLON, Roubaix",
+        "description": "Élaboration, intégration et développement de pages web, d'applications web et web mobile."             
+    },
+
+    {
+        "id": 3,
+        "periode": "2019 - 2020",
+        "titre": "Titre professionnel designer web",
+        "lieu" : "AFPA, Roubaix",
+        "description": "Création de wireframe et de maquette en suivant un cahier des charges. Intégration de pages web sous langages HTML5, CSS3, JS, Bootstrap. Création d'outils de communication digital (logo, flyers, site internet)."
+    },      
+    {
+        "id": 4,
+        "periode": "2013 - Août",
+        "titre": "Bafa",
+        "lieu" : "UFCV, Tourcoing",
+        "description": "Assurer la sécurité des enfants et le bon déroulement des activité. Thêatre et mise en scène. Travail en équipe, s'adapter à différents rôles et à différentes situations. Gestion de conflits et mise en place d'actions préventives"
+    },    
+    {
+        "id": 5,
+        "periode": "2011 - 2013",
+        "titre": "Licence Arts Plastiques",
+        "lieu" : "Université de Lille 3, Lille",
+        "description": "Sculptures, tableaux , customisation d’objets, développement de photos."
+    }    
+]
+
