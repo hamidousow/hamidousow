@@ -1,0 +1,40 @@
+[
+    {
+        "id": "git",        
+        "src": "../images/Git-logo2.svg",
+        "alt": "logo git"
+    },
+    {
+        "id": "java",        
+        "src": "../images/java-logo.svg",
+        "alt": "logo java"
+    },
+    {
+        "id": "postgre",        
+        "src": "../images/postgresql.svg",
+        "alt": "logo postgreSql"
+    },
+    {
+        "id": "javascript",        
+        "src": "../images/javascript-brands.svg",
+        "alt": "logo javascript"
+    },
+    {
+        "id": "react",        
+        "src": "../images/react-brands.svg",
+        "alt": "logo java"
+    },
+    {
+        "id": "html",        
+        "src": "../images/html5-brands.svg",
+        "alt": "logo html5"
+    },
+    {
+        "id": "scss",        
+        "src": "../images/sass-brands.svg",
+        "alt": "logo sass"
+    }
+]
+    
+    
+    

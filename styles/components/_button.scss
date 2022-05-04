@@ -1,0 +1,41 @@
+.containerButton {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex-grow: 1;
+    justify-content: center;
+    column-gap: 4em; 
+    margin: 3em 0;
+    :nth-child(1) {
+        background: $clr-green;
+        color: $clr-black;
+    }   
+}
+
+.button {
+    border: hidden;
+    padding: 1em;
+    text-transform: uppercase;
+    text-align: center;    
+    font-size: .7em;
+    letter-spacing: 1px;
+    color: $clr-green;
+    background: transparent;
+    border: 1px solid $clr-green;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+@media screen and(min-width: 768px) {
+    .button {        
+        letter-spacing: 1px;       
+        transition: .5s all;
+
+        &:hover {
+            color: $clr-black;
+            background: $clr-grey;
+            border: 1px solid $clr-black;  
+            font-weight: 500;          
+        }
+    }
+}

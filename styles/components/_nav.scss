@@ -1,0 +1,145 @@
+.navigation {    
+    display: flex;    
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    
+    #navContent {        
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em 5em;
+    }
+
+    a {
+        text-decoration: none;
+        width: fit-content;
+    }    
+
+    #homeLogo {
+        img {
+            display: block;
+            height: 25px;
+        }
+    }
+
+    .menu {
+        display: flex;
+        gap: 3em; 
+        flex-basis: auto;
+        flex-grow: 1;
+        justify-content: flex-end;       
+    }    
+
+    #btnBurger {
+        display: none;
+    }    
+}
+
+#homeLogo, .linkNav {
+    text-transform: uppercase;
+    color: $clr-grey;
+    letter-spacing: $space2;
+    cursor: pointer;
+}
+
+.linkNav {
+    color: $clr-grey;
+    font-weight: $light;
+    font-size: clamp(12px, 1vw, 16px);
+    padding: .5em;
+    position: relative;
+    transition: .5s all;   
+
+    &:hover {
+        color: $clr-green;
+    }    
+}
+
+.menuMobile, .menu.active {
+    display: none;
+}
+
+//background navigation when scrolling 
+.navigation.active {
+    box-shadow: $boxShadow;
+    background: $clr-black;
+}
+
+@media screen and (max-width: 992px) {    
+
+    .navigation {
+
+        #navContent {
+            padding: 1em 2em;
+        }
+
+        #menuDesktop {
+            display: none;
+        }
+
+        #btnBurger {
+            display: block;
+            height: 20px;
+            width: 50px;
+            position: relative;
+            cursor: pointer;
+
+            &::before, &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background: $clr-grey;
+            }
+
+            &::before {
+                top: 0;
+            }
+
+            &::after {
+                bottom: 0;
+            }
+        }
+    } 
+
+    .menuMobile {
+        display: none;            
+    }
+
+    .menuMobile.active {        
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: calc(100vh - 73px);
+        z-index: 2;
+        display: flex;               
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;        
+        padding: 5em 3em 0;        
+        background: $clr-black;
+        box-shadow: $boxShadow;
+        
+        ul {
+            display: flex;
+            flex-direction: column;            
+            row-gap: 2em;
+        }
+
+        .containerIcons {
+            flex-direction: row;
+            padding: .5em;
+
+            .iconMedia {
+                font-size: 1.8em;
+            }
+        }
+    }    
+}
+

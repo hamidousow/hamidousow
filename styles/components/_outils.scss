@@ -1,0 +1,27 @@
+.outils-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#outils .outils-container {
+    gap: 25px;
+    flex-wrap: wrap;
+
+    .iconContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 40px;
+    
+        .iconImage {
+            width: 100%;
+            display: block;
+        }
+        
+        .iconTitle {        
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+}
+

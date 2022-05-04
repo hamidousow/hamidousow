@@ -1,0 +1,21 @@
+.articles {    
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    align-self: center;
+    align-content: center;
+    gap: 3em;
+
+     * {
+        margin-bottom: .7em;
+    }
+
+    .exp-block {
+        margin-bottom: 25px;     
+    
+        .periode, .lieu, .description {
+            margin-left: 1em;
+            margin-top: 5px;
+        }
+    }
+}
