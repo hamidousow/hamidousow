@@ -1,0 +1,19 @@
+{
+  "name": "hamidousow",
+  "version": "1.0.0",
+  "description": "portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamidousow/hamidousow.git"
+  },
+  "author": "hamidou sow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamidousow/hamidousow/issues"
+  },
+  "homepage": "https://github.com/hamidousow/hamidousow#readme"
+}
