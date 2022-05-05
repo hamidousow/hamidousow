@@ -255,6 +255,10 @@ body .App {
   }
 }
 
+.richText {
+  max-width: 800px;
+}
+
 .articles {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -263,9 +267,7 @@ body .App {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 900px;
-  -ms-flex-item-align: center;
-      align-self: center;
+  max-width: 800px;
   -ms-flex-line-pack: center;
       align-content: center;
   gap: 3em;
