@@ -1,6 +1,13 @@
 [
     {   
         "id": 1,        
+        "periode": "2022 - Avril / Mai",           
+        "titre": "Développeur fullstack",
+        "lieu" : "INSY2S",
+        "description": "Développement d’une application web avec Spring boot, ReactJs et Postgres. Méthode agile."             
+    },
+    {   
+        "id": 2,        
         "periode": "2021 - Septembre / Octobre",           
         "titre": "Web developpeur",
         "lieu" : "Ayoub ABARJI",
@@ -8,7 +15,7 @@
     },
 
     {
-        "id": 2,
+        "id": 3,
         "periode": "2021 - Janvier / Mars",
         "titre": "Développeur web / Designer web",
         "lieu" : "Besow Design, freelance",
@@ -16,14 +23,14 @@
     },
 
     {
-        "id": 3,
+        "id": 4,
         "periode": "2020 - Juin / Juillet",
         "titre": "Web Designer Stagiaire",
         "lieu" : "MJC Virolois, Tourcoing",
         "description": "Refonte et intégration du site de l’association. Création de flyer et d’illustrations."       
     },      
     {
-        "id": 3,
+        "id": 5,
         "periode": "2014 - 2019",
         "titre": "Animateur centre social et périscolaire",
         "lieu" : "Divers employeurs (communes, centre de loisirs)",

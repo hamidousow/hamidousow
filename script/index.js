@@ -29,6 +29,29 @@ for(let link of linkNav){
 /* ********** MAPPING ******** */ 
 let outilMainContainer = document.getElementById("outils-main-container");
 
+/*const loadData = async () =>  {
+
+    try {  
+        const experienceData = "../data/experienceData.json";
+        const formationData = "../data/formationData.json";
+
+        const results = await Promise.all([
+            fetch(experienceData), 
+            fetch(formationData)
+        ])
+        
+        //convertir chaque reponse de results[]
+        const dataPromises = results.map( result => result.json());
+        const finalData = await Promise.all(dataPromises);
+        console.log(finalData.length)        
+    } catch (err) {
+        console.error(err);
+    }    
+}
+
+loadData();*/
+
+
 let outilsData = fetch("../data/outilsData.json")
                     .then(response => {
                         return response.json();
