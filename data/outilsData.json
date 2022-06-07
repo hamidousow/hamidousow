@@ -1,13 +1,28 @@
 [
     {
+        "id": "sql",        
+        "src": "../images/sql.svg",
+        "alt": "logo sql"
+    },
+    {
         "id": "git",        
         "src": "../images/Git-logo2.svg",
         "alt": "logo git"
     },
     {
+        "id": "react",        
+        "src": "../images/react-brands.svg",
+        "alt": "logo java"
+    },
+    {
         "id": "java",        
         "src": "../images/java-logo.svg",
         "alt": "logo java"
+    },
+    {
+        "id": "node",        
+        "src": "../images/nodejs.svg",
+        "alt": "logo nodejs"
     },
     {
         "id": "postgre",        
@@ -20,19 +35,19 @@
         "alt": "logo javascript"
     },
     {
-        "id": "react",        
-        "src": "../images/react-brands.svg",
-        "alt": "logo java"
-    },
-    {
-        "id": "html",        
-        "src": "../images/html5-brands.svg",
-        "alt": "logo html5"
-    },
+        "id": "bootstrap",        
+        "src": "../images/bootstrap.svg",
+        "alt": "logo bootstrap"
+    },   
     {
         "id": "scss",        
         "src": "../images/sass-brands.svg",
         "alt": "logo sass"
+    },
+    {
+        "id": "springBoot",        
+        "src": "../images/springboot.svg",
+        "alt": "logo springboot"
     }
 ]
     

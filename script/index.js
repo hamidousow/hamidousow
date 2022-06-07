@@ -97,26 +97,40 @@ let createArticle = (item, container) => {
     for(let i = 0; i < item.length; i++) {
         let article = document.createElement("article");    
         container.append(article);
-        article.setAttribute('class', "article-formation article");
+        article.setAttribute('class', "articles__article");
 
-        let title  = document.createElement('h3');
-        let periode = document.createElement('p');
-        let lieu = document.createElement('p');
-        let description = document.createElement('p');
+        let period = document.createElement("div");    
+        container.append(period);
+        period.setAttribute('class', "period");
 
-        article.append(title, periode, lieu, description);
+        let details = document.createElement("div");
+        container.append(details);
+        details.setAttribute('class', "details");
 
-        title.setAttribute('class', "bold expTitle text gradient-title");
-        title.innerHTML = item[i].titre;  
+        let lieu  = document.createElement('h3');
+        let year = document.createElement('p');
+        let month = document.createElement('p');
+        let title = document.createElement('p');
+        let taskDescription = document.createElement('p');
 
-        periode.setAttribute('class', "periode text gradient-title");
-        periode.innerHTML = item[i].periode; 
+        article.append(period,details);
+        period.append(year, month);
+        details.append(lieu, title, taskDescription);
 
-        lieu.setAttribute('class', "lieu text italic light");
-        lieu.innerHTML = item[i].lieu; 
+        year.setAttribute('class', "periode text gradient-title");
+        year.innerHTML = item[i].year; 
         
-        description.setAttribute('class', "description text");
-        description.innerHTML = item[i].description;                 
+        month.setAttribute('class', "periode text");
+        month.innerHTML = item[i].month; 
+
+        lieu.setAttribute('class', "bold expTitle text gradient-title");
+        lieu.innerHTML = item[i].lieu;  
+
+        title.setAttribute('class', "lieu text italic light");
+        title.innerHTML = item[i].title; 
+        
+        taskDescription.setAttribute('class', "description text");
+        taskDescription.innerHTML = item[i].taskDescription;                                      
     }      
 }
 

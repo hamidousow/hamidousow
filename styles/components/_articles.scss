@@ -1,8 +1,9 @@
 .articles {    
     display: flex;
     flex-direction: column;
-    max-width: 500px;
-    align-content: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1200px;
     gap: 3em;
     
     &:nth-child(1) {
@@ -11,14 +12,11 @@
 
      * {
         margin-bottom: .7em;
-    }
-
-    .exp-block {
-        margin-bottom: 25px;     
+    } 
     
-        .periode, .lieu, .description {
-            margin-left: 1em;
-            margin-top: 5px;
-        }
+    .articles__article {
+        display: grid;
+        grid-template-columns: 1fr 2fr; 
+        column-gap: .5em;       
     }
 }
