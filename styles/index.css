@@ -267,9 +267,10 @@ body .App {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 500px;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%;
+  max-width: 1200px;
   gap: 3em;
 }
 
@@ -281,13 +282,13 @@ body .App {
   margin-bottom: .7em;
 }
 
-.articles .exp-block {
-  margin-bottom: 25px;
-}
-
-.articles .exp-block .periode, .articles .exp-block .lieu, .articles .exp-block .description {
-  margin-left: 1em;
-  margin-top: 5px;
+.articles .articles__article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-column-gap: .5em;
+          column-gap: .5em;
 }
 
 .containerButton {
