@@ -107,15 +107,16 @@ let createArticle = (item, container) => {
         container.append(details);
         details.setAttribute('class', "details");
 
-        let lieu  = document.createElement('h3');
+        let title  = document.createElement('h3');
+        let subtitle = document.createElement('h4');
         let year = document.createElement('p');
         let month = document.createElement('p');
-        let title = document.createElement('p');
+        
         let taskDescription = document.createElement('p');
 
         article.append(period,details);
         period.append(year, month);
-        details.append(lieu, title, taskDescription);
+        details.append(title, subtitle, taskDescription);
 
         year.setAttribute('class', "periode text gradient-title");
         year.innerHTML = item[i].year; 
@@ -123,11 +124,11 @@ let createArticle = (item, container) => {
         month.setAttribute('class', "periode text");
         month.innerHTML = item[i].month; 
 
-        lieu.setAttribute('class', "bold expTitle text gradient-title");
-        lieu.innerHTML = item[i].lieu;  
+        title.setAttribute('class', "bold expTitle text gradient-title");
+        title.innerHTML = item[i].title;  
 
-        title.setAttribute('class', "lieu text italic light");
-        title.innerHTML = item[i].title; 
+        subtitle.setAttribute('class', "lieu text italic light");
+        subtitle.innerHTML = item[i].subtitle; 
         
         taskDescription.setAttribute('class', "description text");
         taskDescription.innerHTML = item[i].taskDescription;                                      
