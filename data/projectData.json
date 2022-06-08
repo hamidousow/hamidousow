@@ -2,28 +2,55 @@
     {
         "id": "1",
         "content": {
-            "cardNumber": {
+            "number": {
                 "number": "01",
                 "className": "projectNumber outlines"
             },
 
-            "cardTitle": {
+            "title": {
                 "text": "Bootcamp slider",
                 "className": "cardTitle gradient-title"
             },
 
-            "cardSubtitle": {
+            "subtitle": {
                 "text": "Front-end developement",
                 "className": "cardSubtitle"
             },
 
-            "cardImg": {
+            "background": {
                 "className": "cardImg",
-                "source": "./img/young-coding.jpg",
+                "source": "../images/young-coding.jpg",
                 "alt": "team working on computer in the same place"
             },
 
             "cardLink": "https://hamidousow.github.io/bootcamp-coding-slider/"
+        }
+    },   
+    {
+        "id": "2",
+        "content": {
+            "number": {
+                "number": "02",
+                "className": "projectNumber outlines"
+            },
+
+            "title": {
+                "text": "Interactive pricing component",
+                "className": "cardTitle gradient-title"
+            },
+
+            "subtitle": {
+                "text": "Front-end developement",
+                "className": "cardSubtitle"
+            },
+
+            "background": {
+                "className": "cardImg",
+                "source": "../images/pricing-bg.jpg",
+                "alt": "de l'argent et une calculatrice"
+            },
+
+            "link": "https://hamidousow.github.io/interactive-pricing-component/"
         }
     }    
 ]
