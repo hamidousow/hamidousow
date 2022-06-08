@@ -35,7 +35,7 @@
             },
 
             "title": {
-                "text": "Interactive pricing component",
+                "text": "Pricing component",
                 "className": "cardTitle gradient-title"
             },
 
