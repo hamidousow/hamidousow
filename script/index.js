@@ -2,10 +2,42 @@ let navigation = document.getElementById("nav-desktop");
 let btnBurger = document.getElementById("btnBurger");
 let menuMobile = document.getElementById("menuMobile");
 let linkNav = document.querySelectorAll("#menuMobile .linkNav");
+let card = document.querySelector(".card");
+let cardsContainer = document.querySelector(".cardsContainer");
+
+let projectNumber = document.querySelector(".projectNumber");
+let cardImg = document.querySelector(".cardImg");
+let cardTitle = document.querySelector(".projet-title");
+let cardSubtitle = document.querySelector(".cardSubtitle");
+
+let projectLink = document.querySelector(".blockLink");
+
+let cardData = fetch("../data/projectData.json")
+    .then(response => {
+        return response.json()
+    })
+    .then(data => createNewNode(data))
+
+let createNewNode = (item) => {
+    let newCard;
+
+    for(let i = 0; i < item.length; i++) {
+        // console.log(item[i].content)
+        newCard = card.cloneNode(true);
+        projectNumber.innerHTML = item[i].content.number.number;
+        cardTitle.innerHTML = item[i].content.title.text;
+        cardSubtitle.innerHTML = item[i].content.subtitle.text;
+        cardImg.src = item[i].content.background.source;
+        projectLink.href = item[i].content.link;        
+    }
+    
+    card.after(newCard) 
+    
+}
 
 let setNavOpacity = () => {
     if(window.scrollY >= 50) {
-        navigation.classList.add("active");
+        return navigation.classList.add("active");
     } else {
         navigation.classList.remove("active");
     }
@@ -27,37 +59,15 @@ for(let link of linkNav){
 };
 
 /* ********** MAPPING ******** */ 
+
 let outilMainContainer = document.getElementById("outils-main-container");
-
-/*const loadData = async () =>  {
-
-    try {  
-        const experienceData = "../data/experienceData.json";
-        const formationData = "../data/formationData.json";
-
-        const results = await Promise.all([
-            fetch(experienceData), 
-            fetch(formationData)
-        ])
-        
-        //convertir chaque reponse de results[]
-        const dataPromises = results.map( result => result.json());
-        const finalData = await Promise.all(dataPromises);
-        console.log(finalData.length)        
-    } catch (err) {
-        console.error(err);
-    }    
-}
-
-loadData();*/
-
 
 let outilsData = fetch("../data/outilsData.json")
                     .then(response => {
                         return response.json();
                     })
-                    .then(data =>
-                        createOutil(data)                        
+                    .then(data =>                        
+                        createOutil(data)                                              
                     );
 
 let experience = fetch("../data/experienceData.json")
