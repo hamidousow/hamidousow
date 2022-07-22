@@ -48,6 +48,11 @@
         "id": "springBoot",        
         "src": "../images/springboot.svg",
         "alt": "logo springboot"
+    },
+    {
+        "id": "junit",        
+        "src": "../images/junit.svg",
+        "alt": "logo junit"
     }
 ]
     
