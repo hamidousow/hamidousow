@@ -53,6 +53,26 @@
         "id": "junit",        
         "src": "../images/junit.svg",
         "alt": "logo junit"
+    },
+    {
+        "id": "illustrator",        
+        "src": "../images/illustrator.svg",
+        "alt": "logo illustrator"
+    },
+    {
+        "id": "photoshop",        
+        "src": "../images/photoshop.svg",
+        "alt": "logo photoshop"
+    },
+    {
+        "id": "xd",        
+        "src": "../images/xd.svg",
+        "alt": "logo xd"
+    },
+    {
+        "id": "figma",        
+        "src": "../images/figma.svg",
+        "alt": "logo figma"
     }
 ]
     
