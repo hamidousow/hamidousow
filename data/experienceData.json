@@ -4,7 +4,7 @@
         "year": "2022",
         "month": "Avril / Mai",        
         "title" : "INSY2S",
-        "subtitle": "Développeur fullstack Stagiaire",
+        "subtitle": "Développeur Web Fullstack Stagiaire",
         "taskDescription": "• Analyse des besoins du client • Brainstorming •  Conception d’application web • Développement d’application web •  Versionning de code avec GIT"       
     },
     {   
@@ -12,16 +12,16 @@
         "year": "2021",
         "month": "Septembre / Octobre",
         "title" : "Ayoub ABARJI",          
-        "subtitle": "Web developpeur Stagiaire",        
+        "subtitle": "Développeur Web Stagiaire",        
         "taskDescription": "• Analyse des besoins du client • Brainstorming • Intégration et développement de site internet avec ReactJs • Design de site internet sur figma"             
     },
 
     {
         "id": 3,
         "year": "2021",
-        "month": "Janvier / Mars",
-        "title" : "BGE - projet entrepreneurial",
-        "subtitle": "Développeur web / Designer web",        
+        "month": "Janvier / Juillet",
+        "title" : "BGE Tourcoing - Bee Sow Design (projet entrepreneurial)",
+        "subtitle": "Web Designer Freelance",        
         "taskDescription": "• Analyse des besoins du client • Étude de la concurrence • Conception de logo • Design de site internet • Intégration de maquette"             
     },
 
