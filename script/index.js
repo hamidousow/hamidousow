@@ -6,9 +6,9 @@ let card = document.querySelector(".card");
 let cardsContainer = document.querySelector(".cardsContainer");
 
 let projectNumber = document.querySelector(".projectNumber");
-let cardImg = document.querySelector(".cardImg");
-let cardTitle = document.querySelector(".projet-title");
-let cardSubtitle = document.querySelector(".cardSubtitle");
+let card__img = document.querySelector(".card__img");
+let cardTitle = document.querySelector(".card__title");
+let card__subtitle = document.querySelector(".card__subtitle");
 
 let projectLink = document.querySelector(".blockLink");
 
@@ -26,8 +26,8 @@ let createNewNode = (item) => {
         newCard = card.cloneNode(true);
         projectNumber.innerHTML = item[i].content.number.number;
         cardTitle.innerHTML = item[i].content.title.text;
-        cardSubtitle.innerHTML = item[i].content.subtitle.text;
-        cardImg.src = item[i].content.background.source;
+        card__subtitle.innerHTML = item[i].content.subtitle.text;
+        card__img.src = item[i].content.background.source;
         projectLink.href = item[i].content.link;        
     }
     

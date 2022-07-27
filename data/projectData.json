@@ -14,11 +14,11 @@
 
             "subtitle": {
                 "text": "Front-end developement",
-                "className": "cardSubtitle"
+                "className": "card__subtitle"
             },
 
             "background": {
-                "className": "cardImg",
+                "className": "card__img",
                 "source": "../images/young-coding.jpg",
                 "alt": "team working on computer in the same place"
             },
@@ -41,11 +41,11 @@
 
             "subtitle": {
                 "text": "Front-end developement",
-                "className": "cardSubtitle"
+                "className": "card__subtitle"
             },
 
             "background": {
-                "className": "cardImg",
+                "className": "card__img",
                 "source": "../images/pricing-bg.jpg",
                 "alt": "de l'argent et une calculatrice"
             },

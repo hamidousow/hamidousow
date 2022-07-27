@@ -33,7 +33,16 @@ body .App {
   line-height: 110%;
 }
 
-.smallTitle, .text, .cardSubtitle {
+.outlines {
+  -webkit-text-stroke-width: .3px;
+  -webkit-text-stroke-color: #dddddd;
+  font-weight: bold;
+  color: transparent;
+  z-index: 1;
+  opacity: .3;
+}
+
+.smallTitle, .text, .card__subtitle {
   color: #dddddd;
 }
 
@@ -364,123 +373,33 @@ body .App {
 }
 
 .containerCards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  row-gap: 3em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
+  gap: 1em;
 }
 
-.containerCards .card {
+.card {
   width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-.containerCards .cardContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -webkit-column-gap: 1em;
-          column-gap: 1em;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.projectNumber {
-  font-size: clamp(100px, 15vw, 200px);
-  font-weight: 900;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.outlines {
-  -webkit-text-stroke-width: .3px;
-  -webkit-text-stroke-color: #dddddd;
-  font-weight: bold;
-  color: transparent;
-  z-index: 1;
-  opacity: .3;
-}
-
-.cardRichText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-bottom: 1.2em;
-}
-
-.cardRichText .cardTitle {
-  font-size: clamp(13px, 2vw, 19px);
-  font-weight: 800;
-  text-transform: uppercase;
-  margin-bottom: 0.5em;
-  letter-spacing: 1px;
-}
-
-.cardRichText .cardSubtitle {
-  font-size: clamp(11px, 2vw, 15px);
-}
-
-.cardRichText .cardSubtitle a {
-  color: #dddddd;
-}
-
-.blockLink {
-  margin: auto;
-  max-width: 900px;
-  width: 100%;
-  position: relative;
-  bottom: 2em;
-}
-
-.blockLink .cardContainerImage {
-  height: 50vmin;
-  width: 100%;
-  right: 0;
   bottom: 2em;
   overflow: hidden;
   -webkit-box-shadow: 0px 0px 10px 0px #0000003b;
-          box-shadow: 0px 0px 10px 0px #0000003b;
+  box-shadow: 0px 0px 10px 0px #0000003b;
   cursor: pointer;
   border-radius: 10px;
 }
 
-.blockLink .cardContainerImage::after {
-  content: "see more details";
-  position: absolute;
-  bottom: 15px;
-  right: 50%;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
-  background-color: #54c47d;
-  font-size: .7em;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #15181f;
-  padding: .7em 1em;
-  border-radius: 5px;
+.card .blockLink {
+  width: 100%;
 }
 
-.blockLink .cardContainerImage .cardImg {
+.card .card__header {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card .card__header .card__img {
   width: 100%;
   -webkit-filter: saturate(0);
           filter: saturate(0);
@@ -488,9 +407,59 @@ body .App {
   transition: 0.9s;
 }
 
-.blockLink .cardContainerImage:hover .cardImg {
+.card .card__header:hover .card__img {
   -webkit-filter: brightness(0.7);
           filter: brightness(0.7);
+}
+
+.card .projectNumber {
+  font-size: clamp(20px, 7vw, 70px);
+  font-weight: 900;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.card .card__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1.5em;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+}
+
+.card .card__body .card__project__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .card__body .card__title {
+  font-size: clamp(13px, 2vw, 19px);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+}
+
+.card .card__body .card__subtitle {
+  font-size: clamp(11px, 2vw, 15px);
+}
+
+.card .card__body .card__subtitle a {
+  color: #dddddd;
 }
 
 @media screen and (min-width: 768px) {

@@ -1,108 +1,80 @@
 .containerCards {
-    display: flex;
-    flex-direction: column;
-    row-gap: 3em;
-
-    .card {
-        width: 100%;
-        position: relative;
-        margin: auto;
-    }
-
-    .cardContent {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        flex-direction: row;
-        column-gap: 1em;
-        flex-wrap: wrap;
-    }
+    display: grid;
+    // flex-direction: column;
+    grid-template-columns: 2fr 2fr;
+    gap: 1em;   
 }
 
-.projectNumber {
-    font-size: $bigNumber;
-    font-weight: 900;
-    width: fit-content; 
-}
-
-.outlines {
-    -webkit-text-stroke-width: .3px;
-    -webkit-text-stroke-color: $clr-grey;
-    font-weight: bold;
-    color: transparent; 
-    z-index: 1; 
-    opacity: .3;  
-}
-
-.cardRichText {        
-    display: flex;
-    justify-content: center;
-    flex-direction: column; 
-    padding-bottom: 1.2em;       
-    
-    .cardTitle {
-        font-size: $smallTitle;        
-        font-weight: 800;        
-        text-transform: uppercase;
-        margin-bottom: 0.5em;
-        letter-spacing: 1px;
-    }
-
-    .cardSubtitle {
-        font-size: $smallText;
-        a {
-            color: $clr-grey;            
-        }                
-    }
-} 
-
-.blockLink {
-    margin: auto;
-    max-width: 900px;
+.card {
     width: 100%;
-    position: relative;
     bottom: 2em;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 10px 0px #0000003b;
+    box-shadow: 0px 0px 10px 0px #0000003b;
+    cursor: pointer;
+    border-radius: 10px;
 
-    .cardContainerImage {
-        height: 50vmin;
+    .blockLink {
         width: 100%;
-        right: 0;
-        bottom: 2em; 
-        overflow: hidden; 
-        box-shadow: $boxShadow; 
-        cursor: pointer; 
-        border-radius: 10px;
-        // position: relative;
-
-        &::after {
-            content: "see more details";
-            position: absolute;
-            bottom: 15px;  
-            right: 50%;
-            transform: translateX(50%);
-            background-color: $clr-green;
-            font-size: .7em;
-            text-transform: uppercase;
-            font-weight: bold;
-            color: $clr-black;
-            padding: .7em 1em;
-            border-radius: 5px;
-        }
-
-        .cardImg {
+    }
+    
+    .card__header {
+        // height: 50vmin;
+        width: 100%;       
+        overflow: hidden;  
+    
+        .card__img {
             width: 100%;
             filter: saturate(0);
             transition: 0.9s;
         }
         
         &:hover {
-             
-            .cardImg {
+                
+            .card__img {
                 filter: brightness(0.7);                
             }
         }       
+    } 
+
+    .projectNumber {
+        font-size: $bigNumber;
+        font-weight: 900;
+        width: fit-content; 
+    }
+
+    .card__body{        
+        display: flex;
+        flex-direction: row; 
+        padding: 1.5em;
+        column-gap: 1em;
+
+        .card__project__description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card__title {
+            font-size: $smallTitle;        
+            font-weight: 800;        
+            text-transform: uppercase;
+            margin-bottom: 0.5em;
+            letter-spacing: 1px;
+        }
+    
+        .card__subtitle {
+            font-size: $smallText;
+            a {
+                color: $clr-grey;            
+            }                
+        }
     }
 }
+
+
+
+ 
 
 
 @media screen and (min-width: 768px) {
