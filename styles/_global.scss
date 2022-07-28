@@ -11,7 +11,6 @@ $boxShadow: 0px 0px 10px 0px #0000003b;
 
 //responsive font-size
 $bigTitle: clamp(32px, 4vw, 50px);
-$smallTitle: clamp(13px, 2vw, 19px); 
 $text-size: clamp(12px, 2vw, 17px);
 $smallText: clamp(11px, 2vw, 15px);
 $bigNumber: clamp(20px, 7vw, 70px);
@@ -68,13 +67,8 @@ body {
     opacity: .3;  
 }
 
-.smallTitle, .text, .card__subtitle {
+.text, .card__subtitle {
     color: $clr-grey;
-}
-
-.smallTitle {    
-    font-size: $smallTitle;
-    text-transform: uppercase;
 }
 
 .text {    

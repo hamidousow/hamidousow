@@ -42,13 +42,8 @@ body .App {
   opacity: .3;
 }
 
-.smallTitle, .text, .card__subtitle {
+.text, .card__subtitle {
   color: #dddddd;
-}
-
-.smallTitle {
-  font-size: clamp(13px, 2vw, 19px);
-  text-transform: uppercase;
 }
 
 .text {
@@ -428,9 +423,9 @@ body .App {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 1.5em;
-  -webkit-column-gap: 1em;
-          column-gap: 1em;
+  padding: .5em;
+  -webkit-column-gap: .5em;
+          column-gap: .5em;
 }
 
 .card .card__body .card__project__description {
@@ -447,15 +442,14 @@ body .App {
 }
 
 .card .card__body .card__title {
-  font-size: clamp(13px, 2vw, 19px);
+  font-size: clamp(7px, 2vw, 19px);
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 0.5em;
-  letter-spacing: 1px;
 }
 
 .card .card__body .card__subtitle {
-  font-size: clamp(11px, 2vw, 15px);
+  font-size: clamp(5px, 2vw, 15px);
 }
 
 .card .card__body .card__subtitle a {
@@ -468,6 +462,18 @@ body .App {
   }
   .card {
     max-width: 1000px;
+  }
+  .card .card__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 1.5em;
+    -webkit-column-gap: 1em;
+            column-gap: 1em;
   }
 }
 

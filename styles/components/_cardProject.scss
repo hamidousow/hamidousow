@@ -46,8 +46,8 @@
     .card__body{        
         display: flex;
         flex-direction: row; 
-        padding: 1.5em;
-        column-gap: 1em;
+        padding: .5em;
+        column-gap: .5em;
 
         .card__project__description {
             display: flex;
@@ -56,15 +56,14 @@
         }
 
         .card__title {
-            font-size: $smallTitle;        
+            font-size: clamp(7px, 2vw, 19px);        
             font-weight: 800;        
             text-transform: uppercase;
             margin-bottom: 0.5em;
-            letter-spacing: 1px;
         }
     
         .card__subtitle {
-            font-size: $smallText;
+            font-size: clamp(5px, 2vw, 15px);
             a {
                 color: $clr-grey;            
             }                
@@ -84,7 +83,14 @@
     }
 
     .card {
-        max-width: 1000px;        
+        max-width: 1000px;  
+        
+        .card__body{        
+            display: flex;
+            flex-direction: row; 
+            padding: 1.5em;
+            column-gap: 1em;
+        }
     }
 }
 
