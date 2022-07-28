@@ -14,11 +14,8 @@
     cursor: pointer;
     border-radius: 10px;
     border: .5px solid #dddddd3c;
+    transition: 0.9s;
 
-    .blockLink {
-        width: 100%;
-    }
-    
     .card__header {
         max-height: 275px;
         width: 100%;       
@@ -26,17 +23,23 @@
     
         .card__img {
             width: 100%;
+            transform: scale(1.1);
             filter: saturate(0);
-            transition: 0.9s;
+            // transition-property: all;
+            transition: .9s;            
+        }               
+    }
+
+    &:hover {
+        .card__img {
+            filter: saturate(1); 
+            transform: scale(1.2);               
         }
-        
-        &:hover {
-                
-            .card__img {
-                filter: brightness(0.7);                
-            }
-        }       
-    } 
+    }
+
+    .blockLink {
+        width: 100%;
+    }  
 
     // .projectNumber {
     //     font-size: $bigNumber;
@@ -47,8 +50,8 @@
     .card__body{        
         display: flex;
         flex-direction: row; 
-        padding: .5em;
-        column-gap: .5em;
+        padding: 1em;
+        column-gap: 1em;
         background-color: #1b1f28;
 
         .card__project__description {
