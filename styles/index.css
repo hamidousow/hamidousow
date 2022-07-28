@@ -26,8 +26,8 @@ body .App {
 }
 
 .bigTitle {
-  color: #dddddd;
-  font-size: clamp(32px, 4vw, 50px);
+  color: #54c47d;
+  font-size: clamp(25px, 4vw, 50px);
   font-weight: 900;
   text-transform: uppercase;
   line-height: 110%;
@@ -323,7 +323,7 @@ body .App {
 
 .button {
   border: hidden;
-  padding: 1em;
+  padding: 1em 1.5em;
   text-transform: uppercase;
   text-align: center;
   font-size: .7em;
@@ -332,7 +332,7 @@ body .App {
   background: transparent;
   border: 1px solid #54c47d;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -383,6 +383,7 @@ body .App {
   box-shadow: 0px 0px 10px 0px #0000003b;
   cursor: pointer;
   border-radius: 10px;
+  border: .5px solid #dddddd3c;
 }
 
 .card .blockLink {
@@ -390,6 +391,7 @@ body .App {
 }
 
 .card .card__header {
+  max-height: 275px;
   width: 100%;
   overflow: hidden;
 }
@@ -407,14 +409,6 @@ body .App {
           filter: brightness(0.7);
 }
 
-.card .projectNumber {
-  font-size: clamp(20px, 7vw, 70px);
-  font-weight: 900;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .card .card__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -426,6 +420,7 @@ body .App {
   padding: .5em;
   -webkit-column-gap: .5em;
           column-gap: .5em;
+  background-color: #1b1f28;
 }
 
 .card .card__body .card__project__description {
@@ -442,14 +437,15 @@ body .App {
 }
 
 .card .card__body .card__title {
-  font-size: clamp(7px, 2vw, 19px);
+  color: #54c47d;
+  font-size: clamp(9px, 2vw, 19px);
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 0.5em;
 }
 
 .card .card__body .card__subtitle {
-  font-size: clamp(5px, 2vw, 15px);
+  font-size: clamp(8px, 2vw, 15px);
 }
 
 .card .card__body .card__subtitle a {
@@ -517,6 +513,7 @@ body .App {
 }
 
 .heroSection .leftContent .bigTitle {
+  color: #dddddd;
   margin-bottom: 6px;
 }
 

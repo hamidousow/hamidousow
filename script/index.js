@@ -5,7 +5,7 @@ let linkNav = document.querySelectorAll("#menuMobile .linkNav");
 let card = document.querySelector(".card");
 let cardsContainer = document.querySelector(".cardsContainer");
 
-let projectNumber = document.querySelector(".projectNumber");
+// let projectNumber = document.querySelector(".projectNumber");
 let card__img = document.querySelector(".card__img");
 let cardTitle = document.querySelector(".card__title");
 let card__subtitle = document.querySelector(".card__subtitle");
@@ -24,7 +24,7 @@ let createNewNode = (item) => {
     for(let i = 0; i < item.length; i++) {
         // console.log(item[i].content)
         newCard = card.cloneNode(true);
-        projectNumber.innerHTML = item[i].content.number.number;
+        // projectNumber.innerHTML = item[i].content.number.number;
         cardTitle.innerHTML = item[i].content.title.text;
         card__subtitle.innerHTML = item[i].content.subtitle.text;
         card__img.src = item[i].content.background.source;
@@ -128,13 +128,13 @@ let createArticle = (item, container) => {
         period.append(year, month);
         details.append(title, subtitle, taskDescription);
 
-        year.setAttribute('class', "periode text gradient-title");
+        year.setAttribute('class', "periode text");
         year.innerHTML = item[i].year; 
         
         month.setAttribute('class', "periode text");
         month.innerHTML = item[i].month; 
 
-        title.setAttribute('class', "bold expTitle text gradient-title");
+        title.setAttribute('class', "bold expTitle text");
         title.innerHTML = item[i].title;  
 
         subtitle.setAttribute('class', "lieu text italic light");

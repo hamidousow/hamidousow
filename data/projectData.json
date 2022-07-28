@@ -9,7 +9,7 @@
 
             "title": {
                 "text": "Bootcamp slider",
-                "className": "cardTitle gradient-title"
+                "className": "cardTitle"
             },
 
             "subtitle": {
@@ -36,7 +36,7 @@
 
             "title": {
                 "text": "Pricing component",
-                "className": "cardTitle gradient-title"
+                "className": "cardTitle"
             },
 
             "subtitle": {
