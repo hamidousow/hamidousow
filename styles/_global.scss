@@ -11,10 +11,9 @@ $boxShadow: 0px 0px 10px 0px #0000003b;
 
 //responsive font-size
 $bigTitle: clamp(32px, 4vw, 50px);
-$smallTitle: clamp(13px, 2vw, 19px); 
 $text-size: clamp(12px, 2vw, 17px);
 $smallText: clamp(11px, 2vw, 15px);
-$bigNumber: clamp(100px, 15vw, 200px);
+$bigNumber: clamp(20px, 7vw, 70px);
 $callToAction: clamp(11px, 1vw, 16px);
 $bigOutlineTitle: clamp(35px, 10vw, 200px);
 
@@ -59,13 +58,17 @@ body {
     line-height: 110%;  
 }
 
-.smallTitle, .text, .cardSubtitle {
-    color: $clr-grey;
+.outlines {
+    -webkit-text-stroke-width: .3px;
+    -webkit-text-stroke-color: $clr-grey;
+    font-weight: bold;
+    color: transparent; 
+    z-index: 1; 
+    opacity: .3;  
 }
 
-.smallTitle {    
-    font-size: $smallTitle;
-    text-transform: uppercase;
+.text, .card__subtitle {
+    color: $clr-grey;
 }
 
 .text {    
