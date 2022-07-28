@@ -11,6 +11,8 @@ let cardTitle = document.querySelector(".card__title");
 let card__subtitle = document.querySelector(".card__subtitle");
 
 let projectLink = document.querySelector(".blockLink");
+let outilsContainer = document.querySelector(".outils-container");
+let outilMainContainer = document.getElementById("outils-main-container");
 
 let cardData = fetch("../data/projectData.json")
     .then(response => {
@@ -60,7 +62,7 @@ for(let link of linkNav){
 
 /* ********** MAPPING ******** */ 
 
-let outilMainContainer = document.getElementById("outils-main-container");
+
 
 let outilsData = fetch("../data/outilsData.json")
                     .then(response => {
@@ -87,13 +89,9 @@ let formation = fetch("../data/formationData.json")
 let createOutil = (item) => {
 
     for(let i = 0; i < item.length; i++) {
-        let outil = document.createElement("div");    
-        outilMainContainer.append(outil);
-        outil.setAttribute('class', "iconContainer");
-
         let outilImg = document.createElement('img');
-        outil.append(outilImg);
-        outilImg.setAttribute('class', "outilImage");
+        outilMainContainer.append(outilImg);
+        outilImg.setAttribute('class', "logo_tech");
         outilImg.src = item[i].src;
         outilImg.alt = item[i].alt;
     }       

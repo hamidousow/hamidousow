@@ -1,27 +1,15 @@
-.outils-container{
-    display: flex;
-    justify-content: space-around;
-}
+#outils .outils-container {  
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px; 
+    justify-items: center;  
+    align-items: center;     
 
-#outils .outils-container {
-    gap: 25px;
-    flex-wrap: wrap;
-
-    .iconContainer {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 40px;
-    
-        .iconImage {
-            width: 100%;
-            display: block;
-        }
-        
-        .iconTitle {        
-            text-transform: uppercase;
-            text-align: center;
-        }
+    .logo_tech {
+        width: 100%;
+        max-width: 50px;
     }
 }
 
