@@ -10,7 +10,7 @@ $clr-yellow: #dfc349;
 $boxShadow: 0px 0px 10px 0px #0000003b;
 
 //responsive font-size
-$bigTitle: clamp(32px, 4vw, 50px);
+$bigTitle: clamp(25px, 4vw, 50px);
 $text-size: clamp(12px, 2vw, 17px);
 $smallText: clamp(11px, 2vw, 15px);
 $bigNumber: clamp(20px, 7vw, 70px);
@@ -51,7 +51,7 @@ body {
 }
 
 .bigTitle {
-    color: $clr-grey;
+    color: $clr-green;
     font-size: $bigTitle;
     font-weight: 900;
     text-transform: uppercase;
