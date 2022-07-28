@@ -384,10 +384,8 @@ body .App {
   cursor: pointer;
   border-radius: 10px;
   border: .5px solid #dddddd3c;
-}
-
-.card .blockLink {
-  width: 100%;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
 }
 
 .card .card__header {
@@ -398,15 +396,23 @@ body .App {
 
 .card .card__header .card__img {
   width: 100%;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-filter: saturate(0);
           filter: saturate(0);
-  -webkit-transition: 0.9s;
-  transition: 0.9s;
+  -webkit-transition: .9s;
+  transition: .9s;
 }
 
-.card .card__header:hover .card__img {
-  -webkit-filter: brightness(0.7);
-          filter: brightness(0.7);
+.card:hover .card__img {
+  -webkit-filter: saturate(1);
+          filter: saturate(1);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.card .blockLink {
+  width: 100%;
 }
 
 .card .card__body {
@@ -417,9 +423,9 @@ body .App {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: .5em;
-  -webkit-column-gap: .5em;
-          column-gap: .5em;
+  padding: 1em;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
   background-color: #1b1f28;
 }
 
@@ -605,42 +611,24 @@ body .App {
   padding: .5em 0;
 }
 
-.outils-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 #outils .outils-container {
-  gap: 25px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#outils .outils-container .iconContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 40px;
-}
-
-#outils .outils-container .iconContainer .iconImage {
+#outils .outils-container .logo_tech {
   width: 100%;
-  display: block;
-}
-
-#outils .outils-container .iconContainer .iconTitle {
-  text-transform: uppercase;
-  text-align: center;
+  max-width: 50px;
 }
 
 .section {
