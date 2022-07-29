@@ -238,11 +238,6 @@ body .App {
   display: -ms-flexbox;
   display: flex;
   gap: 3em;
-  -ms-flex-preferred-size: auto;
-      flex-basis: auto;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
