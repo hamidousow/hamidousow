@@ -5,11 +5,9 @@
     flex-grow: 1;
     justify-content: center;
     column-gap: 4em; 
-    margin: 3em 0;
-    :nth-child(1) {
-        background: $clr-green;
-        color: $clr-black;
-    }   
+    margin: 3em 0;    
+    // background: --clr-green;
+    // color: --clr-black;      
 }
 
 .button {
@@ -19,9 +17,8 @@
     text-align: center;    
     font-size: .7em;
     letter-spacing: 1px;
-    color: $clr-green;
-    background: transparent;
-    border: 1px solid $clr-green;
+    // color: --clr-green;
+    background: transparent;    
     cursor: pointer;
     border-radius: 5px;
 }
@@ -31,10 +28,7 @@
         letter-spacing: 1px;       
         transition: .5s all;
 
-        &:hover {
-            color: $clr-black;
-            background: $clr-grey;
-            border: 1px solid $clr-black;  
+        &:hover {           
             font-weight: 500;          
         }
     }

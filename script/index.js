@@ -1,18 +1,27 @@
-let navigation = document.getElementById("nav-desktop");
-let btnBurger = document.getElementById("btnBurger");
-let menuMobile = document.getElementById("menuMobile");
-let linkNav = document.querySelectorAll("#menuMobile .linkNav");
-let card = document.querySelector(".card");
-let cardsContainer = document.querySelector(".cardsContainer");
+/**
+ * switch mode
+ */
+// let btnSwitchMode = document.querySelectorAll("input[name=switchMode]");
+let btnSwitchMode = document.getElementById("btnSwitchMode");
+let btnActiveDarkMode = document.querySelector("#dark-mode");
+let btnActiveDefaultMode = document.querySelector("#light-mode");
+let body = document.getElementsByTagName("body");
 
-// let projectNumber = document.querySelector(".projectNumber");
+
+    btnSwitchMode.addEventListener("click", () => {        
+        document.getElementById("site").classList.toggle("dark-mode");
+    }) 
+
+
+
+/** 
+ * fetch the json file into 
+ */
+let card = document.querySelector(".card");
 let card__img = document.querySelector(".card__img");
 let cardTitle = document.querySelector(".card__title");
 let card__subtitle = document.querySelector(".card__subtitle");
-
 let projectLink = document.querySelector(".blockLink");
-let outilsContainer = document.querySelector(".outils-container");
-let outilMainContainer = document.getElementById("outils-main-container");
 
 let cardData = fetch("../data/projectData.json")
     .then(response => {
@@ -20,22 +29,29 @@ let cardData = fetch("../data/projectData.json")
     })
     .then(data => createNewNode(data))
 
+    /**
+     * 
+     * @param {*} item correspond to the object passing 
+     */
 let createNewNode = (item) => {
     let newCard;
 
-    for(let i = 0; i < item.length; i++) {
-        // console.log(item[i].content)
-        newCard = card.cloneNode(true);
-        // projectNumber.innerHTML = item[i].content.number.number;
+    for(let i = 0; i < item.length; i++) {        
+        newCard = card.cloneNode(true);       
         cardTitle.innerHTML = item[i].content.title.text;
         card__subtitle.innerHTML = item[i].content.subtitle.text;
         card__img.src = item[i].content.background.source;
         projectLink.href = item[i].content.link;        
     }
     
-    card.after(newCard) 
-    
+    card.after(newCard)    
 }
+
+/**
+ * set navigation opacity when scrolling the page from the top, 
+ * by adding the class "active" to the nav classlist
+ */
+let navigation = document.getElementById("nav-desktop");
 
 let setNavOpacity = () => {
     if(window.scrollY >= 50) {
@@ -47,22 +63,35 @@ let setNavOpacity = () => {
 
 window.addEventListener('scroll', setNavOpacity);
 
+
+/**
+ * open/close aside menu on mobile devices 
+ */
+
+let btnBurger = document.getElementById("btnBurger");
+let menuMobile = document.getElementById("menuMobile");
+let linkNav = document.querySelectorAll("#menuMobile .linkNav");
+
 let toggleMenu = () => {
     menuMobile.classList.toggle("active");
 }
 
 btnBurger.addEventListener('click', toggleMenu);
 
-
+/**
+ * when the mobile menu is open, event click on a link close it
+ */
 for(let link of linkNav){
     link.addEventListener('click', () => {     
         toggleMenu();
     });
 };
 
-/* ********** MAPPING ******** */ 
+/**
+ * outils section fetching
+ */ 
 
-
+let outilMainContainer = document.getElementById("outils-main-container");
 
 let outilsData = fetch("../data/outilsData.json")
                     .then(response => {
@@ -96,6 +125,11 @@ let createOutil = (item) => {
         outilImg.alt = item[i].alt;
     }       
 }
+
+
+/**
+ * formation and exp fetching
+ */
 
 let formationMainContainer =  document.getElementById("formationContainer");
 let experienceMainContainer = document.getElementById("experienceContainer");

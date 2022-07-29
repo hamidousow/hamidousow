@@ -61,7 +61,7 @@
         }
 
         .card__title {
-            color: $clr-green;
+            // color: --clr-green;
             font-size: clamp(9px, 2vw, 19px);        
             font-weight: 800;        
             text-transform: uppercase;
@@ -69,10 +69,7 @@
         }
     
         .card__subtitle {
-            font-size: clamp(8px, 2vw, 15px);
-            a {
-                color: $clr-grey;            
-            }                
+            font-size: clamp(8px, 2vw, 15px);               
         }
     }
 }
