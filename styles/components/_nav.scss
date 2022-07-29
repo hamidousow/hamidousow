@@ -42,22 +42,21 @@
 
 #homeLogo, .linkNav {
     text-transform: uppercase;
-    color: $clr-grey;
     letter-spacing: $space2;
     cursor: pointer;
 }
 
 .linkNav {
-    color: $clr-grey;
+    // color: --clr-grey;
     font-weight: $light;
     font-size: clamp(12px, 1vw, 16px);
     padding: .5em;
     position: relative;
     transition: .5s all;   
 
-    &:hover {
-        color: $clr-green;
-    }    
+    // &:hover {
+    //     color: --clr-green;
+    // }    
 }
 
 .menuMobile, .menu.active {
@@ -67,7 +66,7 @@
 //background navigation when scrolling 
 .navigation.active {
     box-shadow: $boxShadow;
-    background: $clr-black;
+    // background: --clr-black;
 }
 
 @media screen and (max-width: 992px) {    
@@ -88,13 +87,14 @@
             width: 50px;
             position: relative;
             cursor: pointer;
+            
 
             &::before, &::after {
                 content: "";
                 position: absolute;
                 width: 100%;
                 height: 3px;
-                background: $clr-grey;
+                background: var(--clr-black);
             }
 
             &::before {
@@ -123,7 +123,7 @@
         justify-content: space-around;
         align-items: flex-start;        
         padding: 5em 3em 0;        
-        background: $clr-black;
+        // background: --clr-black;
         box-shadow: $boxShadow;
         
         ul {

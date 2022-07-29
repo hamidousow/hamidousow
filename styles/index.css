@@ -1,8 +1,114 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --clr-black: #15181f;
+  --clr-grey: #dddddd;
+  --clr-green: #54c47d;
+  --clr-cyan: #54c4c2;
+  --clr-purple: #bd54c5;
+  --clr-yellow: #dfc349;
+}
+
+#site, .navigation {
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.dark-mode {
+  --clr-black: #dddddd;
+  --clr-grey: #15181f;
+  --clr-lightblack: #1b1f28;
+  --clr-green: #54c47d;
+  --clr-cyan: #54c4c2;
+  --clr-purple: #bd54c5;
+  --clr-yellow: #dfc349;
+}
+
+.slider-mode input[type="checkbox"].btnSwitchMode {
+  display: none;
+}
+
+.slider-mode input[type="checkbox"].btnSwitchMode + label {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  width: 3rem;
+  height: 1.6rem;
+  padding: 2px;
+  border-radius: 20px;
+  background: var(--clr-lightblack);
+  border: 1px solid var(--clr-black);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.slider-mode input[type="checkbox"].btnSwitchMode + label::before {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  content: "☼";
+  height: calc(1.5rem - 5px);
+  width: calc(1.5rem - 5px);
+  border-radius: 50%;
+  background-color: var(--clr-black);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.slider-mode input[type="checkbox"].btnSwitchMode:checked + label {
+  background-color: var(--clr-grey);
+}
+
+.slider-mode input[type="checkbox"].btnSwitchMode:checked + label::before {
+  margin-left: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  content: "☾";
+  color: var(--clr-grey);
+}
+
+.heroSection.bigTitle, .bigTitle, .containerButton, .card__title {
+  color: var(--clr-green);
+}
+
+.text, .card__subtitle, .outlines, .linkNav, .button:hover, .iconMedia {
+  color: var(--clr-grey);
+}
+
+.linkNav:hover {
+  color: var(--clr-green);
+}
+
+#site, .navigation, .navigation.active, .menuMobile, .linkNav:hover {
+  background: var(--clr-grey);
+}
+
+.text, .linkNav, .bigOutlineTitle {
+  color: var(--clr-black);
+}
+
+.bigOutlineTitle {
+  opacity: .1;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
-  background: #15181f;
 }
 
 body .App {
@@ -26,7 +132,6 @@ body .App {
 }
 
 .bigTitle {
-  color: #54c47d;
   font-size: clamp(25px, 4vw, 50px);
   font-weight: 900;
   text-transform: uppercase;
@@ -35,15 +140,10 @@ body .App {
 
 .outlines {
   -webkit-text-stroke-width: .3px;
-  -webkit-text-stroke-color: #dddddd;
   font-weight: bold;
   color: transparent;
   z-index: 1;
   opacity: .3;
-}
-
-.text, .card__subtitle {
-  color: #dddddd;
 }
 
 .text {
@@ -154,23 +254,17 @@ body .App {
 
 #homeLogo, .linkNav {
   text-transform: uppercase;
-  color: #dddddd;
   letter-spacing: 2px;
   cursor: pointer;
 }
 
 .linkNav {
-  color: #dddddd;
   font-weight: 300;
   font-size: clamp(12px, 1vw, 16px);
   padding: .5em;
   position: relative;
   -webkit-transition: .5s all;
   transition: .5s all;
-}
-
-.linkNav:hover {
-  color: #54c47d;
 }
 
 .menuMobile, .menu.active {
@@ -180,7 +274,6 @@ body .App {
 .navigation.active {
   -webkit-box-shadow: 0px 0px 10px 0px #0000003b;
           box-shadow: 0px 0px 10px 0px #0000003b;
-  background: #15181f;
 }
 
 @media screen and (max-width: 992px) {
@@ -202,7 +295,7 @@ body .App {
     position: absolute;
     width: 100%;
     height: 3px;
-    background: #dddddd;
+    background: var(--clr-black);
   }
   .navigation #btnBurger::before {
     top: 0;
@@ -233,7 +326,6 @@ body .App {
         -ms-flex-align: start;
             align-items: flex-start;
     padding: 5em 3em 0;
-    background: #15181f;
     -webkit-box-shadow: 0px 0px 10px 0px #0000003b;
             box-shadow: 0px 0px 10px 0px #0000003b;
   }
@@ -316,11 +408,6 @@ body .App {
   margin: 3em 0;
 }
 
-.containerButton :nth-child(1) {
-  background: #54c47d;
-  color: #15181f;
-}
-
 .button {
   border: hidden;
   padding: 1em 1.5em;
@@ -328,9 +415,7 @@ body .App {
   text-align: center;
   font-size: .7em;
   letter-spacing: 1px;
-  color: #54c47d;
   background: transparent;
-  border: 1px solid #54c47d;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -342,9 +427,6 @@ body .App {
     transition: .5s all;
   }
   .button:hover {
-    color: #15181f;
-    background: #dddddd;
-    border: 1px solid #15181f;
     font-weight: 500;
   }
 }
@@ -363,7 +445,6 @@ body .App {
 
 .callToAction a {
   text-decoration: none;
-  color: #dddddd;
   font-size: clamp(11px, 1vw, 16px);
 }
 
@@ -443,7 +524,6 @@ body .App {
 }
 
 .card .card__body .card__title {
-  color: #54c47d;
   font-size: clamp(9px, 2vw, 19px);
   font-weight: 800;
   text-transform: uppercase;
@@ -452,10 +532,6 @@ body .App {
 
 .card .card__body .card__subtitle {
   font-size: clamp(8px, 2vw, 15px);
-}
-
-.card .card__body .card__subtitle a {
-  color: #dddddd;
 }
 
 @media screen and (min-width: 768px) {
@@ -519,7 +595,6 @@ body .App {
 }
 
 .heroSection .leftContent .bigTitle {
-  color: #dddddd;
   margin-bottom: 6px;
 }
 
@@ -540,7 +615,7 @@ body .App {
   bottom: 0.5%;
   width: 100%;
   height: 85%;
-  z-index: -1;
+  z-index: 0;
   background: -webkit-gradient(linear, left top, right top, color-stop(20%, #54c4c2), color-stop(40%, #dfc349), color-stop(60%, #bd54c5), color-stop(80%, #54c47d));
   background: linear-gradient(to right, #54c4c2 20%, #dfc349 40%, #bd54c5 60%, #54c47d 80%);
   background-size: 200% auto;
@@ -563,6 +638,7 @@ body .App {
   bottom: 0;
   height: 100%;
   max-height: 330px;
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -752,7 +828,6 @@ body .App {
 }
 
 .socialMediaIcons .containerIcons .iconMedia {
-  color: #dddddd;
   text-decoration: none;
   font-size: 2.2em;
   opacity: .5;
@@ -780,6 +855,10 @@ body .App {
           justify-content: flex-end;
   -webkit-column-gap: 2em;
           column-gap: 2em;
+}
+
+footer .section {
+  margin-bottom: 0;
 }
 
 footer .containerIcons {

@@ -11,14 +11,14 @@
         }
 
         .iconMedia {
-            color: $clr-grey;
+            // color: --clr-grey;
             text-decoration: none;
             font-size: 2.2em;
             opacity: .5;
             transition: .5s all;
 
             &:hover {
-                // color: $clr-green;                
+                // color: --clr-green;                
                 opacity: 1;
             }
         }
@@ -41,6 +41,9 @@
 }
 
 footer {
+    .section {
+        margin-bottom: 0;
+    }
     .containerIcons {
         justify-content: center;
     }

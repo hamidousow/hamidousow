@@ -8,20 +8,49 @@
     <link rel="stylesheet" href="styles/_reset.css">
     <link rel="stylesheet" href="styles/index.css">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://kit.fontawesome.com/7ab9ac0ce2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navigation" id="nav-desktop">
-        <div id="navContent">
-            <div id="homeLogo">
-                <a href="#">
-                    <img src="images/myLogo.png" alt="logo Hamidou Sow, retour page d'accueil">
-                </a>
+    <div id="site" class="dark-mode">
+        <nav class="navigation" id="nav-desktop">
+            <div id="navContent">
+                <div id="homeLogo">
+                    <a href="#">
+                        <img src="images/myLogo.png" alt="logo Hamidou Sow, retour page d'accueil">
+                    </a>                
+                </div>                
+                <div class="slider-mode">
+                    <input type="checkbox" id="btnSwitchMode" class="btnSwitchMode">
+                    
+                    <label for="btnSwitchMode"> 
+                    </label>
+                </div>
+                <span id="btnBurger"></span>
+                <ul id="menuDesktop" class="menu">
+                    <li>
+                        <a class="linkNav" href="#about">À propos</a>
+                    </li>
+                    <li>
+                        <a class="linkNav" href="#experiences">Expériences</a>
+                    </li>
+                    <li>
+                        <a class="linkNav" href="#work">Projets</a>
+                    </li>
+                    <li>
+                        <a class="linkNav" href="#outils">Outils</a>
+                    </li>                
+                    <li>
+                        <a class="linkNav" href="#contact">Contact</a>
+                    </li>
+                </ul>
                 
             </div>
-            <span id="btnBurger">
-
-            </span>
-            <ul id="menuDesktop" class="menu">
+        </nav>
+        <aside class="menuMobile" id="menuMobile">
+            <ul>
+                <li>
+                    <a class="linkNav" href="#">Home</a>
+                </li>
                 <li>
                     <a class="linkNav" href="#about">À propos</a>
                 </li>
@@ -33,181 +62,158 @@
                 </li>
                 <li>
                     <a class="linkNav" href="#outils">Outils</a>
-                </li>                
+                </li>
+                
                 <li>
                     <a class="linkNav" href="#contact">Contact</a>
                 </li>
             </ul>
-        </div>
-    </nav>
-    <aside class="menuMobile" id="menuMobile">
-        <ul>
-            <li>
-                <a class="linkNav" href="#">Home</a>
-            </li>
-            <li>
-                <a class="linkNav" href="#about">À propos</a>
-            </li>
-            <li>
-                <a class="linkNav" href="#experiences">Expériences</a>
-            </li>
-            <li>
-                <a class="linkNav" href="#work">Projets</a>
-            </li>
-            <li>
-                <a class="linkNav" href="#outils">Outils</a>
-            </li>
-            
-            <li>
-                <a class="linkNav" href="#contact">Contact</a>
-            </li>
-        </ul>
-        <div class="socialMediaIcons">
-            <ul class="containerIcons">
-                <li>
-                    <a class="iconMedia" href="https://github.com/hamidousow">                           
-                        <i class="devicon-github-original"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="iconMedia" href="https://www.linkedin.com/in/hamidou-sow-6725a5b0/">
-                        <i class="devicon-linkedin-plain"></i>
-                    </a>
-                </li>
-                                        
-                
-            </ul>
-        </div>
-    </aside>
-    <header id="home" class="heroSection">
-        <div class="content">
-            <div class="leftContent">
-                <h1 class="bigTitle">
-                <span class="gradient-title"> Hello. </span>
-                <br>Je suis Hamidou</h1>
-                <p class="text">Développeur Fullstack</p>
-            </div>
-            <div class="rightContent">
-                <img src="images/pp-min.png" class="heroImg" alt="Hamidou SOW">
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <Section class="section" id="about">
-            <div class="wrapTitles">
-                <h2 class="bigTitle">À propos</h2>
-                <span class="bigOutlineTitle outlines">À propos</span>
-            </div>
-            
-            <div class="richText">
-                <p class="text">
-                    Développeur à l’écoute, agile, créatif avec une appétence pour le design.
-                </p>
-                <br/>
-                <p class="text">
-                    Je suis à la recherche d’une première expérience significative au poste de développeur fullstack en intégrant une équipe qui me permettra de monter en compétences sur les technologies en vogue à travers divers projets.
-                </p>
-                <br/>
-                <p class="text">                   
-                    Je suis disponible dès le mois de juin pour un poste de développeur fullstack, ouvert à des propositions de frontend et de backend.
-                </p>
-            </div>
-        </Section> 
-        <Section class="section" id="experiences">
-            <div class="content">
-                <div class="wrapTitles">
-                    <h2 class="bigTitle">expériences</h2>
-                    <span class="bigOutlineTitle outlines">expériences</span>
-                </div>
-                
-                <div id="experienceContainer" class="articles"> </div> 
-            </div>                            
-        </Section>
-        <Section class="section" id="work">
-            <div class="content">
-                <div class="wrapTitles">
-                    <h2 class="bigTitle">projets</h2>
-                    <span class="bigOutlineTitle outlines">projets</span>
-                </div>
-                <div class="containerCards">
-                    <div class="card" data-component="card">
-                        <a href="https://hamidousow.github.io/bootcamp-coding-slider/" class="blockLink" target="_blank" rel="noreferrer">
-                            <div class="card__header">
-                                <img class="card__img" src="images/young-coding.jpg" alt="young coding"/>
-                            </div>
-                            <div class="card__body">
-                                <!-- <p class="projectNumber outlines"> 01 </p> -->
-                                <div class="card__project__description">
-                                    <h3 class="card__title">Bootcamp slider</h3>
-                                    <h4 class="card__subtitle light">frontend</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            
-        </Section> 
-        <Section class="section" id="formations">
-            <div class="content">
-                <div class="wrapTitles">
-                    <h2 class="bigTitle">formations</h2>
-                    <span class="bigOutlineTitle outlines">formations</span>
-                </div>
-                
-                <div id="formationContainer" class="articles"> </div> 
-            </div>                            
-        </Section>
-        <Section class="section" id="outils">
-            <div class="content">
-                <div class="wrapTitles">
-                    <h2 class="bigTitle title-outil">outils</h2>
-                    <span class="bigOutlineTitle outlines">outils</span>
-                </div>
-                <div class="outils-container" id="outils-main-container">
-                    
-                </div> 
-            </div>               
-        </Section> 
-        <Section class="section" id="contact">
-            <div class="content">
-                <div class="wrapTitles">
-                    <h2 class="bigTitle">contact</h2>
-                    <span class="bigOutlineTitle outlines">contact</span>
-                </div>
-                <div class="leftContent">                
-                    <p class="text">
-                        Des questions ? Contactez moi, je suis disponible.
-                    </p>
-                </div>
-    
-                <div class="containerButton">                
-                    <a class="button" href="mailto:hamidou.sow@hotmail.fr"> me contacter</a>                   
-                </div>                                                       
-            </div>               
-        </Section> 
-    </main>
-    <footer class="section">
-        <div class="content">
             <div class="socialMediaIcons">
-                <ul class="containerIcons"> 
+                <ul class="containerIcons">
                     <li>
-                        <a class="iconMedia" href="https://github.com/hamidousow">                            
+                        <a class="iconMedia" href="https://github.com/hamidousow">                           
                             <i class="devicon-github-original"></i>
                         </a>
-                    </li> 
+                    </li>
                     <li>
                         <a class="iconMedia" href="https://www.linkedin.com/in/hamidou-sow-6725a5b0/">
                             <i class="devicon-linkedin-plain"></i>
-                        </a>                  
+                        </a>
                     </li>
-                </ul>            
+                                            
+                    
+                </ul>
             </div>
-        </div>
-    </footer>
-    
+        </aside>
+        <header id="home" class="heroSection">
+            <div class="content">
+                <div class="leftContent">
+                    <h1 class="bigTitle">
+                    <span class="gradient-title"> Hello. </span>
+                    <br>Je suis Hamidou</h1>
+                    <p class="text">Développeur Fullstack</p>
+                </div>
+                <div class="rightContent">
+                    <img src="images/pp-min.png" class="heroImg" alt="Hamidou SOW">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <Section class="section" id="about">
+                <div class="wrapTitles">
+                    <h2 class="bigTitle">À propos</h2>
+                    <span class="bigOutlineTitle outlines">À propos</span>
+                </div>
+                
+                <div class="richText">
+                    <p class="text">
+                        Développeur à l’écoute, agile, créatif avec une appétence pour le design.
+                    </p>
+                    <br/>
+                    <p class="text">
+                        Je suis à la recherche d’une première expérience significative au poste de développeur fullstack en intégrant une équipe qui me permettra de monter en compétences sur les technologies en vogue à travers divers projets.
+                    </p>
+                    <br/>
+                    <p class="text">                   
+                        Je suis disponible dès le mois de juin pour un poste de développeur fullstack, ouvert à des propositions de frontend et de backend.
+                    </p>
+                </div>
+            </Section> 
+            <Section class="section" id="experiences">
+                <div class="content">
+                    <div class="wrapTitles">
+                        <h2 class="bigTitle">expériences</h2>
+                        <span class="bigOutlineTitle outlines">expériences</span>
+                    </div>
+                    
+                    <div id="experienceContainer" class="articles"> </div> 
+                </div>                            
+            </Section>
+            <Section class="section" id="work">
+                <div class="content">
+                    <div class="wrapTitles">
+                        <h2 class="bigTitle">projets</h2>
+                        <span class="bigOutlineTitle outlines">projets</span>
+                    </div>
+                    <div class="containerCards">
+                        <div class="card" data-component="card">
+                            <a href="https://hamidousow.github.io/bootcamp-coding-slider/" class="blockLink" target="_blank" rel="noreferrer">
+                                <div class="card__header">
+                                    <img class="card__img" src="images/young-coding.jpg" alt="young coding"/>
+                                </div>
+                                <div class="card__body">
+                                    <!-- <p class="projectNumber outlines"> 01 </p> -->
+                                    <div class="card__project__description">
+                                        <h3 class="card__title">Bootcamp slider</h3>
+                                        <h4 class="card__subtitle light">frontend</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </Section> 
+            <Section class="section" id="formations">
+                <div class="content">
+                    <div class="wrapTitles">
+                        <h2 class="bigTitle">formations</h2>
+                        <span class="bigOutlineTitle outlines">formations</span>
+                    </div>
+                    
+                    <div id="formationContainer" class="articles"> </div> 
+                </div>                            
+            </Section>
+            <Section class="section" id="outils">
+                <div class="content">
+                    <div class="wrapTitles">
+                        <h2 class="bigTitle title-outil">outils</h2>
+                        <span class="bigOutlineTitle outlines">outils</span>
+                    </div>
+                    <div class="outils-container" id="outils-main-container">
+                        
+                    </div> 
+                </div>               
+            </Section> 
+            <Section class="section" id="contact">
+                <div class="content">
+                    <div class="wrapTitles">
+                        <h2 class="bigTitle">contact</h2>
+                        <span class="bigOutlineTitle outlines">contact</span>
+                    </div>
+                    <div class="leftContent">                
+                        <p class="text">
+                            Des questions ? Contactez moi, je suis disponible.
+                        </p>
+                    </div>
+        
+                    <div class="containerButton">                
+                        <a id="button" class="button" href="mailto:hamidou.sow@hotmail.fr"> me contacter</a>                   
+                    </div>                                                       
+                </div>               
+            </Section> 
+        </main>
+        <footer class="section">
+            <div class="content">
+                <div class="socialMediaIcons">
+                    <ul class="containerIcons"> 
+                        <li>
+                            <a class="iconMedia" href="https://github.com/hamidousow">                            
+                                <i class="devicon-github-original"></i>
+                            </a>
+                        </li> 
+                        <li>
+                            <a class="iconMedia" href="https://www.linkedin.com/in/hamidou-sow-6725a5b0/">
+                                <i class="devicon-linkedin-plain"></i>
+                            </a>                  
+                        </li>
+                    </ul>            
+                </div>
+            </div>
+        </footer>
+    </div>    
     
     <script src="script/index.js"></script>
     
