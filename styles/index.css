@@ -13,6 +13,7 @@
   --clr-cyan: #54c4c2;
   --clr-purple: #5726a7;
   --clr-yellow: #dfc349;
+  --svg-black: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg) brightness(99%) contrast(94%);
 }
 
 .dark-mode {
@@ -23,6 +24,7 @@
   --clr-cyan: #54c4c2;
   --clr-purple: #6c36c1;
   --clr-yellow: #dfc349;
+  --svg-black: invert(95%) sepia(0%) saturate(0%) hue-rotate(97deg) brightness(90%) contrast(103%);
 }
 
 .slider-mode input[type="checkbox"].btnSwitchMode {
@@ -235,10 +237,8 @@ body .App {
   height: 25px;
   cursor: pointer;
   padding: .5em 0;
-}
-
-.navigation #nav__logo img path {
-  fill: red;
+  -webkit-filter: var(--svg-black);
+          filter: var(--svg-black);
 }
 
 @media screen and (min-width: 768px) {
