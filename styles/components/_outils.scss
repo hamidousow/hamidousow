@@ -1,15 +1,33 @@
 #outils .outils-container {  
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px; 
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);    
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
     justify-items: center;  
-    align-items: center;     
+    align-items: center;
+    background: var(--clr-lighterblack);   
+    padding: 1.5rem;
+    border-radius: 1.5rem;
 
     .logo_tech {
-        width: 100%;
-        max-width: 50px;
+        width: auto;
+        max-height: 25px;
     }
+    
+    @media screen and (min-width: 768px) {        
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+
+        .logo_tech {
+            width: auto;
+            max-height: 50px;
+        }
+    }
+
+    
 }
 

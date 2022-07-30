@@ -1,24 +1,25 @@
 // colors 
-:root {
-    --clr-black: #15181f;
-    --clr-grey: #dddddd;
-    --clr-green: #54c47d;
-    --clr-cyan: #54c4c2;
-    --clr-purple: #bd54c5;
-    --clr-yellow: #dfc349;
-}
-
 #site, .navigation {
     transition: .7s;
 }
 
+:root {
+    --clr-black: #15181f;
+    --clr-lighterblack: #00000019;    
+    --clr-grey: #dddddd;
+    --clr-green: #399259;
+    --clr-cyan: #54c4c2;
+    --clr-purple: #5726a7;
+    --clr-yellow: #dfc349;
+}
+
 .dark-mode {       
     --clr-black: #dddddd;
+    --clr-lighterblack: #222632;
     --clr-grey: #15181f;
-    --clr-lightblack: #1b1f28;
     --clr-green: #54c47d;
     --clr-cyan: #54c4c2;
-    --clr-purple: #bd54c5;
+    --clr-purple: #6c36c1;
     --clr-yellow: #dfc349;    
 }
 
@@ -40,7 +41,7 @@
         height: 1.6rem;
         padding: 2px;
         border-radius:20px;
-        background: var(--clr-lightblack);
+        background: var(--clr-grey);
         border: 1px solid var(--clr-black);
         transition: all .4s;
         
@@ -54,14 +55,13 @@
         content: "☼";        
         height: calc(1.5rem - 5px);
         width: calc(1.5rem - 5px);
-        border-radius: 50%;
-        background-color: var(--clr-black);
+        border-radius: 50%;       
+        background-color: #dddddd;
         transition: all .4s;
     }    
 
     input[type="checkbox"].btnSwitchMode:checked + label {
-        background-color: var(--clr-grey);
-                
+        background-color: var(--clr-grey);                
     }
 
     input[type="checkbox"].btnSwitchMode:checked + label::before {
@@ -70,12 +70,13 @@
         justify-content: center;
         align-items: center;
         content: "☾";
-        color: var(--clr-grey);               
+        color: var(--clr-black); 
+        background-color: var(--clr-grey);              
     }   
 }
 
 .heroSection.bigTitle, .bigTitle, .containerButton, .card__title {
-    color: var(--clr-green);
+    color: var(--clr-black);
 }
 
 .text, .card__subtitle, .outlines, .linkNav, .button:hover, .iconMedia {
@@ -107,7 +108,7 @@ $text-size: clamp(12px, 2vw, 17px);
 $smallText: clamp(11px, 2vw, 15px);
 $bigNumber: clamp(20px, 7vw, 70px);
 $callToAction: clamp(11px, 1vw, 16px);
-$bigOutlineTitle: clamp(35px, 10vw, 200px);
+ $bigOutlineTitle: clamp(35px, 10vw, 200px);
 
 //fonts weight
 $light: 300;
@@ -138,12 +139,11 @@ body {
         text-transform: uppercase;
         font-size: $bigOutlineTitle;
         left: 45px;
-        z-index: -1;
+        z-index: 0;
     }
 }
 
 .bigTitle {
-    // color: --clr-green;
     font-size: $bigTitle;
     font-weight: 900;
     text-transform: uppercase;
@@ -151,7 +151,7 @@ body {
 }
 
 .outlines {
-    -webkit-text-stroke-width: .3px;    
+    -webkit-text-stroke: 1px var(--clr-black);    
     font-weight: bold;
     color: transparent; 
     z-index: 1; 
