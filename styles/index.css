@@ -13,16 +13,18 @@
   --clr-cyan: #54c4c2;
   --clr-purple: #5726a7;
   --clr-yellow: #dfc349;
+  --svg-black: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg) brightness(99%) contrast(94%);
 }
 
 .dark-mode {
   --clr-black: #dddddd;
   --clr-lighterblack: #222632;
   --clr-grey: #15181f;
-  --clr-green: #54c47d;
+  --clr-green: #399259;
   --clr-cyan: #54c4c2;
   --clr-purple: #6c36c1;
   --clr-yellow: #dfc349;
+  --svg-black: invert(95%) sepia(0%) saturate(0%) hue-rotate(97deg) brightness(90%) contrast(103%);
 }
 
 .slider-mode input[type="checkbox"].btnSwitchMode {
@@ -88,19 +90,19 @@
   color: var(--clr-black);
 }
 
-.text, .card__subtitle, .outlines, .linkNav, .button:hover, .iconMedia {
+.text, .card__subtitle, .outlines, .nav__link, .button:hover, .iconMedia {
   color: var(--clr-grey);
 }
 
-.linkNav:hover {
+.nav__link:hover {
   color: var(--clr-green);
 }
 
-#site, .navigation, .navigation.active, .menuMobile, .linkNav:hover {
+#site, .navigation, .navigation.active, .menuMobile, .nav__link:hover {
   background: var(--clr-grey);
 }
 
-.text, .linkNav, .bigOutlineTitle {
+.text, .nav__link, .bigOutlineTitle {
   color: var(--clr-black);
 }
 
@@ -235,10 +237,8 @@ body .App {
   height: 25px;
   cursor: pointer;
   padding: .5em 0;
-}
-
-.navigation #nav__logo img path {
-  fill: red;
+  -webkit-filter: var(--svg-black);
+          filter: var(--svg-black);
 }
 
 @media screen and (min-width: 768px) {
@@ -261,14 +261,14 @@ body .App {
   display: none;
 }
 
-#nav__logo, .linkNav {
+#nav__logo, .nav__link {
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
 }
 
-.linkNav {
-  font-weight: 300;
+.nav__link {
+  font-weight: 500;
   font-size: clamp(12px, 1vw, 16px);
   padding: .5em;
   position: relative;
@@ -421,10 +421,12 @@ body .App {
   border: hidden;
   padding: 1em 1.5em;
   text-transform: uppercase;
-  color: var(--clr-grey);
+  color: var(--clr-black);
   background: var(--clr-green);
+  border: 1px solid var(--clr-green);
+  font-weight: 500;
   text-align: center;
-  font-size: .7em;
+  font-size: .9em;
   letter-spacing: 1px;
   cursor: pointer;
   border-radius: 5px;
@@ -433,7 +435,10 @@ body .App {
 }
 
 .contact__button:hover {
-  background: var(--clr-purple);
+  color: var(--clr-green);
+  background: transparent;
+  border: 1px solid var(--clr-green);
+  font-weight: 500;
 }
 
 @media screen and (min-width: 768px) {
@@ -933,9 +938,17 @@ footer .container-icons-social {
 
 footer .footer__icon-social {
   width: 35px;
+  opacity: .8;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+footer .footer__icon-social:hover {
+  opacity: 1;
 }
 
 footer #github-icon {
-  fill: var(--clr-grey);
+  -webkit-filter: var(--svg-black);
+          filter: var(--svg-black);
 }
 /*# sourceMappingURL=index.css.map */

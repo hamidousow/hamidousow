@@ -11,16 +11,18 @@
     --clr-cyan: #54c4c2;
     --clr-purple: #5726a7;
     --clr-yellow: #dfc349;
+    --svg-black: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg) brightness(99%) contrast(94%);
 }
 
 .dark-mode {       
     --clr-black: #dddddd;
     --clr-lighterblack: #222632;
     --clr-grey: #15181f;
-    --clr-green: #54c47d;
+    --clr-green: #399259;
     --clr-cyan: #54c4c2;
     --clr-purple: #6c36c1;
-    --clr-yellow: #dfc349;    
+    --clr-yellow: #dfc349; 
+    --svg-black: invert(95%) sepia(0%) saturate(0%) hue-rotate(97deg) brightness(90%) contrast(103%);   
 }
 
 // .slide-mode-desktop {
@@ -79,19 +81,19 @@
     color: var(--clr-black);
 }
 
-.text, .card__subtitle, .outlines, .linkNav, .button:hover, .iconMedia {
+.text, .card__subtitle, .outlines, .nav__link, .button:hover, .iconMedia {
     color: var(--clr-grey);
 }
 
-.linkNav:hover {
+.nav__link:hover {
     color: var(--clr-green);
 }
 
-#site, .navigation, .navigation.active, .menuMobile, .linkNav:hover  {        
+#site, .navigation, .navigation.active, .menuMobile, .nav__link:hover  {        
     background: var(--clr-grey);
 }
 
-.text, .linkNav, .bigOutlineTitle {
+.text, .nav__link, .bigOutlineTitle {
     color: var(--clr-black);
 }
 

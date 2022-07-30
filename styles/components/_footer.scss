@@ -14,9 +14,15 @@ footer {
 
      .footer__icon-social {
         width: 35px;
+        opacity: .8;
+        transition: all .4s;
+
+        &:hover {
+            opacity: 1;
+        }
     }
     
     #github-icon {
-        fill: var(--clr-grey);
+        filter: var(--svg-black);
     }
 }
