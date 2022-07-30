@@ -169,7 +169,7 @@ let createArticle = (item, container) => {
         title.setAttribute('class', "bold expTitle text");
         title.innerHTML = item[i].title;  
 
-        subtitle.setAttribute('class', "lieu text italic light");
+        subtitle.setAttribute('class', "lieu text italic");
         subtitle.innerHTML = item[i].subtitle; 
         
         taskDescription.setAttribute('class', "description text");

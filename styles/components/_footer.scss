@@ -1,0 +1,22 @@
+footer {
+    background: var(--clr-lighterblack);    
+    margin-bottom: 0;  
+    
+    .section {
+        margin-bottom: 0;
+    }
+
+    .container-icons-social {
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 2em;
+    }
+
+     .footer__icon-social {
+        width: 35px;
+    }
+    
+    #github-icon {
+        fill: var(--clr-grey);
+    }
+}

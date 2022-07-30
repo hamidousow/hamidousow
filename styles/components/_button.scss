@@ -5,31 +5,30 @@
     flex-grow: 1;
     justify-content: center;
     column-gap: 4em; 
-    margin: 3em 0;    
-    // background: --clr-green;
-    // color: --clr-black;      
+    margin: 3em 0;         
 }
 
-.button {
+.contact__button {
     border: hidden;
     padding: 1em 1.5em;
     text-transform: uppercase;
+    color: var(--clr-grey);
+    background: var(--clr-green);
     text-align: center;    
     font-size: .7em;
     letter-spacing: 1px;
-    // color: --clr-green;
-    background: transparent;    
+    
     cursor: pointer;
     border-radius: 5px;
+    transition: all .4s;
+
+    &:hover {
+        background: var(--clr-purple);
+    }
 }
 
 @media screen and(min-width: 768px) {
     .button {        
         letter-spacing: 1px;       
-        transition: .5s all;
-
-        &:hover {           
-            font-weight: 500;          
-        }
     }
 }
