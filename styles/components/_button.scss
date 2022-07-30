@@ -12,8 +12,9 @@
     border: hidden;
     padding: 1em 1.5em;
     text-transform: uppercase;
-    color: var(--clr-grey);
+    color: var(--clr-black);
     background: var(--clr-green);
+    border: 1px solid var(--clr-green);
     text-align: center;    
     font-size: .7em;
     letter-spacing: 1px;
@@ -23,7 +24,11 @@
     transition: all .4s;
 
     &:hover {
-        background: var(--clr-purple);
+        color: var(--clr-green);
+        background: transparent;
+        border: 1px solid var(--clr-green); 
+             
+        transform: scale(1.1, 1.1);      
     }
 }
 

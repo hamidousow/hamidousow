@@ -421,8 +421,9 @@ body .App {
   border: hidden;
   padding: 1em 1.5em;
   text-transform: uppercase;
-  color: var(--clr-grey);
+  color: var(--clr-black);
   background: var(--clr-green);
+  border: 1px solid var(--clr-green);
   text-align: center;
   font-size: .7em;
   letter-spacing: 1px;
@@ -433,7 +434,11 @@ body .App {
 }
 
 .contact__button:hover {
-  background: var(--clr-purple);
+  color: var(--clr-green);
+  background: transparent;
+  border: 1px solid var(--clr-green);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 @media screen and (min-width: 768px) {
@@ -936,6 +941,7 @@ footer .footer__icon-social {
 }
 
 footer #github-icon {
-  fill: var(--clr-grey);
+  -webkit-filter: var(--svg-black);
+          filter: var(--svg-black);
 }
 /*# sourceMappingURL=index.css.map */
