@@ -90,19 +90,19 @@
   color: var(--clr-black);
 }
 
-.text, .card__subtitle, .outlines, .linkNav, .button:hover, .iconMedia {
+.text, .card__subtitle, .outlines, .nav__link, .button:hover, .iconMedia {
   color: var(--clr-grey);
 }
 
-.linkNav:hover {
+.nav__link:hover {
   color: var(--clr-green);
 }
 
-#site, .navigation, .navigation.active, .menuMobile, .linkNav:hover {
+#site, .navigation, .navigation.active, .menuMobile, .nav__link:hover {
   background: var(--clr-grey);
 }
 
-.text, .linkNav, .bigOutlineTitle {
+.text, .nav__link, .bigOutlineTitle {
   color: var(--clr-black);
 }
 
@@ -261,14 +261,14 @@ body .App {
   display: none;
 }
 
-#nav__logo, .linkNav {
+#nav__logo, .nav__link {
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
 }
 
-.linkNav {
-  font-weight: 300;
+.nav__link {
+  font-weight: 500;
   font-size: clamp(12px, 1vw, 16px);
   padding: .5em;
   position: relative;

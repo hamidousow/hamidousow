@@ -49,23 +49,18 @@
     }    
 }
 
-#nav__logo, .linkNav {
+#nav__logo, .nav__link {
     text-transform: uppercase;
     letter-spacing: $space2;
     cursor: pointer;
 }
 
-.linkNav {
-    // color: --clr-grey;
-    font-weight: $light;
+.nav__link {    
+    font-weight: $regular;
     font-size: clamp(12px, 1vw, 16px);
     padding: .5em;
     position: relative;
-    transition: .5s all;   
-
-    // &:hover {
-    //     color: --clr-green;
-    // }    
+    transition: .5s all;
 }
 
 .menuMobile, .menu.active {

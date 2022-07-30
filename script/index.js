@@ -70,7 +70,7 @@ window.addEventListener('scroll', setNavOpacity);
 
 let btnBurger = document.getElementById("btnBurger");
 let menuMobile = document.getElementById("menuMobile");
-let linkNav = document.querySelectorAll("#menuMobile .linkNav");
+let nav__link = document.querySelectorAll("#menuMobile .nav__link");
 
 let toggleMenu = () => {
     menuMobile.classList.toggle("active");
@@ -81,7 +81,7 @@ btnBurger.addEventListener('click', toggleMenu);
 /**
  * when the mobile menu is open, event click on a link close it
  */
-for(let link of linkNav){
+for(let link of nav__link){
     link.addEventListener('click', () => {     
         toggleMenu();
     });
