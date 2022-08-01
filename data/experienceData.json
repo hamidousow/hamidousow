@@ -1,14 +1,6 @@
 [
     {   
         "id": 1,        
-        "year": "2022",
-        "month": "Avril / Mai",        
-        "title" : "INSY2S",
-        "subtitle": "Développeur Web Fullstack Stagiaire",
-        "taskDescription": "• Analyse des besoins du client • Brainstorming •  Conception d’application web • Développement d’application web •  Versionning de code avec GIT"       
-    },
-    {   
-        "id": 2,        
         "year": "2021",
         "month": "Septembre / Octobre",
         "title" : "Ayoub ABARJI",          

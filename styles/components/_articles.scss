@@ -14,7 +14,7 @@
         margin-bottom: .7em;
     } 
     
-    .articles__article {
+    .exp__article, .formation__article {
         display: grid;
         grid-template-columns: 1fr 2fr; 
         column-gap: .5em;       

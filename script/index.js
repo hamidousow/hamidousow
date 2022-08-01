@@ -1,53 +1,4 @@
 /**
- * switch mode
- */
-// let btnSwitchMode = document.querySelectorAll("input[name=switchMode]");
-let btnSwitchMode = document.getElementById("btnSwitchMode");
-let btnActiveDarkMode = document.querySelector("#dark-mode");
-let btnActiveDefaultMode = document.querySelector("#light-mode");
-let body = document.getElementsByTagName("body");
-
-
-    btnSwitchMode.addEventListener("click", () => {        
-        document.getElementById("site").classList.toggle("dark-mode");
-    }) 
-
-
-
-/** 
- * fetch the json file into 
- */
-let card = document.querySelector(".card");
-let card__img = document.querySelector(".card__img");
-let cardTitle = document.querySelector(".card__title");
-let card__subtitle = document.querySelector(".card__subtitle");
-let projectLink = document.querySelector(".blockLink");
-
-let cardData = fetch("../data/projectData.json")
-    .then(response => {
-        return response.json()
-    })
-    .then(data => createNewNode(data))
-
-    /**
-     * 
-     * @param {*} item correspond to the object passing 
-     */
-let createNewNode = (item) => {
-    let newCard;
-
-    for(let i = 0; i < item.length; i++) {        
-        newCard = card.cloneNode(true);       
-        cardTitle.innerHTML = item[i].content.title.text;
-        card__subtitle.innerHTML = item[i].content.subtitle.text;
-        card__img.src = item[i].content.background.source;
-        projectLink.href = item[i].content.link;        
-    }
-    
-    card.after(newCard)    
-}
-
-/**
  * set navigation opacity when scrolling the page from the top, 
  * by adding the class "active" to the nav classlist
  */
@@ -61,26 +12,24 @@ let setNavOpacity = () => {
     }
 }
 
-window.addEventListener('scroll', setNavOpacity);
-
+window.addEventListener('scroll', setNavOpacity); 
 
 /**
  * open/close aside menu on mobile devices 
  */
 
-let btnBurger = document.getElementById("btnBurger");
-let menuMobile = document.getElementById("menuMobile");
-let nav__link = document.querySelectorAll("#menuMobile .nav__link");
 
 let toggleMenu = () => {
-    menuMobile.classList.toggle("active");
+    document.getElementById("menuMobile").classList.toggle("active");
 }
 
-btnBurger.addEventListener('click', toggleMenu);
+document.getElementById("btnBurger").addEventListener('click', toggleMenu);
 
 /**
  * when the mobile menu is open, event click on a link close it
  */
+let nav__link = document.querySelectorAll("#menuMobile .nav__link");
+
 for(let link of nav__link){
     link.addEventListener('click', () => {     
         toggleMenu();
@@ -88,38 +37,101 @@ for(let link of nav__link){
 };
 
 /**
- * outils section fetching
- */ 
+ * switch mode
+ */
+document.getElementById("btnSwitchMode").addEventListener("click", () => {        
+    document.getElementById("site").classList.toggle("dark-mode");
+}) 
 
-let outilMainContainer = document.getElementById("outils-main-container");
+/** fetch local data */
+
+let cardData = fetch("../data/projectData.json")
+    .then(response => {
+        return response.json()
+    })
+    .then(data => createNewNode(data))
 
 let outilsData = fetch("../data/outilsData.json")
-                    .then(response => {
-                        return response.json();
-                    })
-                    .then(data =>                        
-                        createOutil(data)                                              
-                    );
+    .then(response => {
+        return response.json();
+    })
+    .then(data =>                        
+        createOutil(data)                                              
+    );
 
-let experience = fetch("../data/experienceData.json")
-                    .then(response => {
-                        return response.json();
-                    })
-                    .then(data => 
-                        createArticle(data, tabOfContainer[0]))
+let experienceData = fetch("../data/experienceData.json")
+    .then(response => {
+        return response.json();
+        
+    })
+    .then(data =>                        
+        createExperienceArticle(data)                                         
+    );
 
 let formation = fetch("../data/formationData.json")
-                        .then(response => {
-                            return response.json();
-                        })
-                        .then(data => 
-                            createArticle(data, tabOfContainer[1]))
+    .then(response => {
+        return response.json();        
+    })
+    .then(data =>                        
+        formationNewData = createFormationArticle(data)                                                
+    );
+
+/* FUNCTIONS */
+
+let article = document.querySelector(".exp__article");
+
+let createExperienceArticle = (item) => {
+    let newArticle;
+    for(let i = 0; i < item.length; i++) {         
+        newArticle = article.cloneNode(true);
+        article.setAttribute("id", item[i].id);
+        document.querySelector(".article__year").innerHTML = item[i].year;    
+        document.querySelector(".article__month").innerHTML = item[i].month;      
+        document.querySelector(".article__title").innerHTML = item[i].title;
+        document.querySelector(".article__subtitle").innerHTML = item[i].subtitle;
+        document.querySelector(".article__description").innerHTML = item[i].taskDescription;        
+        article.after(newArticle);
+    }    
+}
+
+let formationArticle = document.querySelector(".formation__article");
+let createFormationArticle = (item) => {
+    let newFormationArticle;
+    for(let i = 0; i < item.length; i++) {         
+        newFormationArticle = formationArticle.cloneNode(true);
+        formationArticle.setAttribute("id", item[i].id);
+        document.querySelector(".formation__article__year").innerHTML = item[i].year;    
+        document.querySelector(".formation__article__month").innerHTML = item[i].month;      
+        document.querySelector(".formation__article__title").innerHTML = item[i].title;
+        document.querySelector(".formation__article__subtitle").innerHTML = item[i].subtitle;
+        formationArticle.after(newFormationArticle);
+    }    
+}
+
+/** 
+ * clone card element for each iteration on the json file
+ */
+
+let card = document.querySelector(".card"); 
+let createNewNode = (item) => {
+    let newCard;
+
+    for(let i = 0; i < item.length; i++) {        
+        newCard = card.cloneNode(true);       
+        document.querySelector(".card__title").innerHTML = item[i].content.title.text;
+        document.querySelector(".card__subtitle").innerHTML = item[i].content.subtitle.text;
+        document.querySelector(".card__img").src = item[i].content.background.source;
+        document.querySelector(".blockLink").href = item[i].content.link;        
+    }
+    
+    card.after(newCard)    
+}
 
 let createOutil = (item) => {
 
     for(let i = 0; i < item.length; i++) {
         let outilImg = document.createElement('img');
-        outilMainContainer.append(outilImg);
+        document.getElementById("outils-main-container").append(outilImg);
         outilImg.setAttribute('class', "logo_tech");
         outilImg.src = item[i].src;
         outilImg.alt = item[i].alt;
@@ -127,55 +139,6 @@ let createOutil = (item) => {
 }
 
 
-/**
- * formation and exp fetching
- */
-
-let formationMainContainer =  document.getElementById("formationContainer");
-let experienceMainContainer = document.getElementById("experienceContainer");
-const tabOfContainer = [experienceMainContainer, formationMainContainer];
-
-let createArticle = (item, container) => {
-    for(let i = 0; i < item.length; i++) {
-        let article = document.createElement("article");    
-        container.append(article);
-        article.setAttribute('class', "articles__article");
-
-        let period = document.createElement("div");    
-        container.append(period);
-        period.setAttribute('class', "period");
-
-        let details = document.createElement("div");
-        container.append(details);
-        details.setAttribute('class', "details");
-
-        let title  = document.createElement('h3');
-        let subtitle = document.createElement('h4');
-        let year = document.createElement('p');
-        let month = document.createElement('p');
-        
-        let taskDescription = document.createElement('p');
-
-        article.append(period,details);
-        period.append(year, month);
-        details.append(title, subtitle, taskDescription);
-
-        year.setAttribute('class', "periode text");
-        year.innerHTML = item[i].year; 
-        
-        month.setAttribute('class', "periode text");
-        month.innerHTML = item[i].month; 
-
-        title.setAttribute('class', "bold expTitle text");
-        title.innerHTML = item[i].title;  
-
-        subtitle.setAttribute('class', "lieu text italic");
-        subtitle.innerHTML = item[i].subtitle; 
-        
-        taskDescription.setAttribute('class', "description text");
-        taskDescription.innerHTML = item[i].taskDescription;                                      
-    }      
-}
 
 
 
