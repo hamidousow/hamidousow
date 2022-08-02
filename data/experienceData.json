@@ -5,7 +5,7 @@
         "month": "Septembre / Octobre",
         "title" : "Ayoub ABARJI",          
         "subtitle": "Développeur Web Stagiaire",        
-        "taskDescription": "• Analyse des besoins du client • Brainstorming • Intégration et développement de site internet avec ReactJs • Design de site internet sur figma"             
+        "taskDescription": "• Intégration et développement de site internet avec ReactJs • Analyse des besoins du client • Brainstorming • Design de site internet sur figma"             
     },
 
     {
@@ -13,8 +13,8 @@
         "year": "2021",
         "month": "Janvier / Juillet",
         "title" : "BGE Tourcoing - Bee Sow Design (projet entrepreneurial)",
-        "subtitle": "Web Designer Freelance",        
-        "taskDescription": "• Analyse des besoins du client • Étude de la concurrence • Conception de logo • Design de site internet • Intégration de maquette"             
+        "subtitle": "Projet freelance Webdesigner",        
+        "taskDescription": "• Étude de la concurrence • Conception de logo • Design de site internet • Intégration de maquette • Analyse des besoins du client"             
     },
 
     {
@@ -23,7 +23,7 @@
         "month": "Mai / Juillet",
         "title": "MJC Virolois, Tourcoing",
         "subtitle": "Web Designer Stagiaire",
-        "taskDescription": "• Analyse des besoins du client • Design de site internet • Refonte du site internet de l’association"       
+        "taskDescription": "• Design de site internet • Refonte du site internet de l’association • Analyse des besoins du client • Étude de la concurrence"       
     }    
 ]
 
