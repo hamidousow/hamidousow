@@ -1,11 +1,16 @@
 # Welcome to hamidousow.fr
 
 ## What is hamidousow.fr
+My name is Hamidou Sow, Im a fullstack web developper, and this is my resume and portfolio. 
+So by following this link you'll able to see :
+> - my experiences
+> - my personal project
 
-Its [Hamidou Sow]'s resume and portfolio. So by following this link you'll able to see my experiences and my personal projects, and others fun things about my career.
+and others fun things about my career.
 
-Here is the #link to it **https:www.hamidousow.fr**
+## Discover my website
+Here is the #link to it [hamidousow.fr](https:www.hamidousow.fr)
 
-So I hope you will enjoy !! 
+*** So I hope you will enjoy !! ***
 
-Oh and if you can give me feedback, I will be happy :) 
+Oh and if you can give me feedback <hamidou.sow@hotmail.fr> , I will be happy :) 
