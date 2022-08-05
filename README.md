@@ -1,7 +1,7 @@
-# Hello, my name is Hamidou, Im a fullstack web developper
+# Hello, my name is Hamidou
 
 ## What is hamidousow.fr
-This is my resume and portfolio. 
+Im a fullstack web developper and this is my resume and portfolio. 
 So by following this [link](https://hamidousow.fr/) you'll able to see :
 > - my experiences
 > - my personal projects
