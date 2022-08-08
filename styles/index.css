@@ -13,6 +13,7 @@
   --clr-cyan: #54c4c2;
   --clr-purple: #5726a7;
   --clr-yellow: #dfc349;
+  --clr-white: #ffffff;
   --svg-black: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg) brightness(99%) contrast(94%);
 }
 
@@ -86,7 +87,7 @@
   background-color: var(--clr-grey);
 }
 
-.heroSection.bigTitle, .bigTitle, .containerButton, .card__title {
+.heroSection.bigTitle, .bigTitle, .contact__link, .card__title {
   color: var(--clr-black);
 }
 
@@ -396,49 +397,91 @@ body .App {
           column-gap: .5em;
 }
 
-.containerButton {
+.contact__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-column-gap: 4em;
           column-gap: 4em;
   margin: 3em 0;
 }
 
-.contact__button {
+@media screen and (min-width: 568px) {
+  .contact__links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 1em;
+            column-gap: 1em;
+    row-gap: 0;
+  }
+}
+
+.contact__link {
   border: hidden;
+  width: 175px;
+  max-width: 200px;
   padding: 1em 1.5em;
   text-transform: uppercase;
-  color: var(--clr-black);
+  color: var(--clr-white);
   background: var(--clr-green);
-  border: 1px solid var(--clr-green);
-  font-weight: 500;
+  font-weight: 300;
   text-align: center;
-  font-size: .9em;
-  letter-spacing: 1px;
+  font-size: .7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.7rem;
+          column-gap: 0.7rem;
   cursor: pointer;
   border-radius: 5px;
   -webkit-transition: all .4s;
   transition: all .4s;
+  opacity: 1;
 }
 
-.contact__button:hover {
-  color: var(--clr-green);
-  background: transparent;
-  border: 1px solid var(--clr-green);
-  font-weight: 500;
+@media screen and (min-width: 568px) {
+  .contact__link {
+    opacity: 7;
+  }
+}
+
+.contact__link:hover {
+  opacity: 1;
+}
+
+.contact__link .contact__link__icon {
+  width: 12px;
+}
+
+#email {
+  background: #0072c5;
+}
+
+#github {
+  background: #000000;
+}
+
+#linkedin {
+  background: #0961b8;
 }
 
 @media screen and (min-width: 768px) {

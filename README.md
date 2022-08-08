@@ -9,7 +9,7 @@ So by following this link you'll able to see :
 and others fun things about my career.
 
 ## Discover my website
-Here is the #link to it [hamidousow.fr](https:www.hamidousow.fr)
+Here is the #link to it **[hamidousow.fr](https:www.hamidousow.fr)**.
 
 *** So I hope you will enjoy !! ***
 
