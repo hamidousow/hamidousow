@@ -11,6 +11,7 @@
     --clr-cyan: #54c4c2;
     --clr-purple: #5726a7;
     --clr-yellow: #dfc349;
+    --clr-white: #ffffff;
     --svg-black: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg) brightness(99%) contrast(94%);
 }
 
@@ -77,7 +78,7 @@
     }   
 }
 
-.heroSection.bigTitle, .bigTitle, .containerButton, .card__title {
+.heroSection.bigTitle, .bigTitle, .contact__link, .card__title {
     color: var(--clr-black);
 }
 
