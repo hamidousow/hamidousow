@@ -40,7 +40,9 @@ for(let link of nav__link){
  * switch mode
  */
 document.getElementById("btnSwitchMode").addEventListener("click", () => {        
-    document.getElementById("site").classList.toggle("dark-mode");
+    document
+        .getElementById("site")
+        .classList.toggle("dark-mode");
 }) 
 
 /** fetch local data */
