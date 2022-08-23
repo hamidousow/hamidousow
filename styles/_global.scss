@@ -1,6 +1,15 @@
 // colors 
+
+html {
+    scroll-behavior: smooth;
+}
+
 #site, .navigation {
     transition: .7s;
+}
+
+#site {    
+    max-width: 1900px;
 }
 
 :root {
