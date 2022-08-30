@@ -20,9 +20,8 @@
             "background": {
                 "className": "card__img",
                 "source": "../images/young-coding.jpg",
-                "alt": "team working on computer in the same place"
+                "alt": "projet slider bootcamp coding"
             },
-
             "link": "https://hamidousow.github.io/bootcamp-coding-slider/"
         }
     },   
@@ -47,7 +46,7 @@
             "background": {
                 "className": "card__img",
                 "source": "../images/pricing-bg.jpg",
-                "alt": "de l'argent et une calculatrice"
+                "alt": "projet pricing component"
             },
 
             "link": "https://hamidousow.github.io/interactive-pricing-component/"
