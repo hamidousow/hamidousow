@@ -66,7 +66,8 @@ let createNewNode = (item) => {
         document.querySelector(".card__title").innerHTML = item[i].content.title.text;
         document.querySelector(".card__subtitle").innerHTML = item[i].content.subtitle.text;
         document.querySelector(".card__img").src = item[i].content.background.source;
-        document.querySelector(".blockLink").href = item[i].content.link;        
+        document.querySelector(".card__img").alt = item[i].content.background.alt;
+        document.querySelector(".blockLink").href = item[i].content.link;      
     }
     
     card.after(newCard)    
