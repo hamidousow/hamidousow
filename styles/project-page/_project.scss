@@ -1,0 +1,64 @@
+// @import '../global';
+
+#project-header.heroSection {
+    padding: 0 4em;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;    
+    position: relative; 
+    height: 90vh;  
+}
+
+#project-header .content {
+    height: 100%;
+    display: flex;
+    align-items: center;    
+}
+
+#project-header .header__title {
+    z-index: 1;    
+}
+
+#project-header .header__img {
+    position: absolute;
+    height: 90vh;
+    width: 60%;
+    right: 0;
+    top: 0;
+    background-image: url('../../images/young-coding.jpg');
+    background-size: cover;
+    filter: brightness(.7);
+    z-index: 0;
+}
+
+.project__link {
+    height: 100%;
+    width: 100%;
+    max-height: 450px;
+    max-width: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+    align-self: center;
+
+    .project__link__img {
+        width: 100%;
+        width: 100%;
+        transform: scale(1);
+        filter: saturate(0.5);
+        transition: all .6s;
+        &:hover {
+            transform: scale(1.1);
+            filter: saturate(0.8);
+            // transition: all .6s;
+        }
+        
+    }    
+}
+
+#project-live-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+
+

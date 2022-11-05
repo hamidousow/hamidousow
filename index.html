@@ -16,73 +16,43 @@
 <body>
     <div id="site" class="light-mode">
         <nav class="navigation" id="nav-desktop">
-            <div id="navContent">
-                <div id="nav__logo">
+            <div class="navigation__content">
+                <div class="navigation__logo"  id="navigation__logo">
                     <a href="#">
                         <img src="images/hamidousow-logo.svg" alt="logo Hamidou sow">
                     </a>                
                 </div>                
-                <div class="slider-mode">
+                <div class="navigation__switch-mode">
                     <input type="checkbox" id="btnSwitchMode" class="btnSwitchMode">
                     
                     <label for="btnSwitchMode"> 
                     </label>
                 </div>
-                <span id="btnBurger"></span>
-                <ul id="menuDesktop" class="menu">
+                <span id="btnBurger" class="navigation__button-burger"></span>
+                <ul id="navigation__menu" class="navigation__menu">
                     <li>
-                        <a class="nav__link" href="#about">À propos</a>
+                        <a class="navigation__menu__link" href="#about">À propos</a>
                     </li>                    
                     <li>
-                        <a class="nav__link" href="#work">Projets</a>
+                        <a class="navigation__menu__link" href="#work">Projets</a>
                     </li>               
                     <li>
-                        <a class="nav__link" href="#contact">Contact</a>
+                        <a class="navigation__menu__link" href="#contact">Contact</a>
                     </li>
                 </ul>
                 
             </div>
         </nav>
-        <aside class="menuMobile" id="menuMobile">
-            <ul>
-                <li>
-                    <a class="nav__link" href="#">Home</a>
-                </li>
-                <li>
-                    <a class="nav__link" href="#about">À propos</a>
-                </li>
-                <li>
-                    <a class="nav__link" href="#work">Projets</a>
-                </li>
-                <li>
-                    <a class="nav__link" href="#contact">Contact</a>
-                </li>
-            </ul>
-            <div class="socialMediaIcons">
-                <ul class="containerIcons">
-                    <li>
-                        <a class="iconMedia" href="https://github.com/hamidousow">                           
-                            <i class="devicon-github-original"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="iconMedia" href="https://www.linkedin.com/in/hamidou-sow-6725a5b0/">
-                            <i class="devicon-linkedin-plain"></i>
-                        </a>
-                    </li> 
-                </ul>
-            </div>
-        </aside>
-        <header id="home" class="heroSection">
-            <div class="content">
-                <div class="leftContent">
-                    <h1 class="bigTitle">
-                    <span class="gradient-title"> Hello. </span>
+        <header id="home" class="hero">
+            <div class="hero__content">
+                <div class="hero__left">
+                    <h1 class="hero__left__big-title">
+                    <span class="hero__left__gradient-title"> Hello. </span>
                     <br>Je suis Hamidou</h1>
-                    <h2 class="text">Développeur Web Fullstack</h2>
+                    <h2 class="hero__left__text">Développeur Web Fullstack</h2>
                 </div>
-                <div class="rightContent">
-                    <img src="images/hero-img-profil.png" class="heroImg" alt="">
+                <div class="hero__right">
+                    <img src="images/hero-img-profil.png" class="hero__right__img" alt="">
                 </div>
             </div>
         </header>
@@ -91,7 +61,7 @@
             <Section class="section" id="about">
                 <div class="content">
                     <div class="wrapTitles">
-                        <h2 class="bigTitle">À propos</h2>
+                        <h2 class="section__title big-title">À propos</h2>
                         <span class="bigOutlineTitle outlines">À propos</span>
                     </div>
                     
@@ -115,12 +85,12 @@
             <Section class="section" id="work">
                 <div class="content">
                     <div class="wrapTitles">
-                        <h2 class="bigTitle">projets</h2>
+                        <h2 class="section__title big-title">projets</h2>
                         <span class="bigOutlineTitle outlines">projets</span>
                     </div>
-                    <div class="containerCards">
-                        <div class="card" data-component="card">
-                            <a href="https://hamidousow.github.io/bootcamp-coding-slider/" class="blockLink" target="_blank" rel="noreferrer">
+                    <div class="containerCards" id="container-cards-projects">
+                        <!-- <div class="card" data-component="card">
+                            <a href="https://hamidousow.github.io/bootcamp-coding-slider/" class="blockLink" target="_blank" rel="noopener noreferrer">
                                 <div class="card__header">
                                     <img class="card__img" src="images/young-coding.jpg" alt="projet slider"/>
                                 </div>
@@ -131,14 +101,14 @@
                                     </div>
                                 </div>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>                
             </Section>             
             <Section class="section" id="contact">
                 <div class="content">
                     <div class="wrapTitles">
-                        <h2 class="bigTitle">contact</h2>
+                        <h2 class="section__title big-title">contact</h2>
                         <span class="bigOutlineTitle outlines">contact</span>
                     </div>
                     <div class="leftContent">                

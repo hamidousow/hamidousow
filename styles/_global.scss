@@ -39,55 +39,7 @@ html {
 //     display: block;
 // }
 
-.slider-mode {   
-
-    input[type="checkbox"].btnSwitchMode {
-        display: none;        
-    }
-
-    input[type="checkbox"].btnSwitchMode + label {
-        position: relative;
-        box-sizing: border-box;
-        display: inline-block;
-        width: 3rem;        
-        height: 1.6rem;
-        padding: 2px;
-        border-radius:20px;
-        background: var(--clr-grey);
-        border: 1px solid var(--clr-black);
-        transition: all .4s;
-        
-    }
-
-    input[type="checkbox"].btnSwitchMode + label::before {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        content: "☼";        
-        height: calc(1.5rem - 5px);
-        width: calc(1.5rem - 5px);
-        border-radius: 50%;       
-        background-color: #dddddd;
-        transition: all .4s;
-    }    
-
-    input[type="checkbox"].btnSwitchMode:checked + label {
-        background-color: var(--clr-grey);                
-    }
-
-    input[type="checkbox"].btnSwitchMode:checked + label::before {
-        margin-left: 1.5rem; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        content: "☾";
-        color: var(--clr-black); 
-        background-color: var(--clr-grey);              
-    }   
-}
-
-.heroSection.bigTitle, .bigTitle, .contact__link, .card__title {
+.section__title, .contact__link, .card__title {
     color: var(--clr-black);
 }
 
@@ -155,7 +107,7 @@ body {
     }
 }
 
-.bigTitle {
+.big-title {
     font-size: $bigTitle;
     font-weight: 900;
     text-transform: uppercase;

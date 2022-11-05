@@ -1,149 +1,226 @@
-.navigation {    
-    display: flex;    
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    
-    #navContent {        
-        display: flex;
-        width: 100%;
+@media screen and (min-width: 320px) {
+
+    .navigation {    
+        display: flex;    
         align-items: center;
-        justify-content: space-between;
-        padding: 1em 5em;
-    }
-
-    a {
-        text-decoration: none;
-        width: fit-content;
-    }    
-
-    #nav__logo {
-        img {
-            display: block;
-            height: 25px;            
-            cursor: pointer;
-            padding: .5em 0; 
-            filter: var(--svg-black);           
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        
+        &__content {        
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1em 5em;
         }
 
-        @media screen and (min-width: 768px) {
+        &__logo {
             img {
-                height: 30px;
+                display: block;
+                height: 25px; 
+                padding: .5em 0; 
+                filter: var(--svg-black);           
+            }
+    
+            @media screen and (min-width: 768px) {
+                img {
+                    height: 30px;
+                }
             }
         }
+
+        &__switch-mode {   
+
+            input[type="checkbox"].btnSwitchMode {
+                display: none;        
+            }
+        
+            input[type="checkbox"].btnSwitchMode + label {
+                position: relative;
+                box-sizing: border-box;
+                display: inline-block;
+                width: 3rem;        
+                height: 1.6rem;
+                padding: 2px;
+                border-radius:20px;
+                background: var(--clr-grey);
+                border: 1px solid var(--clr-black);
+                transition: all .4s;
+                
+            }
+        
+            input[type="checkbox"].btnSwitchMode + label::before {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                content: "☼";        
+                height: calc(1.5rem - 5px);
+                width: calc(1.5rem - 5px);
+                border-radius: 50%;       
+                background-color: #dddddd;
+                transition: all .4s;
+            }    
+        
+            input[type="checkbox"].btnSwitchMode:checked + label {
+                background-color: var(--clr-grey);                
+            }
+        
+            input[type="checkbox"].btnSwitchMode:checked + label::before {
+                margin-left: 1.5rem; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                content: "☾";
+                color: var(--clr-black); 
+                background-color: var(--clr-grey);              
+            }   
+        }
+
+        &__menu {            
+            display: none;
+            // gap: 3em; 
+            animation: dropMenu .5s ease-in;            
+
+            &-active {
+                display: flex;               
+                flex-direction: column; 
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: -10;                
+                row-gap: 2rem;   
+                padding: 2rem;        
+                background: var(--clr-grey);
+                box-shadow: $boxShadow;                
+            } 
+            
+            &__link {
+                text-decoration: none;  
+                color: var(--clr-black);
+                text-transform: uppercase;  
+                font-weight: $regular;
+                font-size: clamp(1rem, 1vw, 2rem);
+                padding: .5em;
+                transition: .5s all;
+            }
+        }   
+    
+        &__button-burger {
+            display: block;
+            position: relative;
+            height: 10px;
+            width: 40px;
+
+            &::before, &::after {
+                content: "";
+                display: block;
+                height: 3px;
+                width: 100%;
+                border-radius: 2px;
+                background-color: var(--clr-black);
+            }
+
+            &::before {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            &::after {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }            
+    } 
+    
+    //background navigation when scrolling 
+    .navigation.active {
+        box-shadow: $boxShadow;
+        // background: --clr-black;
     }
-
-    .menu {
-        display: flex;
-        gap: 3em; 
-        // flex-basis: auto;
-        // flex-grow: 1;
-        justify-content: flex-end;       
-    }    
-
-    #btnBurger {
-        display: none;
-    }    
 }
 
-#nav__logo, .nav__link {
-    text-transform: uppercase;
-    letter-spacing: $space2;
-    cursor: pointer;
+@keyframes dropMenu {
+    
+    0% {
+        height: 0;
+    } 100% {
+        height: 100vh;
+    }
 }
 
-.nav__link {    
-    font-weight: $regular;
-    font-size: clamp(12px, 1vw, 16px);
-    padding: .5em;
-    position: relative;
-    transition: .5s all;
-}
+@media screen and (min-width: 765px) {
+    .navigation {
+        &__button-burger {
+            display: none;
+        }
 
-.menuMobile, .menu.active {
-    display: none;
-}
-
-//background navigation when scrolling 
-.navigation.active {
-    box-shadow: $boxShadow;
-    // background: --clr-black;
+        &__menu {
+            position: inherit;
+            display: flex;
+            height: inherit;
+            width: auto;
+            animation: inherit;
+            background-color: inherit;
+            box-shadow: inherit;
+            // padding: inherit;
+            flex-direction: row;
+            column-gap: 2rem;            
+        } 
+    }
 }
 
 @media screen and (max-width: 992px) {    
 
     .navigation {
 
-        #navContent {
+        &__content {
             padding: 1em 2em;
-        }
+        }        
 
-        #menuDesktop {
-            display: none;
-        }
-
-        #btnBurger {
-            display: block;
-            height: 20px;
-            width: 50px;
-            position: relative;
-            cursor: pointer;
+    //     #btnBurger {
+    //         display: block;
+    //         height: 20px;
+    //         width: 50px;
+    //         position: relative;
+    //         cursor: pointer;
             
 
-            &::before, &::after {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 3px;
-                background: var(--clr-black);
-            }
+    //         &::before, &::after {
+    //             content: "";
+    //             position: absolute;
+    //             width: 100%;
+    //             height: 3px;
+    //             background: var(--clr-black);
+    //         }
 
-            &::before {
-                top: 0;
-            }
+    //         &::before {
+    //             top: 0;
+    //         }
 
-            &::after {
-                bottom: 0;
-            }
-        }
+    //         &::after {
+    //             bottom: 0;
+    //         }
+    //     }
     } 
 
-    .menuMobile {
-        display: none;            
-    }
+    
 
-    .menuMobile.active {        
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 60%;
-        height: calc(100vh - 73px);
-        z-index: 2;
-        display: flex;               
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;        
-        padding: 5em 3em 0;        
-        // background: --clr-black;
-        box-shadow: $boxShadow;
-        
-        ul {
-            display: flex;
-            flex-direction: column;            
-            row-gap: 2em;
+    .containerIcons {
+        flex-direction: row;
+        padding: .5em;
+
+        .iconMedia {
+            font-size: 1.8em;
         }
-
-        .containerIcons {
-            flex-direction: row;
-            padding: .5em;
-
-            .iconMedia {
-                font-size: 1.8em;
-            }
-        }
-    }    
+    }   
 }
 
