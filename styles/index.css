@@ -614,38 +614,20 @@ body .App {
   max-height: 800px;
 }
 
-.hero__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.hero__left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.hero__left__big-title {
+.hero__title {
   font-size: clamp(25px, 4vw, 50px);
-  font-weight: 900;
-  text-transform: uppercase;
   color: var(--clr-black);
   margin-bottom: 6px;
 }
 
-.hero__left__gradient-title {
+.hero__title span {
+  font-weight: bold;
+}
+
+.hero__gradient-title {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(110px, 11vw, 300px);
   background: -webkit-gradient(linear, left top, right top, color-stop(20%, #54c4c2), color-stop(40%, #dfc349), color-stop(60%, #bd54c5), color-stop(80%, #54c47d));
   background: linear-gradient(to right, #54c4c2 20%, #dfc349 40%, #bd54c5 60%, #54c47d 80%);
   background-size: 200% auto;
@@ -662,7 +644,7 @@ body .App {
   }
 }
 
-.hero__left__text {
+.hero__text {
   color: var(--clr-black);
   text-transform: uppercase;
 }
@@ -709,15 +691,6 @@ body .App {
 @media screen and (min-width: 768px) {
   .hero {
     padding: 0 4em;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .hero__right {
-    height: 400px;
-  }
-  .hero__right__img {
-    max-height: 450px;
   }
 }
 
@@ -727,23 +700,6 @@ body .App {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .hero__content {
-    -webkit-column-gap: 3em;
-            column-gap: 3em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .hero__right {
-    width: 50%;
   }
 }
 
