@@ -35,15 +35,11 @@ html {
     --svg-black: invert(95%) sepia(0%) saturate(0%) hue-rotate(97deg) brightness(90%) contrast(103%);   
 }
 
-// .slide-mode-desktop {
-//     display: block;
-// }
-
 .section__title, .contact__link, .card__title {
     color: var(--clr-black);
 }
 
-.text, .card__subtitle, .outlines, .nav__link, .button:hover, .iconMedia {
+.text, .card__subtitle, .nav__link, .iconMedia {
     color: var(--clr-grey);
 }
 
@@ -55,11 +51,11 @@ html {
     background: var(--clr-grey);
 }
 
-.text, .nav__link, .bigOutlineTitle {
+.text, .nav__link, .outline-title {
     color: var(--clr-black);
 }
 
-.bigOutlineTitle {
+.outline-title {
     opacity: .1;
 }    
 
@@ -68,11 +64,10 @@ $boxShadow: 0px 0px 10px 0px #0000003b;
 
 //responsive font-size
 $bigTitle: clamp(25px, 4vw, 50px);
-$text-size: clamp(12px, 2vw, 17px);
+$text-size: clamp(16px, 2vw, 27px);
 $smallText: clamp(11px, 2vw, 15px);
 $bigNumber: clamp(20px, 7vw, 70px);
 $callToAction: clamp(11px, 1vw, 16px);
-$bigOutlineTitle: clamp(35px, 10vw, 200px);
 
 //fonts weight
 $light: 300;
@@ -92,21 +87,6 @@ body {
     }
 }
 
-.wrapTitles {
-    position: relative;
-    margin: 2em 0 4em;  
-
-    .bigOutlineTitle {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);            
-        text-transform: uppercase;
-        font-size: $bigOutlineTitle;
-        left: 45px;
-        z-index: 0;
-    }
-}
-
 .big-title {
     font-size: $bigTitle;
     font-weight: 900;
@@ -114,12 +94,14 @@ body {
     line-height: 110%;  
 }
 
-.outlines {
+.outline-title {
     -webkit-text-stroke: 1px var(--clr-black);    
     font-weight: bold;
     color: transparent; 
     z-index: 1; 
-    opacity: .3;  
+    opacity: .3;
+    text-transform: uppercase;
+    font-size: clamp(80px, 9vw, 200px);  
 }
 
 .text {    
@@ -127,21 +109,10 @@ body {
     line-height: 125%;    
 }
 
-//font-weight
-.bold {
-    font-weight: bold;
+.vertical-text {
+    writing-mode: vertical-lr;
+    text-orientation: initial;
 }
-
-.light {
-    font-weight: lighter;
-}
-
-//font style
-.italic {
-    font-style: italic;
-}
-
-//
 
 .callToAction {
     position: absolute;
