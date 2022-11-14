@@ -14,7 +14,7 @@
             width: 100%;
             align-items: center;
             justify-content: space-between;
-            padding: 1em 5em;
+            padding: 1rem .7rem;
         }
 
         &__logo {
@@ -157,8 +157,21 @@
     }
 }
 
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 567px) {
     .navigation {
+        &__content {
+            padding: 1rem 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 765px) {
+
+    .navigation {
+        &__content {
+            padding: 1rem 5rem;
+        }
+
         &__button-burger {
             display: none;
         }
@@ -166,61 +179,15 @@
         &__menu {
             position: inherit;
             display: flex;
-            height: inherit;
+            height: inherit; 
             width: auto;
             animation: inherit;
             background-color: inherit;
             box-shadow: inherit;
-            // padding: inherit;
             flex-direction: row;
             column-gap: 2rem;            
         } 
     }
 }
 
-@media screen and (max-width: 992px) {    
-
-    .navigation {
-
-        &__content {
-            padding: 1em 2em;
-        }        
-
-    //     #btnBurger {
-    //         display: block;
-    //         height: 20px;
-    //         width: 50px;
-    //         position: relative;
-    //         cursor: pointer;
-            
-
-    //         &::before, &::after {
-    //             content: "";
-    //             position: absolute;
-    //             width: 100%;
-    //             height: 3px;
-    //             background: var(--clr-black);
-    //         }
-
-    //         &::before {
-    //             top: 0;
-    //         }
-
-    //         &::after {
-    //             bottom: 0;
-    //         }
-    //     }
-    } 
-
-    
-
-    .containerIcons {
-        flex-direction: row;
-        padding: .5em;
-
-        .iconMedia {
-            font-size: 1.8em;
-        }
-    }   
-}
 
