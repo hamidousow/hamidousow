@@ -69,16 +69,16 @@ async function getProjects() {
 function initProjectCards (id, title, subtitle, link, imageSource, imageAlt) { 
     return document.getElementById('container-cards-projects').innerHTML += (
         `<div class="card" data-component="card" id=${id}>
-                <div class="card__header">
-                    <a href=${link} target="_blank" rel="noopener noreferrer" class="card__number">${id}</a>
-                    <a href=${link} target="_blank" rel="noopener noreferrer">
-                        <h3 class="card__title">${title}</h3>
-                        <h4 class="card__subtitle">${subtitle}</h4>
-                    </a>
-                </div>              
-                <img class="card__img" src=${imageSource} alt=${imageAlt}/>                    
-                
-            
+            <div class="card__header">
+                <a href=${link} target="_blank" rel="noopener noreferrer" class="card__number">${id}</a>
+                <a href=${link} target="_blank" rel="noopener noreferrer">
+                    <h3 class="card__title">${title}</h3>
+                    <h4 class="card__subtitle">${subtitle}</h4>
+                </a>
+            </div>  
+            <a href=${link} target="_blank" rel="noopener noreferrer">           
+                <img class="card__img" src=${imageSource} alt=${imageAlt}/>   
+            </a>            
         </div>` )     
 }  
 
