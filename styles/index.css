@@ -86,10 +86,9 @@ body .App {
 }
 
 .big-title {
-  font-size: clamp(25px, 4vw, 50px);
+  font-size: clamp(55px, 9vw, 200px);
   font-weight: 900;
   text-transform: uppercase;
-  line-height: 110%;
 }
 
 .outline-title {
@@ -99,10 +98,6 @@ body .App {
   z-index: 1;
   opacity: .3;
   text-transform: uppercase;
-}
-
-.big-title {
-  font-size: clamp(55px, 9vw, 200px);
 }
 
 .text {
@@ -462,6 +457,10 @@ body .App {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  row-gap: 7rem;
 }
 
 @-webkit-keyframes slideText {
@@ -596,19 +595,9 @@ body .App {
   font-size: clamp(11px, 1vw, 16px);
 }
 
-.cards-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  row-gap: 7rem;
-}
-
 .card {
   width: 100%;
+  max-width: 800px;
   bottom: 2em;
   display: -webkit-box;
   display: -ms-flexbox;

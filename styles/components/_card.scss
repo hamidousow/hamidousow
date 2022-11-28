@@ -1,11 +1,6 @@
-.cards-container {
-    display: flex;
-    flex-direction: column;
-    row-gap: 7rem;      
-}
-
 .card {
     width: 100%;
+    max-width: 800px;
     bottom: 2em;
     display: flex;
     flex-direction: column;    
