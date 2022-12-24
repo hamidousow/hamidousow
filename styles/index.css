@@ -526,8 +526,8 @@ body .App {
       -ms-flex-direction: column;
           flex-direction: column;
   cursor: pointer;
-  -webkit-transition: 0.9s;
-  transition: 0.9s;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
 }
 
 .card .card__header {
@@ -546,7 +546,7 @@ body .App {
 }
 
 .card .card__number {
-  font-size: 3rem;
+  font-size: clamp(3rem, 67px, 6vw);
   font-weight: 800;
 }
 
@@ -566,7 +566,17 @@ body .App {
   -webkit-box-shadow: 0px 0px 5px 0px #00000021;
           box-shadow: 0px 0px 5px 0px #00000021;
   width: 100%;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 5px;
+  -webkit-filter: saturate(0.5);
+          filter: saturate(0.5);
+}
+
+.card:hover .card__img {
+  -webkit-filter: saturate(1);
+          filter: saturate(1);
 }
 
 @media screen and (min-width: 768px) {
