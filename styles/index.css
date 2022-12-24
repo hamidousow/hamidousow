@@ -860,39 +860,14 @@ body .App {
 }
 
 footer {
+  padding: 1em;
   background: var(--clr-lighterblack);
-  margin-bottom: 0;
 }
 
-footer .section {
-  margin-bottom: 0;
-}
-
-footer .container-icons-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-column-gap: 2em;
-          column-gap: 2em;
-}
-
-footer .footer__icon-social {
-  width: 35px;
-  opacity: .8;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
-footer .footer__icon-social:hover {
-  opacity: 1;
-}
-
-footer #github-icon {
-  -webkit-filter: var(--svg-black);
-          filter: var(--svg-black);
+footer .text {
+  text-align: center;
+  font-size: 13px;
+  color: var(--clr-black);
 }
 
 #project-header.heroSection {
@@ -1052,6 +1027,11 @@ footer #github-icon {
 
 .section-contact .contact__link .contact__link__icon {
   width: 45px;
+}
+
+.section-contact #github-icon {
+  -webkit-filter: var(--svg-black);
+          filter: var(--svg-black);
 }
 
 .section-contact .text {

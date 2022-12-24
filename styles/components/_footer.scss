@@ -1,28 +1,10 @@
 footer {
-    background: var(--clr-lighterblack);    
-    margin-bottom: 0;  
-    
-    .section {
-        margin-bottom: 0;
-    }
+    padding: 1em;
+    background: var(--clr-lighterblack);
 
-    .container-icons-social {
-        display: flex;
-        justify-content: flex-end;
-        column-gap: 2em;
-    }
-
-     .footer__icon-social {
-        width: 35px;
-        opacity: .8;
-        transition: all .4s;
-
-        &:hover {
-            opacity: 1;
-        }
-    }
-    
-    #github-icon {
-        filter: var(--svg-black);
-    }
+    .text {
+        text-align: center;
+        font-size: 13px;
+        color: var(--clr-black);
+    }    
 }
