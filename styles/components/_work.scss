@@ -1,40 +1,58 @@
 .work {
-    padding: 2em .7rem;
+    margin-bottom: 9.3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
 
-    &__wrapTitles {
+    .container-title {
+        position: absolute;
         display: flex;
-        flex-direction: row;
-        overflow: hidden;
-        margin-bottom: 5rem;
-        transform: rotate(-5deg);
+        flex-direction: column;
+        left: 1.5rem;
+        @media screen and (min-width: 768px) {
+            left: 5rem;
+        }
     }
+
+    // .wrap-title {
+    //     display: flex;
+    //     flex-direction: row;
+    //     overflow: hidden;
+    //     margin-bottom: 5rem;
+    //     transform: rotate(-5deg);
+    // }
 
     &__title {
         animation: slideText 15s infinite linear;
         flex: none;
-    }    
+    }   
+    
+    .cards-container {
+        display: flex;
+        flex:  0 0 80%;
+        flex-direction: column;
+        align-items: flex-end;
+        row-gap: 7rem;  
+    }
 }
 
 @keyframes slideText {
     0% {
-        transform: translate(-100%, 0%) translate3d(0px, 0px, 0px);
+        transform: translate(0%, 0%) translate3d(0px, 0px, 0px);
     }
 
     100% {
-        transform: translate(-0%, 0%) translate3d(0px, 0px, 0px);
+        transform: translate(0%, -100%) translate3d(0px, 0px, 0px);
     }
 }
 
-@media screen and (min-width: 567px) {
-    .work {
-        padding: 2em;
-    }    
-}
+// @media screen and (min-width: 567px) {}
 
 @media screen and (min-width: 768px) {
-    .work {
-        padding: 5em 4em; 
-
+    .work { 
         &__wrapTitles {
             margin-bottom: 7rem;
         }

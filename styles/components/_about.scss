@@ -1,7 +1,4 @@
 .about {
-    padding: 2em 0;
-    margin-bottom: 2em;
-
     &__wrapper {
         display: flex;
         flex-direction: row;
@@ -18,32 +15,21 @@
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        padding: 0 2rem;
-    }
-}
 
-@media screen and (min-width: 567px) {
-    .about {
-        padding: 2em;
-
-        &__right {
-            padding: 0 4rem;
+        &__title {
+            margin-bottom: 2rem;
         }
-    }    
-}
-
-@media screen and (min-width: 768px) {
-    .about {
-        padding: 5em 4em; 
     }
 }
+
+// @media screen and (min-width: 567px) {}
+// @media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 992px) {
 
     .about {
         &__right {
-            max-width: 800px;
-            padding: 0 6rem;
+            max-width: 1000px;
         }
     }    
 }
