@@ -548,6 +548,11 @@ body .App {
 .card .card__number {
   font-size: clamp(3rem, 67px, 6vw);
   font-weight: 800;
+  color: var(--clr-grey);
+  -webkit-text-stroke: 2px var(--clr-black);
+  font-weight: bold;
+  color: transparent;
+  opacity: .3;
 }
 
 .card .card__title {
