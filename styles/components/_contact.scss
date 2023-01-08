@@ -1,8 +1,6 @@
-.section-contact {
+.section-contact {    
+    background-color: var(--clr-grey-darker);
     
-    background-color: var(--clr-lighterblack);
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-
     .content {
         margin-top: 100px;
     }

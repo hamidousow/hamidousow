@@ -14,8 +14,9 @@ html {
 
 :root {
     --clr-black: #15181f;
-    --clr-lighterblack: #00000019;    
+    --clr-grey-darker: #bababa;    
     --clr-grey: #dddddd;
+    --clr-green-darker: #27633d;
     --clr-green: #399259;
     --clr-cyan: #54c4c2;
     --clr-purple: #5726a7;
@@ -26,7 +27,7 @@ html {
 
 .dark-mode {       
     --clr-black: #dddddd;
-    --clr-lighterblack: #222632;
+    --clr-grey-darker: #222632;
     --clr-grey: #15181f;
     --clr-green: #399259;
     --clr-cyan: #54c4c2;

@@ -14,8 +14,9 @@ html {
 
 :root {
   --clr-black: #15181f;
-  --clr-lighterblack: #00000019;
+  --clr-grey-darker: #bababa;
   --clr-grey: #dddddd;
+  --clr-green-darker: #27633d;
   --clr-green: #399259;
   --clr-cyan: #54c4c2;
   --clr-purple: #5726a7;
@@ -26,7 +27,7 @@ html {
 
 .dark-mode {
   --clr-black: #dddddd;
-  --clr-lighterblack: #222632;
+  --clr-grey-darker: #222632;
   --clr-grey: #15181f;
   --clr-green: #399259;
   --clr-cyan: #54c4c2;
@@ -437,6 +438,8 @@ body .App {
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 0.3rem;
+  color: var(--clr-green);
+  transition: 0.5s;
 }
 .card .card__subtitle {
   font-size: 1rem;
@@ -465,7 +468,7 @@ body .App {
 .card .card__cta-style {
   font-size: 0.7rem;
   background: var(--clr-green);
-  color: var(--clr-grey);
+  color: var(--clr-white);
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: 0.5s;
@@ -475,13 +478,19 @@ body .App {
   .card {
     max-width: 1000px;
   }
+  .card .card__title {
+    color: var(--clr-black);
+  }
   .card .card__img {
     filter: saturate(0);
   }
   .card .card__cta-style {
     padding: 0.6rem 1rem;
-    background: transparent;
-    border: 1px solid var(--clr-green);
+    font-size: 1rem;
+    background: var(--clr-green-darker);
+    color: var(--clr-grey);
+  }
+  .card:hover .card__title {
     color: var(--clr-green);
   }
   .card:hover .card__img {
@@ -683,7 +692,7 @@ body .App {
 
 footer {
   padding: 1em;
-  background: var(--clr-lighterblack);
+  background: var(--clr-grey-darker);
 }
 footer .text {
   text-align: center;
@@ -749,9 +758,7 @@ footer .text {
 }
 
 .section-contact {
-  background-color: var(--clr-lighterblack);
-  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  background-color: var(--clr-grey-darker);
 }
 .section-contact .content {
   margin-top: 100px;
