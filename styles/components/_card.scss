@@ -47,45 +47,54 @@
         max-height: 400px;
         object-fit: cover;
         border-radius: 5px;
-        filter: saturate(0); 
+        filter: saturate(1); 
         transition: all 0.5s;
     }
 
-    .card__cta {
+    .card__cta-position {
         position: absolute;
-        bottom: 2rem;
+        bottom: 1.5rem;
         right: 50%;
         transform: translateX(50%);
         z-index: 1;        
     }
 
     .card__cta-style {
-        background: transparent;
-        border: 1px solid var(--clr-green);
-        color: var(--clr-green);
-        padding: .6rem 1rem;
+        font-size: .7rem;
+        background: var(--clr-green);
+        color: var(--clr-grey);
+        padding: .5rem 1rem;
         border-radius: 5px;
-        letter-spacing: 1px;
-        cursor: pointer;
         transition: .5s;        
-    }    
-
-    &:hover {
-        .card__img {
-            filter: saturate(1);          
-        }
-
-        .card__cta-style {
-            background: var(--clr-green);
-            color: var(--clr-white);
-        }        
-    }
+    } 
 }
 
 @media screen and (min-width: 768px) {
 
     .card {
         max-width: 1000px; 
+
+        .card__img {
+            filter: saturate(0);          
+        }
+
+        .card__cta-style {            
+            padding: .6rem 1rem;
+            background: transparent; 
+            border: 1px solid var(--clr-green); 
+            color: var(--clr-green);     
+        }
+
+        &:hover {
+            .card__img {
+                filter: saturate(1);          
+            }
+
+            .card__cta-style {
+                background: var(--clr-green);
+                color: var(--clr-white);
+            }
+        }
     }
 }
 

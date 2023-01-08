@@ -78,7 +78,7 @@ function initProjectCards (id, title, subtitle, link, imageSource, imageAlt) {
             </div>  
             <a href=${link} target="_blank" rel="noopener noreferrer">
                 <div class="card__body">
-                    <span class="card__cta card__cta-style">découvrir le projet</span>         
+                    <span class="card__cta card__cta-position card__cta-style">découvrir le projet</span>         
                     <img class="card__img" src=${imageSource} alt=${imageAlt}/>
                 </div> 
             </a>            
