@@ -8,6 +8,7 @@
         left: 0;
         right: 0;
         z-index: 10;
+        background: var(--clr-grey);
         
         &__content {        
             display: flex;
@@ -90,15 +91,14 @@
                 flex-direction: column; 
                 justify-content: center;
                 position: absolute;
-                top: 0;
+                top: 73px;
                 left: 0;
-                width: 100vw;
+                right: 0;
                 height: 100vh;
                 z-index: -10;                
                 row-gap: 2rem;   
                 padding: 2rem;        
-                background: var(--clr-grey);
-                box-shadow: $boxShadow;                
+                background: var(--clr-grey);              
             } 
             
             &__link {

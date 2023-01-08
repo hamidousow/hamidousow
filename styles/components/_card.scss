@@ -50,6 +50,7 @@
         border-radius: 5px;
         filter: saturate(1); 
         transition: all 0.5s;
+        box-shadow: var(--box-shadow);
     }
 
     .card__cta-position {
