@@ -76,8 +76,11 @@ function initProjectCards (id, title, subtitle, link, imageSource, imageAlt) {
                     <h4 class="card__subtitle">${subtitle}</h4>
                 </a>
             </div>  
-            <a href=${link} target="_blank" rel="noopener noreferrer">           
-                <img class="card__img" src=${imageSource} alt=${imageAlt}/>   
+            <a href=${link} target="_blank" rel="noopener noreferrer">
+                <div class="card__body">
+                    <span class="card__cta card__cta-style">découvrir le projet</span>         
+                    <img class="card__img" src=${imageSource} alt=${imageAlt}/>
+                </div> 
             </a>            
         </div>` )     
 }  
