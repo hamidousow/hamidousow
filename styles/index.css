@@ -104,8 +104,7 @@ body .App {
 }
 
 .vertical-text {
-  -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
   text-orientation: initial;
 }
 
@@ -122,13 +121,7 @@ body .App {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: shine 30s linear infinite;
-          animation: shine 30s linear infinite;
-}
-@-webkit-keyframes shine {
-  to {
-    background-position: 200% center;
-  }
+  animation: shine 30s linear infinite;
 }
 @keyframes shine {
   to {
@@ -210,8 +203,7 @@ body .App {
 @media screen and (min-width: 320px) {
   .navigation__menu {
     display: none;
-    -webkit-animation: dropMenu 0.5s ease-in;
-            animation: dropMenu 0.5s ease-in;
+    animation: dropMenu 0.5s ease-in;
   }
   .navigation__menu-active {
     display: flex;
@@ -268,14 +260,6 @@ body .App {
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1098039216);
   }
 }
-@-webkit-keyframes dropMenu {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100vh;
-  }
-}
 @keyframes dropMenu {
   0% {
     height: 0;
@@ -301,8 +285,7 @@ body .App {
     display: flex;
     height: inherit;
     width: auto;
-    -webkit-animation: inherit;
-            animation: inherit;
+    animation: inherit;
     background-color: inherit;
     box-shadow: inherit;
     flex-direction: row;
@@ -310,14 +293,39 @@ body .App {
          column-gap: 2rem;
   }
 }
+.about .big-title {
+  font-size: clamp(45px, 5vw, 100px);
+}
+.about .text {
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 130%;
+}
 .about__wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: space-between;
 }
 .about__left {
+  margin-top: 85px;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  row-gap: 1rem;
+}
+.about__left__container-img {
+  display: flex;
+  flex-direction: row;
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.about__left__img {
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: slideImage 31s infinite linear;
 }
 .about__right {
   display: flex;
@@ -329,9 +337,38 @@ body .App {
   margin-bottom: 2rem;
 }
 
+@keyframes slideImage {
+  0% {
+    transform: translate(0%, 0%) translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate(-100%, 0%) translate3d(0px, 0px, 0px);
+  }
+}
 @media screen and (min-width: 992px) {
+  #about {
+    max-height: 90vh;
+  }
+  .about__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
+  .about__left {
+    width: 45%;
+    margin-top: 0px;
+  }
+  .about__left__container-img {
+    height: 100%;
+    max-height: 70vh;
+  }
   .about__right {
+    width: 55%;
     max-width: 1000px;
+    margin-top: 10px;
+    justify-content: center;
   }
 }
 .work {
@@ -355,8 +392,7 @@ body .App {
   }
 }
 .work__title {
-  -webkit-animation: slideText 15s infinite linear;
-          animation: slideText 15s infinite linear;
+  animation: slideText 15s infinite linear;
   flex: none;
 }
 .work .cards-container {
@@ -365,15 +401,6 @@ body .App {
   flex-direction: column;
   align-items: flex-end;
   row-gap: 7rem;
-}
-
-@-webkit-keyframes slideText {
-  0% {
-    transform: translate(0%, 0%) translate3d(0px, 0px, 0px);
-  }
-  100% {
-    transform: translate(0%, -100%) translate3d(0px, 0px, 0px);
-  }
 }
 
 @keyframes slideText {
@@ -400,7 +427,6 @@ body .App {
   right: 50%;
   left: 50%;
   transform: translate(-50%);
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -528,8 +554,7 @@ body .App {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: shine 30s linear infinite;
-          animation: shine 30s linear infinite;
+  animation: shine 30s linear infinite;
 }
 @keyframes shine {
   to {
@@ -555,8 +580,7 @@ body .App {
   z-index: 0;
   background: linear-gradient(to right, #54c4c2 20%, #dfc349 40%, #bd54c5 60%, #54c47d 80%);
   background-size: 200% auto;
-  -webkit-animation: shine 30s linear infinite;
-          animation: shine 30s linear infinite;
+  animation: shine 30s linear infinite;
   opacity: 0.4;
 }
 @keyframes shine {
