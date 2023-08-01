@@ -1,0 +1,158 @@
+
+.navigation {    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: var(--clr-grey);
+}
+
+.nav-link:hover {
+    color: var(--clr-green);
+}
+
+@media (min-width: 320px) {         
+
+    .switchMode input[type="checkbox"].btnSwitchMode {
+        display: none;           
+    }
+    
+    .switchMode input[type="checkbox"].btnSwitchMode + label {
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 3rem;        
+        height: 1.6rem;
+        padding: 2px;
+        border-radius:20px;
+        background: var(--clr-grey);
+        border: 1px solid var(--clr-black);               
+    }
+    
+    .switchMode input[type="checkbox"].btnSwitchMode + label::before {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: "☼";        
+        height: calc(1.5rem - 5px);
+        width: calc(1.5rem - 5px);
+        border-radius: 50%;       
+        background-color: #dddddd;
+    }    
+    
+    .switchMode input[type="checkbox"].btnSwitchMode:checked + label {
+        background-color: var(--clr-grey);                
+    }
+    
+    .switchMode input[type="checkbox"].btnSwitchMode:checked + label::before {
+        margin-left: 1.5rem; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: "☾";
+        color: var(--clr-black); 
+        background-color: var(--clr-grey);              
+    }
+
+    .menu {            
+        display: none;
+        animation: dropMenu .5s ease-in;
+    }   
+
+    .active {
+        display: flex;               
+        flex-direction: column; 
+        justify-content: center;
+        position: absolute;
+        top: 73px;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        z-index: -10;                
+        row-gap: 2rem;   
+        padding: 2rem;        
+        background: var(--clr-grey);              
+    } 
+    
+    .link {
+        text-decoration: none;  
+        color: var(--clr-black);
+        text-transform: uppercase;  
+        font-weight: --var(regular);
+        font-size: clamp(1rem, 1vw, 2rem);
+        padding: .5em;
+    }
+
+    .btnBurger {
+        display: block;
+        position: relative;
+        height: 10px;
+        width: 40px;
+    }        
+}
+        
+.btnBurger::before, .btnBurger::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--clr-black);
+}
+
+.btnBurger::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.btnBurger::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media screen and (min-width: 567px) {
+    .content {
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (min-width: 765px) {
+
+    .logo img {
+        height: 50px;
+    }    
+
+    .content {
+        padding: 1rem 5rem;
+    }
+
+    .btnBurger {
+        display: none;
+    }
+
+    .menu {
+        position: inherit;
+        display: flex;
+        height: inherit; 
+        width: auto;
+        animation: inherit;
+        background-color: inherit;
+        box-shadow: inherit;
+        flex-direction: row;
+        column-gap: 2rem;            
+    }
+}
+
+@keyframes dropMenu {
+    
+    0% {
+        height: 0;
+    } 100% {
+        height: 100vh;
+    }
+}
+

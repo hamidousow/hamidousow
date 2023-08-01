@@ -1,0 +1,143 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --clr-black: #15181f;
+  --clr-grey-darker: #bababa;
+  --clr-grey: #dddddd;
+  --clr-green-darker: #27633d;
+  --clr-green: #399259;
+  --clr-cyan: #54c4c2;
+  --clr-purple: #5726a7;
+  --clr-yellow: #dfc349;
+  --clr-white: #ffffff;
+  --svg-black: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg)
+    brightness(99%) contrast(94%);
+  --box-shadow: 0px 0px 6px 3px rgb(0 0 0 / 11%);
+
+  --boxShadow: 0px 0px 6px 0px #0000001c;
+}
+
+.darkMode {
+  --clr-black: #dddddd;
+  --clr-grey-darker: #222632;
+  --clr-grey: #15181f;
+  --clr-green: #399259;
+  --clr-cyan: #54c4c2;
+  --clr-purple: #6c36c1;
+  --clr-yellow: #dfc349;
+  --svg-black: invert(95%) sepia(0%) saturate(0%) hue-rotate(97deg)
+    brightness(90%) contrast(103%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--clr-black);
+  background-color: var(--clr-grey);
+  font-family: 'Archivo', sans-serif;
+  scroll-behavior: smooth;
+  
+  .App {
+      position: relative;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/*  */
+
+.section__title,
+.contact__link,
+.card__title {
+  color: var(--clr-black);
+}
+
+.text,
+.card__subtitle,
+.nav__link,
+.iconMedia {
+  color: var(--clr-grey);
+}
+
+.nav__link:hover {
+  color: var(--clr-green);
+}
+
+#site,
+.navigation,
+.navigation.active,
+.menuMobile,
+.nav__link:hover {
+  background: var(--clr-grey);
+}
+
+.text,
+.nav__link,
+.outline-title {
+  color: var(--clr-black);
+}
+
+.big-title {
+  font-weight: 900;  
+}
+
+.outline-text {
+  color: var(--clr-grey);
+  -webkit-text-stroke: 1px var(--clr-black);
+}
+
+.text {
+  font-size: clamp(18px, 2vw, 27px);
+  line-height: 130%;
+}
+
+.verticalText {
+  writing-mode: vertical-lr;
+  text-orientation: initial;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1px;
+  min-width: 100px;
+  padding: 2px 15px;
+}
+
+.button-style {
+  border: 1px solid var(--clr-black);
+  color: var(--clr-black);
+  border-radius: 50px;
+  transition: all 0.5s;
+  white-space: nowrap;
+}
+
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+}
