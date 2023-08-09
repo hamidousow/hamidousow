@@ -131,6 +131,11 @@ li {
   white-space: nowrap;
 }
 
+.button-style:hover {
+  background-color: var(--clr-black);
+  color: var(--clr-grey);
+}
+
 @media (prefers-color-scheme: light) {
   html {
     color-scheme: light;
@@ -301,5 +306,38 @@ li {
 .card {
   width: 100%;
   max-width: 1000px;
-  aspect-ratio: 5/3;
+  overflow: hidden;
+}
+
+.card-body {
+  background: linear-gradient(0deg, #000000 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.container-img {
+  height: 100%;
+  width: 100%;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+  font-weight: 900;
+  font-size: clamp(21px, 3vw, 41px);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--clr-grey);
+}
+
+.round-btn {
+  height: 50px;
+  width: 50px;
+  background: var(--clr-green);
+  border-radius: 50px;
 }/*# sourceMappingURL=index.css.map */

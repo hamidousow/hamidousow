@@ -10,7 +10,7 @@ export default function Hero() {
             <span className='outline-text'> fullstack </span>
         </h1>
         <div className="container-button d-flex justify-content-end">
-            <Link className="hero-cta d-flex justify-content-center align-items-center" to='/projets'>↓</Link> 
+            <Link className="hero-cta d-flex justify-content-center align-items-center" to='projets'>↓</Link> 
         </div>
     </div>
     </>

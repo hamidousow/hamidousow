@@ -135,6 +135,11 @@ li {
   white-space: nowrap;
 }
 
+.button-style:hover {
+  background-color: var(--clr-black);
+  color: var(--clr-grey);
+}
+
 
 @media (prefers-color-scheme: light) {
   html {
