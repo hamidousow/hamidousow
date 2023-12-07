@@ -1,0 +1,16 @@
+.hero {
+    height: 90vh;
+    row-gap: 9rem;
+}
+
+.big-title span {
+    color: var(--clr-grey);
+    -webkit-text-stroke: 1px var(--clr-black);
+}
+
+.hero-cta {
+    height: 50px;
+    width: 50px;
+    background: var(--clr-green);
+    border-radius: 50px;
+}
