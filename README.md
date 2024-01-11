@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **Java, Spring & Spring Boot, Typescript, Angular**
 
-- 👨‍💻 All of my projects are available at [www.hamidousow.fr](www.hamidousow.fr)
+- 👨‍💻 All of my projects are available at [ https://hamidousow.fr/]
 
 - 💬 Ask me about **Angular or Spring boot**
 
