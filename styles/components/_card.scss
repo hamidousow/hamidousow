@@ -53,6 +53,14 @@
         box-shadow: var(--box-shadow);
     }
 
+    .card__cta::after {
+        
+        content: url('../../images/link.png');
+        display: block;
+        height: 50px;
+        
+    }
+
     .card__cta-position {
         position: absolute;
         bottom: 1.5rem;
@@ -67,7 +75,9 @@
         color: var(--clr-white);
         padding: .5rem 1rem;
         border-radius: 5px;
-        transition: .5s;        
+        transition: .5s;    
+        
+        
     } 
 }
 

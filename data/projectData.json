@@ -1,16 +1,24 @@
 [
     {
         "id": "01",
+        "title": "Yourflix",
+        "subtitle": "Angular application",        
+        "imageSource": "../images/movies-poster.jpg",
+        "imageAlt": "movies wallpaper",
+        "link": "https://hamidousow.github.io/yourflix/"
+    },   
+    {
+        "id": "02",
         "title": "Bootcamp slider",
-        "subtitle": "Front-end developement",        
+        "subtitle": "Component",        
         "imageSource": "../images/young-coding.jpg",
         "imageAlt": "projet slider bootcamp coding",
         "link": "https://hamidousow.github.io/bootcamp-coding-slider/"
     },   
     {
-        "id": "02",
+        "id": "03",
         "title": "Pricing component",
-        "subtitle": "Front-end developement",
+        "subtitle": "Component",
         "imageSource": "../images/pricing-bg.jpg",
         "imageAlt": "projet pricing component",        
         "link": "https://hamidousow.github.io/interactive-pricing-component/"
