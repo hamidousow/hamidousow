@@ -1,7 +1,6 @@
 <h1 align="center">Hi 👋, I'm Hamidou</h1>
 <h3 align="center">A passionate fullstack developer from France</h3>
 
-- 🔭 I’m currently working on **Cdaflix**
 
 - 🌱 I’m currently learning **Java, Spring & Spring Boot, Typescript, Angular**
 
@@ -9,9 +8,7 @@
 
 - 💬 Ask me about **Angular or Spring boot**
 
-- 📫 How to reach me **hamidou.sow@hotmail.fr**
-
-- ⚡ Fun fact **I can’t apply something I don’t understand**
+- 📫 How to reach me **hamidousow-pro@hotmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
