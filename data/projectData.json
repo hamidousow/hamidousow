@@ -1,12 +1,4 @@
 [
-    /*{
-        "id": "01",
-        "title": "Yourflix",
-        "subtitle": "Angular application",        
-        "imageSource": "../images/movies-poster.jpg",
-        "imageAlt": "movies wallpaper",
-        "link": "https://hamidousow.github.io/yourflix/"
-    },*/
     {
         "id": "01",
         "title": "Bootcamp slider",
