@@ -1,6 +1,15 @@
 [
     {
         "id": "01",
+        "title": "L'Hamidou",
+        "subtitle": "Site",        
+        "imageSource": "../images/young-coding.jpg",
+        "imageAlt": "projet slider bootcamp coding",
+        "link": "https://lhamidou.pages.dev"
+    },
+    
+    {
+        "id": "02",
         "title": "Bootcamp slider",
         "subtitle": "Component",        
         "imageSource": "../images/young-coding.jpg",
@@ -8,7 +17,7 @@
         "link": "https://hamidousow.github.io/bootcamp-coding-slider/"
     },   
     {
-        "id": "02",
+        "id": "03",
         "title": "Pricing component",
         "subtitle": "Component",
         "imageSource": "../images/pricing-bg.jpg",
