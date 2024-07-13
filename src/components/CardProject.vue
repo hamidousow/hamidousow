@@ -5,23 +5,24 @@ const props = defineProps(["project"]);
 </script>
 <template>
     <div>
-
         <div class="card" data-component="card" id="id project">        
             <div class="card__content">
                 <a href="/" target="_blank" rel="noopener noreferrer">
-                    <h3 class="card__title"> title </h3>
+                    <h3 class="card__title"> {{ props.project.title }} </h3>
                 </a>           
                 <a href="" class="card__button rounded">décourvir</a>
             </div> 
             <div class="card__background">
                 <div class="background-gradiant"></div>
-                <img src="/src/assets/images/young-coding.jpg" alt="">
+                <img :src="props.project.imageSource" :alt="props.project.imageAlt">
             </div>               
         </div>
         <div class="container-keywords">             
-            <h4 class="keyword rounded">Vue JS</h4>
-            <h4 class="keyword rounded">Javascript</h4>
-            <h4 class="keyword rounded">Agile Scrum</h4>
+            <h4 
+            v-for="keyword in props.project.keywords" 
+            :key="keyword"
+            class="keyword rounded"
+            >{{ keyword }}</h4>
         </div>
     </div>
 </template>
@@ -72,7 +73,9 @@ const props = defineProps(["project"]);
     }
 
     .card__button:hover, .card:hover .card__button  {
-        background-color: var(--clr-grey);
+        background-color: var(--clr-green);
+        color: var(--clr-black);
+        border: 0px transparent;
     }
 
 
