@@ -2,20 +2,18 @@
 import CardProject from '@/components/CardProject.vue'
 
 </script>
-<template>
-
-    <div class="work section-padding section-margin-bottom" id="work">
-        <div class="container-title">
-            <h2 class="work__title big-title outline-title vertical-text">projets </h2>                   
-        </div>                                    
-        <div class="cards-container" id="container-cards-projects">
-            <CardProject/>
-        </div>
+<template>                                 
+    <div class="container__cards" id="container-cards-projects">
+        <CardProject/>
+        <CardProject/>
+        <CardProject/>
     </div>
-
 </template>
-
-
-<style>
+<style scoped>
+    .container__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+    }
 
 </style>

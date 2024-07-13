@@ -6,9 +6,7 @@
     <nav class="navigation" id="nav-desktop">
         <div class="navigation__content">
             <div class="navigation__logo"  id="navigation__logo">
-                <a href="/">
-                    Hamidou <br/> SOW
-                </a>                
+                <a href="/"> Hamidou <br/> SOW </a>                
             </div>                
             <div class="navigation__switch-mode">
                 <input type="checkbox" id="btnSwitchMode" class="btnSwitchMode">
@@ -88,7 +86,7 @@
             border-radius:20px;
             background: var(--clr-grey);
             border: 1px solid var(--clr-black);
-            transition: all .4s;
+            transition: .4s;
             
         }
     
@@ -102,7 +100,7 @@
             width: calc(1.5rem - 5px);
             border-radius: 50%;       
             background-color: #dddddd;
-            transition: all .4s;
+            transition: .4s;
         }    
     
         input[type="checkbox"].btnSwitchMode:checked + label {
@@ -139,14 +137,14 @@
         background: var(--clr-grey);              
     } 
     
-    .navigation-menu__link {
+    .navigation__menu__link {
         text-decoration: none;  
         color: var(--clr-black);
         text-transform: uppercase;  
-        /*font-weight: $regular;*/
+        
         font-size: clamp(1rem, 1vw, 2rem);
         padding: .5em;
-        transition: .5s all;
+        transition: .5s;
     } 
 
     .navigation__button-burger {
@@ -177,12 +175,6 @@
         }
     }     
 } 
-
-    /*background navigation when scrolling */
-    .navigation.active {
-        /*box-shadow: $boxShadow;*/
-        
-    }
 
 @keyframes dropMenu {
 
@@ -220,7 +212,11 @@
         background-color: inherit;
         box-shadow: inherit;
         flex-direction: row;
-        column-gap: 2rem;            
+        column-gap: 2rem;   
+        
+        li {
+            list-style: none;
+        }
     }
 }
 
