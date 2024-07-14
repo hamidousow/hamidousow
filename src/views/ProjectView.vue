@@ -21,18 +21,22 @@ let project: Project | null = projectArray[0]
 </script>
 
 <template>
-    <div class="section-padding section-margin-bottom">
-        <div v-if="project">
-            <div class="project-image">
-                <img :src="project.imageSource" :alt="project.imageAlt">
-            </div>
-            <div>
-                <div class="container-keywords">
-                    <span v-for="keyword in project.keywords" :key="keyword">{{ keyword }}</span>
+    <div class="container mb-150 mt-60">
+        <div v-if="project" class="content">
+            <a :href="project.link">
+                <div class="project-image">
+                    <img :src="project.imageSource" :alt="project.imageAlt">
                 </div>
-                <h1>{{ project.title }} </h1>
-                <p>{{  project.description }}</p>
-                <a :href="project.link" target="_blank">Voir le projet en ligne</a>
+            </a>
+            <div class="project-details">
+                <div>
+                    <div class="container-keywords">
+                        <span v-for="keyword in project.keywords" :key="keyword" class="keyword rounded">{{ keyword }}</span>
+                    </div>
+                    <h1 class="project-details__title">{{ project.title }} </h1>
+                    <p class="project-details__description">{{  project.description }}</p>
+                </div>
+                <a :href="project.link" target="_blank" class="project__link">Voir le projet en ligne</a>
             </div>
         </div>
         <div v-else>
@@ -41,8 +45,37 @@ let project: Project | null = projectArray[0]
     </div>
 </template>
 
-<style>
+<style scoped>
 
-   
+    .content {
+        display: flex; 
+        flex-direction: row;
+        gap: 50px;  
+        padding: 130px 0;
+    }
+
+    .project-image {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .project-image img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .project-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px 25px;
+    }
+
+    .project__link {
+        align-self: flex-end;
+    }
+
+
 
 </style>

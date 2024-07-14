@@ -104,11 +104,7 @@ defineProps<{
         object-fit: cover;
         /* z-index: -1;
         position: inherit; */
-    }    
-
-    .rounded {
-        border-radius: 25px;
-    }
+    }     
 
     /*@media screen and (min-width: 567px) {
 
