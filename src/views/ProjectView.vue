@@ -23,9 +23,17 @@ let project: Project | null = projectArray[0]
 <template>
     <div class="section-padding section-margin-bottom">
         <div v-if="project">
-            <h1>{{ project.title }} </h1>
-            <p>{{  project.description }}</p>
-            <a :href="project.link" target="_blank">Voir le projet en ligne</a>
+            <div class="project-image">
+                <img :src="project.imageSource" :alt="project.imageAlt">
+            </div>
+            <div>
+                <div class="container-keywords">
+                    <span v-for="keyword in project.keywords" :key="keyword">{{ keyword }}</span>
+                </div>
+                <h1>{{ project.title }} </h1>
+                <p>{{  project.description }}</p>
+                <a :href="project.link" target="_blank">Voir le projet en ligne</a>
+            </div>
         </div>
         <div v-else>
             <p> Projet non trouvé </p>
@@ -34,5 +42,7 @@ let project: Project | null = projectArray[0]
 </template>
 
 <style>
+
+   
 
 </style>

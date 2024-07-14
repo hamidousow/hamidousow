@@ -1,25 +1,29 @@
 <script lang="ts" setup>
+import KeywordsList from '@/components/KeywordsList.vue';
+import type { Project } from '@/types/Project';
 
-const props = defineProps(["project"]);
+defineProps<{
+    project: Project
+}>()
 
 </script>
 <template>
-    <div>
+    <div class="card-wrapper">
         <div class="card" data-component="card" id="id project">        
             <div class="card__content">
                 <a href="/" target="_blank" rel="noopener noreferrer">
-                    <h3 class="card__title"> {{ props.project.title }} </h3>
+                    <h3 class="card__title"> {{ project.title }} </h3>
                 </a>           
                 <a href="" class="card__button rounded">décourvir</a>
             </div> 
             <div class="card__background">
                 <div class="background-gradiant"></div>
-                <img :src="props.project.imageSource" :alt="props.project.imageAlt">
+                <img :src="project.imageSource" :alt="project.imageAlt">
             </div>               
         </div>
         <div class="container-keywords">             
             <h4 
-            v-for="keyword in props.project.keywords" 
+            v-for="keyword in project.keywords" 
             :key="keyword"
             class="keyword rounded"
             >{{ keyword }}</h4>
@@ -29,20 +33,22 @@ const props = defineProps(["project"]);
 
 
 <style scoped>
+    .card-wrapper {
+        width: 100%;     
+    }
 
     a {
         text-decoration: none;  
     }
 
     .card {
-        max-width: 250px;
-        aspect-ratio: 2/3;
         display: flex;
         flex-direction: column;   
         justify-content: flex-end; 
         cursor: pointer;
         position: relative;
         padding: 10px;
+        aspect-ratio: 3 / 2;        
     }
 
     .card__content {
@@ -98,63 +104,42 @@ const props = defineProps(["project"]);
         object-fit: cover;
         /* z-index: -1;
         position: inherit; */
-    }
-
-    .container-keywords {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 10px 0;
-        gap: 4px;
-    }
-    .keyword {
-        font-size: 13px;
-        padding: 3px 5px;
-        border: 1px solid var(--clr-black);
-        
-        color: var(--clr-black);
-        line-height: 100%;
-    }
+    }    
 
     .rounded {
         border-radius: 25px;
     }
 
-/*@media screen and (min-width: 768px) {
+    /*@media screen and (min-width: 567px) {
 
-    .card {
-        max-width: 1000px;   
-    }
 
-    .card__title {
-        color: var(--clr-black);
-    }
+        .card-wrapper {
+            max-width: 335px;
+        }
+        .card-wrapper:nth-child(even) {
+            margin-top: 50px;
+        }
+        
+    }*/
 
-    .card__img {
-        filter: saturate(0);          
-    }
+    @media screen and (min-width: 765px) {
 
-    .card__cta-style {            
-        padding: .6rem 1rem;
-        font-size: 1rem; 
-        background: var(--clr-green-darker);
-        color: var(--clr-grey);    
-    }
 
-    
+        /* .card-wrapper {
+                         
+        } */
+        .card-wrapper:nth-child(even) {
+            margin-top: 50px;
+        }
 
-    .card:hover .card__title {
-        color: var(--clr-green);
+        .card {
+            width: 100%;
+            max-width: 460px;
+            max-height: 525px;
+            aspect-ratio: 2/3;
+        }
+        
     }
-    .card:hover .card__img {
-        filter: saturate(1);          
-    }
-
-    .card:hover .card__cta-style {
-        background: var(--clr-green);
-        color: var(--clr-white);
-    }
-}*/
 
 
 

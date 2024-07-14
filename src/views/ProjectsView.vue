@@ -1,14 +1,29 @@
 <script lang="ts" setup>
+import { useRouter } from 'vue-router';
 import ProjectsList from '../components/ProjectsList.vue';
+import projects from '@/data/projects'
+import CardProject from '@/components/CardProject.vue';
+
+const router = useRouter();
+function navigateTo(id:any) {
+    router.push(`/project/${id}`)
+}
 
 </script>
 <template>
-    <div class="section-projects projects work section-padding section-margin-bottom" id="work">
+    <div class="section-projects projects work section-padding mb-150" id="work">
         <div class="container-title">
             <h2 class="projects__title big-title outline-title vertical-text"> projets </h2>  
             
         </div>
-        <ProjectsList/>   
+        <div class="container-cards" id="container-cards-projects">
+            <CardProject 
+                v-for="project in projects" 
+                :project="project" 
+                :key="project.id"
+                @click="navigateTo(project.id)"
+            />
+        </div> 
     </div>
 </template>
 
@@ -17,8 +32,11 @@ import ProjectsList from '../components/ProjectsList.vue';
 <style scoped>
     .section-projects {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 4fr;
         padding-top: 130px;
+
+        /* display: flex;
+        flex-direction: row; */
     }
 
     .container-title {
@@ -27,7 +45,24 @@ import ProjectsList from '../components/ProjectsList.vue';
 
     .projects__title {
         line-height: 100%;
-        position: fixed;        
+        position: sticky;
+        top: 130px;      
+    }
+
+    .container-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 17px;
+    }
+
+    @media screen and (min-width:765px) {
+        .container-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 840px;
+            justify-content: space-between;
+        }
     }
 
 

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <nav class="navigation" id="nav-desktop">
+    <nav class="navigation container" id="nav-desktop">
         <div class="navigation__content">
             <div class="navigation__logo"  id="navigation__logo">
                 <a href="/"> Hamidou <br/> SOW </a>                
@@ -44,7 +44,7 @@
         left: 0;
         right: 0;
         z-index: 10;
-        background: var(--clr-grey);
+        background: var(--clr-white);
     }
 
     .navigation__content {        
@@ -52,7 +52,7 @@
             width: 100%;
             align-items: center;
             justify-content: space-between;
-            padding: 1rem 2rem;
+            /* padding: 1rem 2rem; */
         }
 
     .navigation__logo {
@@ -188,16 +188,12 @@
 @media screen and (min-width: 567px) {
     
     .navigation__content {
-        padding: 1rem 2rem;
+        padding: 15px 0;
     }
 
 }
 
 @media screen and (min-width: 765px) {
-
-    .navigation__content {
-        padding: 1rem 5rem;
-    }
 
     .navigation__button-burger {
         display: none;
