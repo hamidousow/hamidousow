@@ -5,7 +5,7 @@ import ProjectsList from '../components/ProjectsList.vue';
 <template>
     <div class="section-projects projects work section-padding section-margin-bottom" id="work">
         <div class="container-title">
-            <h2 class="projects__title big-title outline-title vertical-text">projets </h2>  
+            <h2 class="projects__title big-title outline-title vertical-text"> projets </h2>  
             
         </div>
         <ProjectsList/>   

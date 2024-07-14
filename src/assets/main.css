@@ -1,37 +1,7 @@
 @import './base.css';
 
 :root {
-  /* box-shadow */
-  --boxShadow: 0px 0px 6px 0px #0000001c;
-
-  /* responsive font-size */
-  --bigTitle: clamp(25px, 4vw, 50px);
-  --smallText: clamp(11px, 2vw, 15px);
-  --bigNumber: clamp(20px, 7vw, 70px);
-  --callToAction: clamp(11px, 1vw, 16px);
-
-  /* fonts weight */
-  --light: 300;
-  --regular: 500;
-  --bold: 900;
-
-  /* letter-spacing */
-  --space2: 2px;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-#site, .navigation {
-    transition: .7s;
-}
-
-#site {    
-    max-width: 1900px;
-}
-
-:root {
+    /* colors */
     --clr-black: #15181f;
     --clr-grey-darker: #bababa;    
     --clr-grey: #dddddd;
@@ -43,6 +13,37 @@ html {
     --clr-white: #ffffff;
     --svg-black: invert(0%) sepia(3%) saturate(1633%) hue-rotate(2deg) brightness(99%) contrast(94%);
     --box-shadow: 0px 0px 6px 3px rgb(0 0 0 / 11%);
+
+    /* box-shadow */
+    --boxShadow: 0px 0px 6px 0px #0000001c;
+
+    /* responsive font-size */
+    --bigTitle: clamp(25px, 4vw, 50px);
+    --smallText: clamp(11px, 2vw, 15px);
+    --bigNumber: clamp(20px, 7vw, 70px);
+    --callToAction: clamp(11px, 1vw, 16px);
+
+    /* fonts weight */
+    --light: 300;
+    --regular: 500;
+    --bold: 900;
+
+    /* letter-spacing */
+    --space2: 2px;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+#site, .navigation {
+    transition: .7s;
+    color: var(--clr-black);
+}
+
+#site {    
+    max-width: 1900px;
 }
 
 .dark-mode {       
@@ -128,13 +129,6 @@ body {
 .vertical-text {
     writing-mode: vertical-lr;
     text-orientation: initial;
-}
-
-.callToAction {
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-transform: uppercase;
 }
 
 /* linear gradient  */

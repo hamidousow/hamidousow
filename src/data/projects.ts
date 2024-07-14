@@ -1,8 +1,9 @@
 import pricingImage from '@/assets/images/pricing-bg.jpg'
 import youngCoding from '@/assets/images/young-coding.jpg'
 import portfolioImage from '@/assets/images/portfolio-image.jpg'
+import type { Project } from '@/types/Project';
 
-const projects = [
+const projects: Array<Project> = [
     {
         id: 1,
         title: "L'Hamidou",
@@ -11,25 +12,31 @@ const projects = [
         imageSource: portfolioImage,
         imageAlt: "projet slider bootcamp coding",
         link: "https://lhamidou.pages.dev",
-        keywords: ["Nuxt Js", "Serverless", "Full Stack", "SQL","Supabase"]
+        keywords: ["nuxt Js", "serverless", "full stack", "sql","supabase"],
+        isOnline: false
+
     },   
     {
         id: 2,
         title: "Bootcamp slider",
-        subtitle: "Component",        
+        subtitle: "Component",   
+        description: '',     
         imageSource: youngCoding,
         imageAlt: "projet slider bootcamp coding",
         link: "https://hamidousow.github.io/bootcamp-coding-slider/",
-        keywords: ["Javascript", "Html", "Css"]
+        keywords: ["javascript", "html", "css"],
+        isOnline: false
     },   
     {
         id: 3,
         title: "Pricing component",
         subtitle: "Component",
+        description: '',
         imageSource: pricingImage,
         imageAlt: "projet pricing component",        
         link: "https://hamidousow.github.io/interactive-pricing-component/",
-        keywords: ["Javascript", "Html", "Css"]
+        keywords: ["javascript", "html", "css"],
+        isOnline: false
     }
 ];
 
