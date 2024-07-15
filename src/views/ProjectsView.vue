@@ -32,10 +32,7 @@ function navigateTo(id:any) {
 
 <style scoped>
     .section-projects {
-        /* display: grid;
-        grid-template-columns: 1fr 4fr; */
         padding-top: 130px;
-
         display: flex;
         flex-direction: row;
     }
@@ -54,7 +51,7 @@ function navigateTo(id:any) {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 17px;
+        gap: 15px 0;
         flex: 4;
     }
 
@@ -66,8 +63,10 @@ function navigateTo(id:any) {
         .container-cards {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            max-width: 875px;
+            max-width: 990px;
             justify-content: space-between;
+            gap: 55px;
+            flex: auto;
         }
 
         .white-space {

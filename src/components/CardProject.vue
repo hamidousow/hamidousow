@@ -48,7 +48,9 @@ defineProps<{
         cursor: pointer;
         position: relative;
         padding: 10px;
-        aspect-ratio: 3 / 2;        
+        aspect-ratio: 3 / 2;  
+        border-radius: 5px;
+        overflow: hidden;
     }
 
     .card__content {
