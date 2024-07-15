@@ -108,10 +108,10 @@ body {
   --svg-black: invert(95%) sepia(0%) saturate(0%) hue-rotate(97deg) brightness(90%) contrast(103%);   
 }
 
+
 .container {
-  max-width: 1500px;
   margin: auto;
-  padding: 0 50px;
+  padding: 20px 25px;
 }
 
 .outline-title {
@@ -153,3 +153,10 @@ body {
 .rounded {
   border-radius: 25px;
 }
+
+@media screen and (min-width: 765px) {
+  .container {
+    max-width: 1300px;
+    padding: 0 50px;
+  }
+} 

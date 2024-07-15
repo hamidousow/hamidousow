@@ -16,6 +16,7 @@ function navigateTo(id:any) {
             <h2 class="projects__title big-title outline-title vertical-text"> projets </h2>  
             
         </div>
+        <div class="separator white-space"></div>
         <div class="container-cards" id="container-cards-projects">
             <CardProject 
                 v-for="project in projects" 
@@ -31,12 +32,12 @@ function navigateTo(id:any) {
 
 <style scoped>
     .section-projects {
-        display: grid;
-        grid-template-columns: 1fr 4fr;
+        /* display: grid;
+        grid-template-columns: 1fr 4fr; */
         padding-top: 130px;
 
-        /* display: flex;
-        flex-direction: row; */
+        display: flex;
+        flex-direction: row;
     }
 
     .container-title {
@@ -54,14 +55,23 @@ function navigateTo(id:any) {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 17px;
+        flex: 4;
+    }
+
+    .white-space {
+        flex: 1;
     }
 
     @media screen and (min-width:765px) {
         .container-cards {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            max-width: 840px;
+            max-width: 875px;
             justify-content: space-between;
+        }
+
+        .white-space {
+            flex: auto;
         }
     }
 
