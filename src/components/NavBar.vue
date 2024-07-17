@@ -1,12 +1,13 @@
 <script lang="ts" setup>
     import Logo from '@/assets/images/myLogo.png'
+    import { RouterLink } from 'vue-router';
 </script>
 
 <template>
     <nav class="navigation" id="nav-desktop">
         <div class="navigation__content  container">
             <div class="navigation__logo"  id="navigation__logo">
-                <a href="/" class="navigation__brand"> <span class="bold">Hamidou</span> SOW </a>                
+                <RouterLink to="/" class="navigation__brand"> <span class="bold">Hamidou</span> SOW </RouterLink >                
             </div>                
             <div class="navigation__switch-mode">
                 <input type="checkbox" id="btnSwitchMode" class="btnSwitchMode">
@@ -17,13 +18,13 @@
             <span id="btnBurger" class="navigation__button-burger"></span>
             <ul id="navigation__menu" class="navigation__menu">
                 <li>
-                    <a class="navigation__menu__link" href="/projects">projets</a>
+                    <RouterLink class="navigation__menu__link" to="/projects">projets</RouterLink >
                 </li>               
                 <li>
-                    <a class="navigation__menu__link" href="/about">à propos</a>
+                    <RouterLink class="navigation__menu__link" to="/about">à propos</RouterLink >
                 </li>                    
                 <li>
-                    <a class="navigation__menu__link" href="/contact">contact</a>
+                    <RouterLink class="navigation__menu__link" to="/contact">contact</RouterLink >
                 </li>
             </ul>
             
@@ -110,6 +111,7 @@
 
     .navigation__menu {            
         display: none;
+        padding-inline-start: 0;
         animation: dropMenu .5s ease-in;
     }  
     .navigation-menu-active {
