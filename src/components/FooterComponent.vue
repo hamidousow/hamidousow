@@ -20,6 +20,7 @@ import linkedin from '@/assets/images/linkedin.svg'
 <style scoped>
     .footer {
         padding: 50px 20px;
+        margin-top: auto;
     }
     .footer__social-links {
         display: flex;

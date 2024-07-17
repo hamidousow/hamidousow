@@ -13,5 +13,8 @@ import FooterComponent from './components/FooterComponent.vue'
 </template>
 
 <style scoped>
+    #site  {
+        min-height: 90dvh;
+    }
 
 </style>
