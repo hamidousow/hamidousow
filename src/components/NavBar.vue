@@ -6,7 +6,7 @@
     <nav class="navigation container" id="nav-desktop">
         <div class="navigation__content">
             <div class="navigation__logo"  id="navigation__logo">
-                <a href="/"> Hamidou <br/> SOW </a>                
+                <a href="/"> Hamidou SOW </a>                
             </div>                
             <div class="navigation__switch-mode">
                 <input type="checkbox" id="btnSwitchMode" class="btnSwitchMode">

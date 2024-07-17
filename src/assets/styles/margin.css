@@ -1,7 +1,14 @@
-.mb-150 {
-    margin-bottom: 150pxm;
+.mb-30 {
+    margin-bottom: 30px;
 }
 
+.mb-150 {
+    margin-bottom: 150px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
 .mt-60 {
     margin-top: 60px;
 }
