@@ -9,12 +9,12 @@ import FooterComponent from './components/FooterComponent.vue'
     <div id="site" class="container">        
         <router-view></router-view>
     </div>
-    <FooterComponent/>
 </template>
 
 <style scoped>
-    #site  {
-        min-height: 90dvh;
+    #site {
+        margin-top: auto;
+        min-height: 100dvh;
     }
 
 </style>

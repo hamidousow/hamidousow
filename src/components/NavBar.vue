@@ -175,14 +175,6 @@
     }
 }
 
-@media screen and (min-width: 567px) {
-    
-    /* .navigation__content {
-        padding: 15px 0;
-    } */
-
-}
-
 @media screen and (min-width: 765px) {
 
     .navigation__content {

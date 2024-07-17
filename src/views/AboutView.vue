@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+  import SocialLinks from '@/components/SocialLinks.vue'
   import toonMeImage from '@/assets/images/toonme-carousel-trans.png'
 </script>
 
@@ -27,11 +27,7 @@
                 Je suis à l’écoute du marché pour un poste de développeur Java.                      
             </p>
           </div>
-          <div class="container-social mt-60">
-            <a href="" class="social-link">linkedin</a>
-            <a href="" class="social-link">github</a>
-            <a href="mailto:hamidousow-pro@hotmail.com" class="social-link">mail</a>
-          </div>
+          <SocialLinks />
       </div>
   </div>
 
@@ -74,28 +70,7 @@
     animation: slideImage 31s infinite linear;
   }
 
-  .container-social {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    align-items: flex-end;
-    row-gap: 10px;
-  }
-
-  .social-link {
-    font-weight: 800;
-    font-size: 21px;
-    text-decoration: none;
-    text-transform: capitalize;
-    color: var(--clr-black);
-    transition: color .5s ease;
-  }
-
-  .social-link:hover {
-    font-weight: 900;
-    color: var(--clr-green);
-    text-decoration: line-through;
-  }
+  
 
         
   @keyframes slideImage {

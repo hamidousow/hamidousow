@@ -1,35 +1,39 @@
 <script lang="ts" setup>
+import SocialLinks from '@/components/SocialLinks.vue';
+
 
 </script>
 <template>
-    <section class="section-contact section-padding" id="contact">
-        <h2>Contact</h2>
-        <div class="content">            
-            <div class="contact__links">
-                <div class="contact__button">
-                    <a class="contact__link" href="https://github.com/hamidousow" target="_blank" id="github-icon">
-                        <img class="contact__link__icon" src="./assets/images/github.svg" alt="lien vers github">
-                    </a>
-                </div>
-                <div class="contact__button">
-                    <a class="contact__link" href="https://gitlab.com/hamidousow" target="_blank"
-                id="gitlab">
-                        <img class="contact__link__icon" src="./assets/images/gitlab.svg" alt="lien vers gitlab">
-                    </a> 
-                </div>
-                
-                <div class="contact__button">
-                    <a class="contact__link" href="https://www.linkedin.com/in/hamidousow" target="_blank"
-                id="linkedin">
-                        <img class="contact__link__icon" src="./assets/images/linkedin.svg" alt="lien vers linkedin">
-                    </a> 
-                </div>                
-            </div>
-        </div>               
+    <section class="content mt-60" id="contact">
+        <h1 class="title">👋 Restons en contact </h1>
+        <SocialLinks />            
     </section> 
 </template>
 
+<style scoped>
+    .content {
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-<style>
+    .title {
+        text-align: center;
+    }
+
+    .container-social {
+        align-self: center;
+        align-items: flex-start;
+    }
+
+    
+
+    @media screen and (min-width:992px) {
+        .content {
+            padding: 50px 75px;
+        }
+        
+    }
 
 </style>
