@@ -3,10 +3,10 @@
 </script>
 
 <template>
-    <nav class="navigation container" id="nav-desktop">
-        <div class="navigation__content">
+    <nav class="navigation" id="nav-desktop">
+        <div class="navigation__content  container">
             <div class="navigation__logo"  id="navigation__logo">
-                <a href="/"> Hamidou SOW </a>                
+                <a href="/" class="navigation__brand"> <span class="bold">Hamidou</span> SOW </a>                
             </div>                
             <div class="navigation__switch-mode">
                 <input type="checkbox" id="btnSwitchMode" class="btnSwitchMode">
@@ -17,13 +17,13 @@
             <span id="btnBurger" class="navigation__button-burger"></span>
             <ul id="navigation__menu" class="navigation__menu">
                 <li>
-                    <a class="navigation__menu__link" href="/projects">Projets</a>
+                    <a class="navigation__menu__link" href="/projects">projets</a>
                 </li>               
                 <li>
-                    <a class="navigation__menu__link" href="/about">À propos</a>
+                    <a class="navigation__menu__link" href="/about">à propos</a>
                 </li>                    
                 <li>
-                    <a class="navigation__menu__link" href="/contact">Contact</a>
+                    <a class="navigation__menu__link" href="/contact">contact</a>
                 </li>
             </ul>
             
@@ -47,76 +47,66 @@
         background: var(--clr-white);
     }
 
+    .navigation__brand {
+        text-decoration: none;
+        color: var(--clr-black);
+    }
+
+    .bold {
+        font-weight: 700;
+    }
+
     .navigation__content {        
-            display: flex;
-            width: 100%;
-            align-items: center;
-            justify-content: space-between;
-            /* padding: 1rem 2rem; */
-        }
-
-    .navigation__logo {
-        img {
-            display: block;
-            height: 25px; 
-            padding: .5em 0; 
-            filter: var(--svg-black);           
-        }
-
-        @media screen and (min-width: 768px) {
-            img {
-                height: 30px;
-            }
-        }
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    .navigation__switch-mode {   
-
-        input[type="checkbox"].btnSwitchMode {
-            display: none;        
-        }
-    
-        input[type="checkbox"].btnSwitchMode + label {
-            position: relative;
-            box-sizing: border-box;
-            display: inline-block;
-            width: 3rem;        
-            height: 1.6rem;
-            padding: 2px;
-            border-radius:20px;
-            background: var(--clr-grey);
-            border: 1px solid var(--clr-black);
-            transition: .4s;
-            
-        }
-    
-        input[type="checkbox"].btnSwitchMode + label::before {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            content: "☼";        
-            height: calc(1.5rem - 5px);
-            width: calc(1.5rem - 5px);
-            border-radius: 50%;       
-            background-color: #dddddd;
-            transition: .4s;
-        }    
-    
-        input[type="checkbox"].btnSwitchMode:checked + label {
-            background-color: var(--clr-grey);                
-        }
-    
-        input[type="checkbox"].btnSwitchMode:checked + label::before {
-            margin-left: 1.5rem; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            content: "☾";
-            color: var(--clr-black); 
-            background-color: var(--clr-grey);              
-        }   
+    .navigation__switch-mode input[type="checkbox"].btnSwitchMode {
+        display: none;        
     }
+
+    .navigation__switch-mode input[type="checkbox"].btnSwitchMode + label {
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 3rem;        
+        height: 1.6rem;
+        padding: 2px;
+        border-radius:20px;
+        background: var(--clr-grey);
+        border: 1px solid var(--clr-black);
+        transition: .4s;
+        
+    }
+
+    .navigation__switch-mode input[type="checkbox"].btnSwitchMode + label::before {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: "☼";        
+        height: calc(1.5rem - 5px);
+        width: calc(1.5rem - 5px);
+        border-radius: 50%;       
+        background-color: #dddddd;
+        transition: .4s;
+    }    
+
+    .navigation__switch-mode input[type="checkbox"].btnSwitchMode:checked + label {
+        background-color: var(--clr-grey);                
+    }
+
+    .navigation__switch-mode input[type="checkbox"].btnSwitchMode:checked + label::before {
+        margin-left: 1.5rem; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: "☾";
+        color: var(--clr-black); 
+        background-color: var(--clr-grey);              
+    }  
 
     .navigation__menu {            
         display: none;
@@ -140,9 +130,9 @@
     .navigation__menu__link {
         text-decoration: none;  
         color: var(--clr-black);
-        text-transform: uppercase;  
-        
+        /* text-transform: uppercase;   */
         font-size: clamp(1rem, 1vw, 2rem);
+        font-weight: 600;
         padding: .5em;
         transition: .5s;
     } 
@@ -187,13 +177,18 @@
 
 @media screen and (min-width: 567px) {
     
-    .navigation__content {
+    /* .navigation__content {
         padding: 15px 0;
-    }
+    } */
 
 }
 
 @media screen and (min-width: 765px) {
+
+    .navigation__content {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
     .navigation__button-burger {
         display: none;
