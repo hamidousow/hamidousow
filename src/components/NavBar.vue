@@ -7,24 +7,26 @@
     <nav class="navigation" id="nav-desktop">
         <div class="navigation__content  container">
             <div class="navigation__logo"  id="navigation__logo">
-                <RouterLink to="/" class="navigation__brand"> <span class="bold">Hamidou</span> SOW </RouterLink >                
+                <RouterLink to="/" class="navigation__brand pixelly-font-regular"> 
+                    <span class="bold pixelly-font-bold">Hamidou</span> SOW 
+                </RouterLink >                
             </div>                
-            <div class="navigation__switch-mode">
+            <!-- <div class="navigation__switch-mode">
                 <input type="checkbox" id="btnSwitchMode" class="btnSwitchMode">
                 
                 <label for="btnSwitchMode"> 
                 </label>
-            </div>
+            </div> -->
             <span id="btnBurger" class="navigation__button-burger"></span>
             <ul id="navigation__menu" class="navigation__menu">
                 <li>
-                    <RouterLink class="navigation__menu__link" to="/projects">projets</RouterLink >
+                    <RouterLink class="navigation__menu__link pixelly-font-regular" to="/projects">projets</RouterLink >
                 </li>               
                 <li>
-                    <RouterLink class="navigation__menu__link" to="/about">à propos</RouterLink >
+                    <RouterLink class="navigation__menu__link pixelly-font-regular" to="/about">à propos</RouterLink >
                 </li>                    
                 <li>
-                    <RouterLink class="navigation__menu__link" to="/contact">contact</RouterLink >
+                    <RouterLink class="navigation__menu__link pixelly-font-regular" to="/contact">contact</RouterLink >
                 </li>
             </ul>
             
@@ -51,6 +53,7 @@
     .navigation__brand {
         text-decoration: none;
         color: var(--clr-black);
+        font-size: 19px;
     }
 
     .bold {
@@ -132,11 +135,15 @@
     .navigation__menu__link {
         text-decoration: none;  
         color: var(--clr-black);
-        /* text-transform: uppercase;   */
+        text-transform: uppercase;  
         font-size: clamp(1rem, 1vw, 2rem);
         font-weight: 600;
         padding: .5em;
         transition: .5s;
+    } 
+
+    .navigation__menu__link:hover {
+       text-decoration: line-through;
     } 
 
     .navigation__button-burger {
