@@ -26,8 +26,10 @@
   --clr-grey: #e5e5e5;
   --clr-green-darker: #27633d;
   --clr-green: #399259;
+  --clr-green-flashy: #54DD85;
   --clr-cyan: #54c4c2;
   --clr-purple: #5726a7;
+  --clr-purple-flashy: #DD2CE0;
   --clr-yellow: #dfc349;
   --clr-white: #f2f2f2;
 }
@@ -98,22 +100,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 7px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
- 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
   background: #555555; 
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   
   background: var(--clr-black);
@@ -129,7 +127,6 @@ body {
   --clr-yellow: #dfc349; 
   --svg-black: invert(95%) sepia(0%) saturate(0%) hue-rotate(97deg) brightness(90%) contrast(103%);   
 }
-
 
 .container {
   margin: auto;

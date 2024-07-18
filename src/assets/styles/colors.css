@@ -1,0 +1,11 @@
+.background-green {
+    background: var(--clr-green);
+}
+
+.background-green-flashy {
+    background: var(--clr-green-flashy);
+}
+
+.background-purple-flashy {
+    background: var(--clr-purple-flashy);
+}

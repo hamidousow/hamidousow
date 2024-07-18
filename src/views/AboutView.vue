@@ -70,19 +70,6 @@
     animation: slideImage 31s infinite linear;
   }
 
-  
-
-        
-  @keyframes slideImage {
-      0% {
-          transform: translate(0%, 0%) translate3d(0px, 0px, 0px);
-      }
-
-      100% {
-          transform: translate(-100%, 0%) translate3d(0px, 0px, 0px);
-      }
-  }
-
 @media screen and (min-width: 992px) {
 
   .about__wrapper {
