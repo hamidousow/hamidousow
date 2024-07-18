@@ -12,8 +12,9 @@
     <nav class="navigation" id="nav-desktop">
         <div class="navigation__content  container">
             <div class="navigation__logo"  id="navigation__logo">
-                <RouterLink to="/" class="router-link-active navigation__brand pixelly-font-regular "> 
-                    <span class="bold pixelly-font-bold">Hamidou</span> SOW 
+                <RouterLink to="/" class="router-link-active navigation__brand pixelly-font-regular "
+                    @click="isActivedMenu = false"> 
+                    <span class="bold pixelly-font-bold" >Hamidou</span> SOW 
                 </RouterLink >                
             </div>                
             <!-- <div class="navigation__switch-mode">
