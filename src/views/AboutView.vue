@@ -6,13 +6,13 @@
 <template>   
   <div class="about__wrapper mt-60">
     <div class="about__left">
-      <div class="carousel">                            
+      <div class="carousel border-3 box-shadow">                            
           <img :src="toonMeImage" class="carousel__img" alt="Hamidou the most wanted">
           <img :src="toonMeImage" class="carousel__img" alt="Hamidou the most wanted">
       </div>
     </div>
       <div class="about__right">
-          <h1 class=" big-title mb-30">À propos</h1>
+          <h1 class=" big-title mb-30 pixelly-font-bold">À propos</h1>
           <div>
             <p class="text">
                 Diplômé en Conception et Développement d'Applications (bac+3).
@@ -60,7 +60,6 @@
     height: 150px;
     width: 100%;            
     overflow: hidden;
-    border-radius: 5px;
   }
 
   .carousel__img {

@@ -143,7 +143,7 @@
     } 
 
     .navigation__menu__link:hover {
-       text-decoration: line-through;
+        text-decoration: line-through;
     } 
 
     .navigation__button-burger {
