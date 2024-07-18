@@ -1,6 +1,11 @@
 <script lang="ts" setup>
-    import Logo from '@/assets/images/myLogo.png'
+
+    import { ref } from 'vue';
     import { RouterLink } from 'vue-router';
+
+    const isActivedMenu = ref(false);
+
+    const activeMenu = ref('navigation__menu-active')
 </script>
 
 <template>
@@ -17,19 +22,30 @@
                 <label for="btnSwitchMode"> 
                 </label>
             </div> -->
-            <span id="btnBurger" class="navigation__button-burger"></span>
-            <ul id="navigation__menu" class="navigation__menu">
+            <span id="btnBurger" class="navigation__button-burger" @click="isActivedMenu = !isActivedMenu"></span>
+            <ul id="navigation__menu"  :class="[isActivedMenu ? activeMenu : 'navigation__menu']">
                 <li>
-                    <RouterLink class="router-link-active navigation__menu__link pixelly-font-regular" to="/projects">projets</RouterLink >
+                    <RouterLink 
+                    class="router-link-active navigation__menu__link pixelly-font-regular" 
+                    to="/projects" 
+                    @click="isActivedMenu = !isActivedMenu"
+                    >projets</RouterLink >
                 </li>               
                 <li>
-                    <RouterLink class="router-link-active navigation__menu__link pixelly-font-regular" to="/about">à propos</RouterLink >
+                    <RouterLink 
+                    class="router-link-active navigation__menu__link pixelly-font-regular" 
+                    to="/about" 
+                    @click="isActivedMenu = !isActivedMenu"
+                    >à propos</RouterLink >
                 </li>                    
                 <li>
-                    <RouterLink class="router-link-active navigation__menu__link pixelly-font-regular" to="/contact">contact</RouterLink >
+                    <RouterLink 
+                    class="router-link-active navigation__menu__link pixelly-font-regular" 
+                    to="/contact" 
+                    @click="isActivedMenu = !isActivedMenu"
+                    >contact</RouterLink >
                 </li>
-            </ul>
-            
+            </ul>           
         </div>
     </nav>
 </template>
@@ -125,13 +141,17 @@
         padding-inline-start: 0;
         animation: dropMenu .5s ease-in;
     }  
-    .navigation-menu-active {
+
+    
+
+    .navigation__menu-active {
         display: flex;               
         flex-direction: column; 
         justify-content: center;
         position: absolute;
-        top: 73px;
-        left: 0;
+        top: 0;
+        /* left: 0; */
+        width: 200px;
         right: 0;
         height: 100vh;
         z-index: -10;                
@@ -139,6 +159,11 @@
         padding: 2rem;        
         background: var(--clr-grey);              
     } 
+
+    .navigation__menu-active li {            
+        text-decoration: none;
+        list-style: none;
+    }  
     
     .navigation__menu__link {
         text-decoration: none;  

@@ -45,6 +45,7 @@
     flex-direction: column;        
     justify-content: space-between;
     row-gap: 25px;
+    width: 100%;
   }
 
   .about__left {
