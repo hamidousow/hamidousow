@@ -173,6 +173,29 @@ body {
   border-radius: 25px;
 }
 
+.box-shadow {
+  box-shadow: 6px 6px 1px var(--clr-black);
+}
+
+.card:hover > .box-shadow {
+  box-shadow: 0;
+}
+
+.space {
+  margin: 0 10px;
+}
+
+.line {
+  display: inline-block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--clr-black);
+}
+
+.border-3 {
+  border: 3px solid var(--clr-black);
+}
+
 @media screen and (min-width: 765px) {
   .container {
     max-width: 1260px;
