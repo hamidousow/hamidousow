@@ -33,6 +33,7 @@ function navigateTo(id:any) {
         padding-top: 130px;
         display: flex;
         flex-direction: row;
+        width: 100%;
     }
 
     .container-title {

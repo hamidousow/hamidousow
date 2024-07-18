@@ -15,6 +15,8 @@ import FooterComponent from './components/FooterComponent.vue'
     #site {
         margin-top: auto;
         min-height: 100dvh;
+        display: flex;
+        align-items: center;
     }
 
 </style>

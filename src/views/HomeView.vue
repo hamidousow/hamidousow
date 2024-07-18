@@ -8,9 +8,8 @@ import { RouterLink } from "vue-router";
 </script>
 
 <template>
-  <div class="content mt-80">
-    <div class="grid">
-      
+  <div class="content">
+    <div class="grid mt-60">      
       <RouterLink to="/about" class="grid__right">
         <div class="card box-shadow border-3 background-green-flashy">
           <div class="container-titles sliding-text">
@@ -196,7 +195,7 @@ import { RouterLink } from "vue-router";
   .contact-block .container-social-links {
     display:flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 15px;
   }
 
   .contact-block .social-link {

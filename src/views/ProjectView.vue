@@ -32,11 +32,11 @@ let project: Project | null = projectArray[0]
             <div class="project-details">
                 <div>
                     <div class="container-keywords">
-                        <span v-for="keyword in project.keywords" :key="keyword" class="keyword rounded">{{ keyword }}</span>
+                        <span v-for="keyword in project.keywords" :key="keyword" class="keyword pixelly-font-medium">{{ keyword }}</span>
                     </div>
-                    <h1 class="project-details__title">{{ project.title }} </h1>
+                    <h1 class="project-details__title pixelly-font-bold">{{ project.title }} </h1>
                     <p class="project-details__description">{{  project.description }}</p>
-                    <a :href="project.link" target="_blank" class="project__link">Voir le projet en ligne</a>
+                    <!-- <a :href="project.link" target="_blank" class="project__link">Voir le projet en ligne</a> -->
                 </div>
                 <div class="container-buttons">
                     <a href="" class="project-link-btn github-link">
@@ -61,9 +61,8 @@ let project: Project | null = projectArray[0]
 
     .content {
         display: flex; 
-        flex-direction: row;
-        gap: 50px;  
-        /* padding: 130px 0; */        
+        flex-direction: column;
+        gap: 20px;      
     }
 
     .project-image {
@@ -82,18 +81,31 @@ let project: Project | null = projectArray[0]
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding: 50px 25px;
+        /* padding: 50px 25px; */
     }
+
+    .project-details__title, .project-details__description {
+        margin-bottom: 12px;
+    }    
 
     .project__link {
         align-self: flex-end;
     }
 
+    .container-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 12px 0;
+    }
+
     .container-button {
+        
         background-color: var(--clr-green);
         width: 47px;
         height: 47px;
         border-radius: 5px;
+        margin: 5px 0;
     }
     .container-button .button {
         display: flex;
@@ -104,9 +116,12 @@ let project: Project | null = projectArray[0]
 
     @media screen and (min-width: 765px) {
         .content {
-            height: 80dvh;
             display: grid;
             grid-template-columns: 1fr 1fr;
+        }
+
+        .project-details {
+            padding: 50px 25px;
         }
 
         .project-image {
