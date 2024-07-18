@@ -30,7 +30,7 @@ import { RouterLink } from "vue-router";
                 </div>
                 
               </div>
-              <RouterLink to="/" class="card-button box-shadow pixelly-font-regular">+ d'infos</RouterLink>
+              <RouterLink to="/about" class="card-button box-shadow pixelly-font-regular">+ d'infos</RouterLink>
             
           </div>
         </div>      
