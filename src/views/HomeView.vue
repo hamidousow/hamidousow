@@ -46,7 +46,7 @@ import { RouterLink } from "vue-router";
         </RouterLink>
         <div class="card subgrid-bottom contact-block">
           <h2 class="card-title pixelly-font-bold">contact</h2>
-          <SocialLinks/>          
+          <SocialLinks />          
         </div>
       </div>
     </div>

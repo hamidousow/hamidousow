@@ -7,18 +7,18 @@ import gmail from "@/assets/images/gmail-logo.png"
 
 <template>
     <div class="container-social-links">
-        <RouterLink to="https://www.linkedin.com/in/hamidousow" class="social-link pixelly-font-regular">
+        <a href="https://www.linkedin.com/in/hamidousow" class="social-link pixelly-font-regular" target="_blank">
             <img :src="linkedinLogo" alt="" width="20">
             Linkedin
-        </RouterLink>
-        <RouterLink to="https://github.com/hamidousow" class="social-link pixelly-font-regular">
+        </a>
+        <a href="https://github.com/hamidousow" class="social-link pixelly-font-regular" target="_blank">
             <img :src="githubLogo" alt="" width="20">
             github
-        </RouterLink>
-        <RouterLink to="mailto:hamidousow-pro@hotmail.com" class="social-link pixelly-font-regular" >
+        </a>
+        <a href="mailto:hamidousow-pro@hotmail.com" class="social-link pixelly-font-regular" target="_blank" >
             <img :src="gmail" alt="" width="20">
             email
-        </RouterLink>
+        </a>
     </div>
 </template>
 
