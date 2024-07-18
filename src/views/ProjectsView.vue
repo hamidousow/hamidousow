@@ -13,7 +13,7 @@ function navigateTo(id:any) {
 <template>
     <div class="section-projects projects work section-padding mb-150" id="work">
         <div class="container-title">
-            <h2 class="projects__title big-title outline-title vertical-text"> projets </h2>  
+            <h2 class="projects__title big-title vertical-text pixelly-font-bold"> projets </h2>  
             
         </div>
         <div class="separator white-space"></div>
@@ -27,8 +27,6 @@ function navigateTo(id:any) {
         </div> 
     </div>
 </template>
-
-
 
 <style scoped>
     .section-projects {

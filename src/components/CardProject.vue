@@ -8,13 +8,13 @@ defineProps<{
 
 </script>
 <template>
-    <div class="card-wrapper">
-        <div class="card" data-component="card" id="id project">        
+    <div class="card-wrapper ">
+        <div class="card border-3 box-shadow" data-component="card" id="id project">        
             <div class="card__content">
                 <a href="/" target="_blank" rel="noopener noreferrer">
-                    <h3 class="card__title"> {{ project.title }} </h3>
+                    <h3 class="card__title pixelly-font-bold"> {{ project.title }} </h3>
                 </a>           
-                <a href="" class="card__button rounded">décourvir</a>
+                <a href="" class="card__button pixelly-font-medium">découvrir</a>
             </div> 
             <div class="card__background">
                 <div class="background-gradiant"></div>
@@ -25,7 +25,7 @@ defineProps<{
             <h4 
             v-for="keyword in project.keywords" 
             :key="keyword"
-            class="keyword rounded"
+            class="keyword box-shadow border-3"
             >{{ keyword }}</h4>
         </div>
     </div>
@@ -49,7 +49,6 @@ defineProps<{
         position: relative;
         padding: 10px;
         aspect-ratio: 3 / 2;  
-        border-radius: 5px;
         overflow: hidden;
     }
 
