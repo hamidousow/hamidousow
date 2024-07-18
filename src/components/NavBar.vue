@@ -28,21 +28,21 @@
                     <RouterLink 
                     class="router-link-active navigation__menu__link pixelly-font-regular" 
                     to="/projects" 
-                    @click="isActivedMenu = !isActivedMenu"
+                    @click="isActivedMenu = false"
                     >projets</RouterLink >
                 </li>               
                 <li>
                     <RouterLink 
                     class="router-link-active navigation__menu__link pixelly-font-regular" 
                     to="/about" 
-                    @click="isActivedMenu = !isActivedMenu"
+                    @click="isActivedMenu = false"
                     >à propos</RouterLink >
                 </li>                    
                 <li>
                     <RouterLink 
                     class="router-link-active navigation__menu__link pixelly-font-regular" 
                     to="/contact" 
-                    @click="isActivedMenu = !isActivedMenu"
+                    @click="isActivedMenu = false"
                     >contact</RouterLink >
                 </li>
             </ul>           
@@ -140,9 +140,7 @@
         display: none;
         padding-inline-start: 0;
         animation: dropMenu .5s ease-in;
-    }  
-
-    
+    }      
 
     .navigation__menu-active {
         display: flex;               
