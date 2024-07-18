@@ -5,6 +5,7 @@ const ProjectsView = () => import('@/views/ProjectsView.vue');
 const AboutView = () => import('@/views/AboutView.vue');
 const ContactView = () => import('@/views/ContactView.vue');
 const ProjectView = () => import('@/views/ProjectView.vue');
+const PageNotFoundView = () => import('@/views/PageNotFoundView.vue');
 
 
 const router = createRouter({
@@ -37,6 +38,10 @@ const router = createRouter({
       name: 'project',
       component: ProjectView,
       props: true
+    },
+    {
+      path: '/*',
+      component: PageNotFoundView
     }
   ]
 })
