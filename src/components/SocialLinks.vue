@@ -1,38 +1,67 @@
 <script lang="ts" setup>
-
+import githubBackground from "@/assets/images/github-background.jpg"
+import linkedinLogo from "@/assets/images/linkedin.svg";
+import githubLogo from "@/assets/images/github.svg"
+import gmail from "@/assets/images/gmail-logo.png"
 </script>
 
 <template>
-    <div class="container-social mt-60">
-        <a href="https://www.linkedin.com/in/hamidousow" class="social-link">Linkedin</a>
-        <a href="https://github.com/hamidousow" class="social-link">Github</a>
-        <a href="mailto:hamidousow-pro@hotmail.com" class="social-link">hamidousow-pro@hotmail.com</a>
+    <div class="container-social-links">
+        <RouterLink to="https://www.linkedin.com/in/hamidousow" class="social-link pixelly-font-regular">
+            <img :src="linkedinLogo" alt="" width="20">
+            Linkedin
+        </RouterLink>
+        <RouterLink to="https://github.com/hamidousow" class="social-link pixelly-font-regular">
+            <img :src="githubLogo" alt="" width="20">
+            github
+        </RouterLink>
+        <RouterLink to="mailto:hamidousow-pro@hotmail.com" class="social-link pixelly-font-regular" >
+            <img :src="gmail" alt="" width="20">
+            email
+        </RouterLink>
     </div>
 </template>
 
 
 <style scoped>
-    .container-social {
+
+    a {
+        color: var(--clr-black);
+        text-decoration: none;
+    }
+    a:hover {
+        color: var(--clr-purple-flashy);
+        text-decoration: line-through;
+    }
+
+    .container-social-links {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 30px;
+        margin-top: 60px;
+    }
+
+    .contact-block .container-social-links {
+        display:flex;
         flex-direction: column;
-        align-self: flex-end;
-        align-items: flex-end;
-        row-gap: 10px;
+        row-gap: 15px;
     }
 
     .social-link {
-        font-weight: 800;
-        font-size: 21px;
-        text-decoration: none;
-        font-size: 18px;
-        color: var(--clr-black);
-        transition: color .5s ease;
+        font-size: 24px;
+        text-transform: uppercase;
+        width: fit-content;
+    }
+    .social-link:hover {
+        font-size: 24px;
+        text-transform: uppercase;
+        width: fit-content;
+        text-decoration: line-through;
     }
 
-    .social-link:hover {
-        font-weight: 900;
-        color: var(--clr-green);
-        text-decoration: line-through;
+    .social-link img {
+        margin-right: 10px;
     }
 
 </style>

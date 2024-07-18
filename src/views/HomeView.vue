@@ -1,9 +1,7 @@
 <script setup lang="ts">
 
-import githubBackground from "@/assets/images/github-background.jpg"
-import linkedinLogo from "@/assets/images/linkedin.svg";
-import githubLogo from "@/assets/images/github.svg"
-import mail from "@/assets/images/github.svg"
+
+import SocialLinks from "@/components/SocialLinks.vue";
 import { RouterLink } from "vue-router";
 </script>
 
@@ -48,21 +46,7 @@ import { RouterLink } from "vue-router";
         </RouterLink>
         <div class="card subgrid-bottom contact-block">
           <h2 class="card-title pixelly-font-bold">contact</h2>
-          <div class="container-social-links">
-            <RouterLink to="" class="social-link pixelly-font-regular">
-              <img :src="linkedinLogo" alt="" width="20">
-              Linkedin
-            </RouterLink>
-            <RouterLink to="" class="social-link pixelly-font-regular">
-              <img :src="githubLogo" alt="" width="20">
-              github
-            </RouterLink>
-            <RouterLink to="" class="social-link pixelly-font-regular" >
-              <img :src="linkedinLogo" alt="" width="20">
-              email
-            </RouterLink>
-          </div>
-          
+          <SocialLinks/>          
         </div>
       </div>
     </div>
@@ -179,6 +163,11 @@ import { RouterLink } from "vue-router";
     height: 100%;
   }
 
+  .container-social-links {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+
   .card-button {
     padding: 10px 0;
     height: auto;
@@ -192,27 +181,7 @@ import { RouterLink } from "vue-router";
     font-size: 16px;
   }
 
-  .contact-block .container-social-links {
-    display:flex;
-    flex-direction: column;
-    row-gap: 15px;
-  }
-
-  .contact-block .social-link {
-    font-size: 24px;
-    text-transform: uppercase;
-    width: fit-content;
-  }
-  .contact-block .social-link:hover {
-    font-size: 24px;
-    text-transform: uppercase;
-    width: fit-content;
-    text-decoration: line-through;
-  }
-
-  .contact-block img {
-    margin-right: 10px;
-  }
+  
 
   @media screen and (min-width:567px) {
     .grid__right .card-details[data-v-b4e148ca] {
@@ -228,6 +197,10 @@ import { RouterLink } from "vue-router";
 
     .grid__right .card-details-texts {
         flex: 2;
+    }
+
+    .container-social-links {
+      margin-bottom: 0;
     }
   }
 

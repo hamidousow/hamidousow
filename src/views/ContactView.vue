@@ -2,29 +2,25 @@
 import SocialLinks from '@/components/SocialLinks.vue';
 
 
+
 </script>
 <template>
-    <section class="content mt-60" id="contact">
+    <section class="content" id="contact">
         <h1 class="title">👋 Restons en contact </h1>
-        <SocialLinks />            
+        <SocialLinks /> 
     </section> 
 </template>
 
 <style scoped>
     .content {
-        min-height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
     }
 
     .title {
         text-align: center;
-    }
-
-    .container-social {
-        align-self: center;
-        align-items: flex-start;
     }
 
     

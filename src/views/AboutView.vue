@@ -27,7 +27,7 @@
                 Je suis à l’écoute du marché pour un poste de développeur Java.                      
             </p>
           </div>
-          <SocialLinks />
+          
       </div>
   </div>
 
