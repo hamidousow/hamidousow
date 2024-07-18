@@ -127,6 +127,8 @@ import { RouterLink } from "vue-router";
     overflow: hidden;
     width: 100%;
     justify-content: space-between;
+    flex-wrap: nowrap;
+    
   }
   
 
@@ -134,6 +136,7 @@ import { RouterLink } from "vue-router";
     text-transform: uppercase;
     animation: slideImage 10s infinite linear;
     text-wrap: nowrap;
+    font-size: clamp(13px, 3vw, 31px);
   }
 
   .grid__right .content {
