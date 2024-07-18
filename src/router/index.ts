@@ -8,6 +8,8 @@ const ProjectView = () => import('@/views/ProjectView.vue');
 
 
 const router = createRouter({
+  linkActiveClass: 'active-link',
+  linkExactActiveClass: 'active-link',
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {

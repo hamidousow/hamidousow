@@ -7,7 +7,7 @@
     <nav class="navigation" id="nav-desktop">
         <div class="navigation__content  container">
             <div class="navigation__logo"  id="navigation__logo">
-                <RouterLink to="/" class="navigation__brand pixelly-font-regular"> 
+                <RouterLink to="/" class="router-link-active navigation__brand pixelly-font-regular "> 
                     <span class="bold pixelly-font-bold">Hamidou</span> SOW 
                 </RouterLink >                
             </div>                
@@ -20,13 +20,13 @@
             <span id="btnBurger" class="navigation__button-burger"></span>
             <ul id="navigation__menu" class="navigation__menu">
                 <li>
-                    <RouterLink class="navigation__menu__link pixelly-font-regular" to="/projects">projets</RouterLink >
+                    <RouterLink class="router-link-active navigation__menu__link pixelly-font-regular" to="/projects">projets</RouterLink >
                 </li>               
                 <li>
-                    <RouterLink class="navigation__menu__link pixelly-font-regular" to="/about">à propos</RouterLink >
+                    <RouterLink class="router-link-active navigation__menu__link pixelly-font-regular" to="/about">à propos</RouterLink >
                 </li>                    
                 <li>
-                    <RouterLink class="navigation__menu__link pixelly-font-regular" to="/contact">contact</RouterLink >
+                    <RouterLink class="router-link-active navigation__menu__link pixelly-font-regular" to="/contact">contact</RouterLink >
                 </li>
             </ul>
             
@@ -38,6 +38,14 @@
 
 <style scoped>
 @media screen and (min-width: 320px) {
+
+    a {
+        color: var(--clr-balck);
+    }
+    .active-link {
+        color: var(--clr-purple-flashy);
+        text-decoration: line-through!important;
+    }
 
     .navigation {    
         display: flex;    
@@ -52,7 +60,7 @@
 
     .navigation__brand {
         text-decoration: none;
-        color: var(--clr-black);
+        /* color: var(--clr-black); */
         font-size: 19px;
     }
 
@@ -134,7 +142,7 @@
     
     .navigation__menu__link {
         text-decoration: none;  
-        color: var(--clr-black);
+        /* color: var(--clr-black); */
         text-transform: uppercase;  
         font-size: clamp(1rem, 1vw, 2rem);
         font-weight: 600;

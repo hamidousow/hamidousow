@@ -10,7 +10,7 @@ import { RouterLink } from "vue-router";
 <template>
   <div class="content">
     <div class="grid mt-60">      
-      <RouterLink to="/about" class="grid__right">
+      <RouterLink to="/about" class="grid__right" >
         <div class="card box-shadow border-3 background-green-flashy">
           <div class="container-titles sliding-text">
             <h2 class="pixelly-font-bold"> à propos </h2>
