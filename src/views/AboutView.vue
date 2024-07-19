@@ -12,7 +12,7 @@
       </div>
     </div>
       <div class="about__right">
-          <h1 class=" big-title mb-30 pixelly-font-bold">À propos</h1>
+          <h1 class=" big-title mb-30 pixelify-font-bold">À propos</h1>
           <div>
             <p class="text">
                 Diplômé en Conception et Développement d'Applications (bac+3).

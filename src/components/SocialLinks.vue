@@ -1,24 +1,24 @@
 <script lang="ts" setup>
-import githubBackground from "@/assets/images/github-background.jpg"
 import linkedinLogo from "@/assets/images/linkedin.svg";
 import githubLogo from "@/assets/images/github.svg"
-import gmail from "@/assets/images/gmail-logo.png"
+import gmail from "@/assets/images/Gmail-Logo.wine.svg"
 </script>
 
 <template>
     <div class="container-social-links">
-        <a href="https://www.linkedin.com/in/hamidousow" class="social-link pixelify-font-regular" target="_blank">
-            <img :src="linkedinLogo" alt="" width="20">
-            Linkedin
-        </a>
-        <a href="https://github.com/hamidousow" class="social-link pixelify-font-regular" target="_blank">
-            <img :src="githubLogo" alt="" width="20">
-            github
-        </a>
-        <a href="mailto:hamidousow-pro@hotmail.com" class="social-link pixelify-font-regular" target="_blank" >
-            <img :src="gmail" alt="" width="20">
-            email
-        </a>
+        <div class="link-wrapper">
+            <img :src="linkedinLogo" alt="logo linkedin">
+            <a href="https://www.linkedin.com/in/hamidousow" class="social-link pixelify-font-regular" target="_blank">Linkedin</a>
+        </div>
+        <div class="link-wrapper" >
+            <img :src="githubLogo" alt="logo github">
+            <a href="https://github.com/hamidousow" class="social-link pixelify-font-regular" target="_blank">github</a>
+        </div>
+        <div class="link-wrapper">
+            <img :src="gmail" alt="logo gmail">
+            <a href="mailto:hamidousow-pro@hotmail.com" class="social-link pixelify-font-regular" target="_blank" >email</a>
+        </div>
+        
     </div>
 </template>
 
@@ -38,18 +38,18 @@ import gmail from "@/assets/images/gmail-logo.png"
         display: flex;
         flex-direction: row;
         justify-content: center;
-        column-gap: 30px;
+        column-gap: 20px;
         margin-top: 60px;
     }
 
-    .contact-block .container-social-links {
-        display:flex;
-        flex-direction: column;
-        row-gap: 15px;
+    .link-wrapper {
+        display: flex;
+        flex-direction: row;
+        column-gap: 7px;
     }
 
     .social-link {
-        font-size: 24px;
+        font-size: 16px;
         text-transform: uppercase;
         width: fit-content;
     }
@@ -60,8 +60,10 @@ import gmail from "@/assets/images/gmail-logo.png"
         text-decoration: line-through;
     }
 
-    .social-link img {
-        margin-right: 10px;
+    .link-wrapper img {
+        display: block;
+        width: 20px;        
     }
+    
 
 </style>
