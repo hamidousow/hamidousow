@@ -7,15 +7,15 @@ import gmail from "@/assets/images/gmail-logo.png"
 
 <template>
     <div class="container-social-links">
-        <a href="https://www.linkedin.com/in/hamidousow" class="social-link pixelly-font-regular" target="_blank">
+        <a href="https://www.linkedin.com/in/hamidousow" class="social-link pixelify-font-regular" target="_blank">
             <img :src="linkedinLogo" alt="" width="20">
             Linkedin
         </a>
-        <a href="https://github.com/hamidousow" class="social-link pixelly-font-regular" target="_blank">
+        <a href="https://github.com/hamidousow" class="social-link pixelify-font-regular" target="_blank">
             <img :src="githubLogo" alt="" width="20">
             github
         </a>
-        <a href="mailto:hamidousow-pro@hotmail.com" class="social-link pixelly-font-regular" target="_blank" >
+        <a href="mailto:hamidousow-pro@hotmail.com" class="social-link pixelify-font-regular" target="_blank" >
             <img :src="gmail" alt="" width="20">
             email
         </a>

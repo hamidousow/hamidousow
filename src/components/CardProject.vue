@@ -12,9 +12,9 @@ defineProps<{
         <div class="card border-3 box-shadow" data-component="card" id="id project">        
             <div class="card__content">
                 <a href="/" target="_blank" rel="noopener noreferrer">
-                    <h3 class="card__title pixelly-font-bold"> {{ project.title }} </h3>
+                    <h3 class="card__title pixelify-font-bold"> {{ project.title }} </h3>
                 </a>           
-                <a href="" class="card__button pixelly-font-medium">découvrir</a>
+                <a href="" class="card__button pixelify-font-medium">découvrir</a>
             </div> 
             <div class="card__background">
                 <div class="background-gradiant"></div>

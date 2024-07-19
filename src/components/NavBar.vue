@@ -2,6 +2,7 @@
 
     import { ref } from 'vue';
     import { RouterLink } from 'vue-router';
+    import hamidouLogo from '@/assets/images/hamidou-sow-logo.svg'
 
     const isActivedMenu = ref(false);
 
@@ -11,10 +12,10 @@
 <template>
     <nav class="navigation" id="nav-desktop">
         <div class="navigation__content  container">
-            <div class="navigation__logo"  id="navigation__logo">
-                <RouterLink to="/" class="router-link-active navigation__brand pixelly-font-regular "
+            <div class="navigation__brand"  id="navigation__brand">
+                <RouterLink to="/" class="router-link-active pixelify-font-regular "
                     @click="isActivedMenu = false"> 
-                    <span class="bold pixelly-font-bold" >Hamidou</span> SOW 
+                    <img :src="hamidouLogo" alt="logo Hamidou SOW">
                 </RouterLink >                
             </div>                
             <!-- <div class="navigation__switch-mode">
@@ -27,21 +28,21 @@
             <ul id="navigation__menu"  :class="[isActivedMenu ? activeMenu : 'navigation__menu']">
                 <li>
                     <RouterLink 
-                    class="router-link-active navigation__menu__link pixelly-font-regular" 
+                    class="router-link-active navigation__menu__link pixelify-font-regular" 
                     to="/projects" 
                     @click="isActivedMenu = false"
                     >projets</RouterLink >
                 </li>               
                 <li>
                     <RouterLink 
-                    class="router-link-active navigation__menu__link pixelly-font-regular" 
+                    class="router-link-active navigation__menu__link pixelify-font-regular" 
                     to="/about" 
                     @click="isActivedMenu = false"
                     >à propos</RouterLink >
                 </li>                    
                 <li>
                     <RouterLink 
-                    class="router-link-active navigation__menu__link pixelly-font-regular" 
+                    class="router-link-active navigation__menu__link pixelify-font-regular" 
                     to="/contact" 
                     @click="isActivedMenu = false"
                     >contact</RouterLink >
@@ -76,9 +77,12 @@
     }
 
     .navigation__brand {
-        text-decoration: none;
-        /* color: var(--clr-black); */
-        font-size: 19px;
+        width: 150px;
+    }
+
+    .navigation_brand img {
+        display: block;
+        width: 100%;
     }
 
     .bold {

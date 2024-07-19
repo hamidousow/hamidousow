@@ -74,7 +74,7 @@ html {
 
 body {
   min-height: 100dvh;
-  color: var(--color-text);
+  color: var(--clr-black);
   background: var(--color-background);
   position: relative;
   /* transition:

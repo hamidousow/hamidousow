@@ -11,26 +11,26 @@ import { RouterLink } from "vue-router";
       <RouterLink to="/about" class="grid__right" >
         <div class="card box-shadow border-3 background-green-flashy">
           <div class="container-titles sliding-text">
-            <h2 class="pixelly-font-bold"> à propos </h2>
+            <h2 class="pixelify-font-bold"> à propos </h2>
             <span class="space"></span>
-            <h2 class="pixelly-font-bold"> à propos </h2>
+            <h2 class="pixelify-font-bold"> à propos </h2>
             <span class="space"></span>
-            <h2 class="pixelly-font-bold"> à propos </h2>
+            <h2 class="pixelify-font-bold"> à propos </h2>
             <span class="space"></span>
-            <h2 class="pixelly-font-bold"> à propos </h2>
+            <h2 class="pixelify-font-bold"> à propos </h2>
             <span class="space"></span>
           </div>        
           <div class="wrapper content">
-              <h2 class="card-title pixelly-font-bold">hello <br> world</h2>
+              <h2 class="card-title pixelify-font-bold">hello <br> world</h2>
               <div class="card-details">
                 <span class="line"></span>
                 <div class="card-details-texts">
-                  <h6 class="card-subtitle pixelly-font-medium">My name is Hamidou</h6>
+                  <h6 class="card-subtitle pixelify-font-medium">My name is Hamidou</h6>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit consequatur molestiae odit?</p>
                 </div>
                 
               </div>
-              <RouterLink to="/about" class="card-button box-shadow pixelly-font-regular">+ d'infos</RouterLink>
+              <RouterLink to="/about" class="card-button box-shadow pixelify-font-regular">+ d'infos</RouterLink>
             
           </div>
         </div>      
@@ -40,12 +40,12 @@ import { RouterLink } from "vue-router";
         <RouterLink to="/projects" class="subgrid-top ">
           <div class="card box-shadow border-3 background-purple-flashy project-block">
             <div class="container-title">
-              <h2 class="card-title vertical-text pixelly-font-bold">projets</h2>
+              <h2 class="card-title vertical-text pixelify-font-bold">projets</h2>
             </div>
           </div>
         </RouterLink>
         <div class="card subgrid-bottom contact-block">
-          <h2 class="card-title pixelly-font-bold">contact</h2>
+          <h2 class="card-title pixelify-font-bold">contact</h2>
           <SocialLinks />          
         </div>
       </div>
