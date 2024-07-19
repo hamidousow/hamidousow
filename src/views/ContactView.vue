@@ -5,10 +5,10 @@ import SocialLinks from '@/components/SocialLinks.vue';
 
 </script>
 <template>
-    <section class="content" id="contact">
+    <div class="content" id="contact">
         <h1 class="title">👋 Restons en contact </h1>
         <SocialLinks /> 
-    </section> 
+    </div> 
 </template>
 
 <style scoped>
