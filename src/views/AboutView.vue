@@ -14,9 +14,6 @@
       <div class="about__right">
           <h1 class=" big-title mb-30 pixelify-font-bold">À propos</h1>
           <div>
-            <p class="text">
-                Diplômé en Conception et Développement d'Applications (bac+3).
-            </p>
             <br/>
             <p class="text">
                 Moi c'est Hamidou, je suis développeur full stack, avec une appétence pour le développement front-end. Passionné de design graphique, de développement front-end ou encore d'animés, j'aime réaliser des projets créatifs, du design jusqu'au déploiement. En parallèle de ma profession je réalise des logos et des sites vitrines en tant que designer graphique / développeur front-end freelance. 
