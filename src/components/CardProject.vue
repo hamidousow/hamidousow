@@ -63,19 +63,18 @@ defineProps<{
 
     .card__title {
         font-size: 16px;
-        color: var(--clr-grey);        
+        color: var(--clr-black);        
         font-weight: bold;
         text-transform: uppercase;
-        color: var(--clr-grey);
         opacity: .9;
     }
 
     .card__button {
         text-decoration: none;
-        color: var(--clr-grey);
+        color: var(--clr-black);
         background-color: transparent;
         padding: 3px 7px;
-        border: 1px solid var(--clr-grey);
+        border: 1px solid var(--clr-black);
         align-self: end;
     }
 
@@ -93,12 +92,7 @@ defineProps<{
         height: 100%;
         width: 100%;
     }
-    .background-gradiant {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.722) 0%, rgba(0,0,0,0) 50%, rgba(0, 0, 0, 0.722) 100%);
-    }
+    
     .card__background img {
         height: 100%;
         width: 100%;

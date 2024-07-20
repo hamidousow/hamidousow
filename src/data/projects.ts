@@ -1,6 +1,6 @@
-import pricingImage from '@/assets/images/pricing-bg.jpg'
-import youngCoding from '@/assets/images/young-coding.jpg'
-import portfolioImage from '@/assets/images/portfolio-image.jpg'
+import pricingComponentScreenShot from '@/assets/images/pricing-component.jpg'
+import sliderComponentScreenShot from '@/assets/images/slider-component.jpg'
+import lhamidouPortfolio from '@/assets/images/lhamidou-portfolio.jpg'
 import type { Project } from '@/types/Project';
 
 const projects: Array<Project> = [
@@ -9,7 +9,7 @@ const projects: Array<Project> = [
         title: "L'Hamidou",
         subtitle: "Site",   
         description: "En parrallèle de ma carrière de développeur, je conçois des logos et des sites vitrines. Ce projet a pour but d'exposer quelques travaux emblématique que j'ai réalisé.",     
-        imageSource: portfolioImage,
+        imageSource: lhamidouPortfolio,
         imageAlt: "projet slider bootcamp coding",
         link: "https://lhamidou.pages.dev",
         keywords: ["nuxt Js", "serverless", "full stack", "sql","supabase"],
@@ -21,7 +21,7 @@ const projects: Array<Project> = [
         title: "Bootcamp slider",
         subtitle: "Component",   
         description: '',     
-        imageSource: youngCoding,
+        imageSource: sliderComponentScreenShot,
         imageAlt: "projet slider bootcamp coding",
         link: "https://hamidousow.github.io/bootcamp-coding-slider/",
         keywords: ["javascript", "html", "css"],
@@ -32,7 +32,7 @@ const projects: Array<Project> = [
         title: "Pricing component",
         subtitle: "Component",
         description: '',
-        imageSource: pricingImage,
+        imageSource: pricingComponentScreenShot,
         imageAlt: "projet pricing component",        
         link: "https://hamidousow.github.io/interactive-pricing-component/",
         keywords: ["javascript", "html", "css"],
