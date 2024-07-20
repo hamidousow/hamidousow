@@ -24,7 +24,7 @@ let project: Project | null = projectArray[0]
 <template>
     <div class="mb-150 mt-60">
         <div v-if="project" class="content">
-            <a :href="project.link" class="background-image">
+            <a :href="project.link" class="background-image border-3 box-shadow">
                 <div class="project-image">
                     <img :src="project.imageSource" :alt="project.imageAlt">
                 </div>
@@ -36,7 +36,6 @@ let project: Project | null = projectArray[0]
                     </div>
                     <h1 class="project-details__title pixelly-font-bold">{{ project.title }} </h1>
                     <p class="project-details__description">{{  project.description }}</p>
-                    <!-- <a :href="project.link" target="_blank" class="project__link">Voir le projet en ligne</a> -->
                 </div>
                 <div class="container-buttons">
                     <a href="" class="project-link-btn github-link">
