@@ -19,12 +19,8 @@
             </p>
             <br/>
             <p class="text">
-                Développeur <strong>agile</strong>, je m’adapte facilement aux changements. Doté d’un esprit d’équipe développé, je m’engage à collaborer de manière proactive pour atteindre les objectifs communs. 
-                Mon esprit d’analyse me permet de décomposer les problèmes et d’en tirer des conclusions logiques basées sur l’analyse. Je consacre beaucoup de temps à l’apprentissage, à la veille technologique et à la pratique.                          
-            </p>
-            <br/>
-            <p class="text">
-                Je suis à l’écoute du marché pour un poste de développeur Java.                      
+                Moi c'est Hamidou, je suis développeur full stack, avec une appétence pour le développement front-end. Passionné de design graphique, de développement front-end ou encore d'animés, j'aime réaliser des projets créatifs, du design jusqu'au déploiement. En parallèle de ma profession je réalise des logos et des sites vitrines en tant que designer graphique / développeur front-end freelance. 
+                Je suis toujours curieux de m'informer et d'apprendre de nouvelles technologies.                    
             </p>
           </div>
           
