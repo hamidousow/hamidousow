@@ -26,7 +26,7 @@ import { RouterLink } from "vue-router";
                 <span class="line"></span>
                 <div class="card-details-texts">
                   <h3 class="card-subtitle pixelify-font-medium">My name is Hamidou</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit consequatur molestiae odit?</p>
+                  <p>Développeur full-stack et designer graphique à mes heures perdues.</p>
                 </div>
                 
               </div>
