@@ -58,7 +58,7 @@
 @media screen and (min-width: 320px) {
 
     a {
-        color: var(--clr-balck);
+        color: var(--clr-black);
     }
     .active-link {
         color: var(--clr-purple-flashy);
