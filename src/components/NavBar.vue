@@ -152,10 +152,10 @@
         flex-direction: column; 
         justify-content: center;
         position: absolute;
-        top: 0;
+        top: 60px;
         left: 0; 
         right: 0;
-        height: 100vh;
+        height: calc(100vh -60px);
         /*z-index: -10;*/                
         row-gap: 2rem;   
         padding: 2rem;        
