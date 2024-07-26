@@ -61,6 +61,10 @@ import { RouterLink } from "vue-router";
     color: var(--clr-black);
   }
 
+  .content {
+    width: 100%;
+  }
+
   .grid {    
     display: grid;
     grid-template-columns: repeat(1, 1fr);
