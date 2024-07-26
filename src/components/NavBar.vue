@@ -156,7 +156,7 @@
         left: 0; 
         right: 0;
         height: 100vh;
-        z-index: -10;                
+        /*z-index: -10;*/                
         row-gap: 2rem;   
         padding: 2rem;        
         background-color: var(--clr-grey);              
