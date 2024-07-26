@@ -58,7 +58,7 @@ defineProps<{
         /*z-index: 10;*/
         flex-direction: column;
         justify-content: space-between;
-        z-index: 10;
+        /*z-index: 10;*/
     }
 
     .card__title {
