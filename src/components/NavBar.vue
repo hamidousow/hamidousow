@@ -155,8 +155,8 @@
         top: 60px;
         left: 0; 
         right: 0;
-        height: calc(100vh -60px);
-        /*z-index: -10;*/                
+        height: 100vh;
+        z-index: 1;
         row-gap: 2rem;   
         padding: 2rem;        
         background-color: var(--clr-grey);              
