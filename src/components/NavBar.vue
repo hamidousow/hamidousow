@@ -159,7 +159,7 @@
         z-index: -10;                
         row-gap: 2rem;   
         padding: 2rem;        
-        background: var(--clr-grey);              
+        background-color: var(--clr-grey);              
     } 
 
     .navigation__menu-active li {            
