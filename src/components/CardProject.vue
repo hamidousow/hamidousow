@@ -54,9 +54,8 @@ defineProps<{
 
     .card__content {
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr;
     }
 
     .card__title {
@@ -76,10 +75,10 @@ defineProps<{
         align-self: end;
     }
 
-    /*.card__background {
+    .card__background {
         height: 100%;
         width: 100%;
-    }*/
+    }
     
     .card__background img {
         height: 100%;
