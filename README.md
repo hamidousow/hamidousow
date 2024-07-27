@@ -1,33 +1,22 @@
-# hamidousow
+# My Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is a showcase of my skills and achievements in web and software development. It consists of several main sections:
 
-## Recommended IDE Setup
+## About Me
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+This section provides a brief introduction to my background, professional and personal interests, as well as my career goals. You will also find an overview of my experiences and the values that drive my work.
 
-## Type Support for `.vue` Imports in TS
+## My Projects
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+Here, you can explore a selection of my development projects. Each project includes a detailed description, the technologies used, and links to the source code and live demos. These projects demonstrate my versatility and expertise in various areas, including web development, mobile applications, and more.
 
-## Customize configuration
+## Skills
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+This section highlights my technical and professional skills. I detail the programming languages, frameworks, tools, and technologies I am proficient in. You will also find information on my project management, communication, and problem-solving abilities.
 
-## Project Setup
+## Performance
 
-```sh
-npm install
-```
+![alt text](https://github.com/hamidousow/hamidousow/blob/vuejs/public/pagespeed-screenshot.jpg?raw=true)
 
-### Compile and Hot-Reload for Development
+Performance is a critical aspect of my portfolio. I have tested it using SpeedPage to ensure fast loading times and a smooth user experience. The portfolio is optimized for both desktop and mobile devices, ensuring accessibility and efficiency across all platforms.
 
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
