@@ -52,7 +52,8 @@ let project: Project | null = projectArray[0]
         <div v-else>
             <p> Projet non trouvé </p>
         </div>
-        <div class="mt-130 mb-60 container-link-projects">
+        <div class="line mt-50 mb-50"></div>
+        <div class="mb-60 container-link-projects">
             <RouterLink to="/projects" class="link-to-projects pixelify-font-bold border-3 box-shadow"> Retour aux projets </RouterLink>
         </div>
     </div>
@@ -123,6 +124,7 @@ let project: Project | null = projectArray[0]
         color: var(--clr-black);
         padding: 10px 20px;
     }
+
 
     @media screen and (min-width: 765px) {
         .content {
