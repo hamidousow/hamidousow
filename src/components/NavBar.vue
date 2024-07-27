@@ -58,7 +58,7 @@
 @media screen and (min-width: 320px) {
 
     a {
-        color: var(--clr-balck);
+        color: var(--clr-black);
     }
     .active-link {
         color: var(--clr-purple-flashy);
@@ -152,14 +152,14 @@
         flex-direction: column; 
         justify-content: center;
         position: absolute;
-        top: 0;
+        top: 60px;
         left: 0; 
         right: 0;
-        height: 100vh;
-        z-index: -10;                
+        height: 90vh;
+        z-index: 10;
         row-gap: 2rem;   
         padding: 2rem;        
-        background: var(--clr-grey);              
+        background-color: var(--clr-grey);              
     } 
 
     .navigation__menu-active li {            

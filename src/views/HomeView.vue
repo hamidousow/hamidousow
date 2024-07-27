@@ -26,7 +26,7 @@ import { RouterLink } from "vue-router";
                 <span class="line"></span>
                 <div class="card-details-texts">
                   <h3 class="card-subtitle pixelify-font-medium">My name is Hamidou</h3>
-                  <p>Développeur full-stack et designer graphique à mes heures perdues.</p>
+                  <p>Développeur full-stack et web designer à mes heures perdues.</p>
                 </div>
                 
               </div>
@@ -59,6 +59,10 @@ import { RouterLink } from "vue-router";
   a {
     text-decoration: none;
     color: var(--clr-black);
+  }
+
+  .content {
+    width: 100%;
   }
 
   .grid {    

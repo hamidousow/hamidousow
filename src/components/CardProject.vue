@@ -11,15 +11,15 @@ defineProps<{
     <div class="card-wrapper ">
         <div class="card border-3 box-shadow" data-component="card" id="id project">        
             <div class="card__content">
+							  <div class="card__background">
+                <img :src="project.imageSource" :alt="project.imageAlt">
+            </div>
                 <a href="/" target="_blank" rel="noopener noreferrer">
                     <h3 class="card__title pixelify-font-bold"> {{ project.title }} </h3>
                 </a>           
                 <a href="" class="card__button pixelify-font-medium">découvrir</a>
             </div> 
-            <div class="card__background">
-                <div class="background-gradiant"></div>
-                <img :src="project.imageSource" :alt="project.imageAlt">
-            </div>               
+                         
         </div>
         <div class="container-keywords">             
             <h4 
@@ -54,11 +54,8 @@ defineProps<{
 
     .card__content {
         height: 100%;
-        display: flex;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: space-between;
-        z-index: 10;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 
     .card__title {
@@ -72,33 +69,22 @@ defineProps<{
     .card__button {
         text-decoration: none;
         color: var(--clr-black);
-        background-color: transparent;
+        background-color: var(--clr-white);
         padding: 3px 7px;
         border: 1px solid var(--clr-black);
         align-self: end;
     }
 
-    .card__button:hover, .card:hover .card__button  {
-        background-color: var(--clr-green);
-        color: var(--clr-black);
-        border: 0px transparent;
-    }
-
-
     .card__background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
+        /*height: 100%;
+        width: 100%;*/
     }
     
     .card__background img {
-        height: 100%;
         width: 100%;
-        object-fit: cover;
         /* z-index: -1;
         position: inherit; */
+				flex: 1;
     }     
 
     /*@media screen and (min-width: 567px) {
