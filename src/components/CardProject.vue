@@ -76,10 +76,10 @@ defineProps<{
         align-self: end;
     }
 
-    .card__background {
+    /*.card__background {
         height: 100%;
         width: 100%;
-    }
+    }*/
     
     .card__background img {
         height: 100%;
@@ -87,6 +87,7 @@ defineProps<{
         object-fit: cover;
         /* z-index: -1;
         position: inherit; */
+				flex: 1;
     }     
 
     /*@media screen and (min-width: 567px) {
