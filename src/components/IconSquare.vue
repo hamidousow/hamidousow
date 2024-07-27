@@ -20,13 +20,14 @@
         flex-direction: column;
         justify-content: center;
         justify-items: center;
-        row-gap: 7px;
+        /* row-gap: 7px; */
     }
 
     .icon-square img {
         display: block;
-        margin: 0 auto;
+        margin: auto;
     }
+
     .icon-square h4 {
         text-align: center;
         font-size: clamp(14px, 2vw, 17px);
@@ -38,6 +39,7 @@
             width: 20vw;
             max-height: 150px;
             max-width: 150px;
+            /* row-gap: 12px; */
         }
     }
 </style>
