@@ -11,14 +11,15 @@ defineProps<{
     <div class="card-wrapper ">
         <div class="card border-3 box-shadow" data-component="card" id="id project">        
             <div class="card__content">
+							  <div class="card__background">
+                <img :src="project.imageSource" :alt="project.imageAlt">
+            </div>
                 <a href="/" target="_blank" rel="noopener noreferrer">
                     <h3 class="card__title pixelify-font-bold"> {{ project.title }} </h3>
                 </a>           
                 <a href="" class="card__button pixelify-font-medium">découvrir</a>
             </div> 
-            <div class="card__background">
-                <img :src="project.imageSource" :alt="project.imageAlt">
-            </div>               
+                         
         </div>
         <div class="container-keywords">             
             <h4 
