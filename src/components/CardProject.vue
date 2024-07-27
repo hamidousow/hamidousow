@@ -76,8 +76,8 @@ defineProps<{
     }
 
     .card__background {
-        height: 100%;
-        width: 100%;
+        /*height: 100%;
+        width: 100%;*/
     }
     
     .card__background img {
