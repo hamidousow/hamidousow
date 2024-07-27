@@ -55,7 +55,7 @@ defineProps<{
     .card__content {
         height: 100%;
         display: grid;
-        grid-template-rows: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 
     .card__title {
