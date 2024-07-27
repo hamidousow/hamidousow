@@ -24,7 +24,7 @@ let project: Project | null = projectArray[0]
 <template>
     <div class="mb-150 mt-60">
         <div v-if="project" class="content">
-            <a :href="project.link" class="background-image border-3 box-shadow">
+            <a :href="project.link" class="background-image border-3 box-shadow" target="_blank"  rel="noopener noreferrer">
                 <div class="project-image">
                     <img :src="project.imageSource" :alt="project.imageAlt">
                 </div>
@@ -34,7 +34,7 @@ let project: Project | null = projectArray[0]
                     <div class="container-keywords">
                         <span v-for="keyword in project.keywords" :key="keyword" class="keyword pixelly-font-medium">{{ keyword }}</span>
                     </div>
-                    <h1 class="project-details__title pixelly-font-bold">{{ project.title }} </h1>
+                    <h1 class="project-details__title pixelify-font-bold">{{ project.title }} </h1>
                     <p class="project-details__description">{{  project.description }}</p>
                 </div>
                 <div class="container-buttons">
@@ -42,16 +42,18 @@ let project: Project | null = projectArray[0]
 
                     </a>
                     <div class="container-button">
-                        <a :href="project.link" class="button project-link-btn live-link" target="_blank" rel="noreferrer">
+                        <a :href="project.link" class="button project-link-btn live-link" target="_blank" rel="noopener noreferrer">
                             <img :src="openNewIcon" alt="open blanck page">
                         </a>
                     </div>
                 </div>
-                
             </div>
         </div>
         <div v-else>
             <p> Projet non trouvé </p>
+        </div>
+        <div class="mt-130 mb-60 container-link-projects">
+            <RouterLink to="/projects" class="link-to-projects pixelify-font-bold border-3 box-shadow"> Retour aux projets </RouterLink>
         </div>
     </div>
 </template>
@@ -66,7 +68,6 @@ let project: Project | null = projectArray[0]
 
     .project-image {
         width: 100%;
-        /* max-width: 700px; */
     }
 
     .project-image img {
@@ -80,7 +81,6 @@ let project: Project | null = projectArray[0]
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        /* padding: 50px 25px; */
     }
 
     .project-details__title, .project-details__description {
@@ -111,6 +111,17 @@ let project: Project | null = projectArray[0]
         justify-content: center;
         align-items: center;
         height: 100%;
+    }
+
+    .link-to-projects {
+        display: block;
+        width: fit-content;
+        margin: auto;
+        font-size: clamp(21px, 2vw, 31px);
+        text-align: center;
+        text-decoration: none;
+        color: var(--clr-black);
+        padding: 10px 20px;
     }
 
     @media screen and (min-width: 765px) {

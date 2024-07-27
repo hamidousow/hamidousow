@@ -151,6 +151,7 @@
         display: flex;               
         flex-direction: column; 
         justify-content: center;
+        align-items: center;
         position: absolute;
         top: 60px;
         left: 0; 
@@ -159,7 +160,7 @@
         z-index: 10;
         row-gap: 2rem;   
         padding: 2rem;        
-        background-color: var(--clr-grey);              
+        background-color: var(--clr-white);              
     } 
 
     .navigation__menu-active li {            
@@ -169,9 +170,9 @@
     
     .navigation__menu__link {
         text-decoration: none;  
-        /* color: var(--clr-black); */
-        text-transform: uppercase;  
-        font-size: clamp(1rem, 1vw, 2rem);
+        text-transform: uppercase;
+        text-align: end;  
+        font-size: clamp(22px, 2vw, 29px);
         font-weight: 600;
         padding: .5em;
         transition: .5s;
@@ -245,6 +246,10 @@
             list-style: none;
         }
     }
+
+    .navigation__menu__link {  
+        font-size: 27px;
+    } 
 }
 
 

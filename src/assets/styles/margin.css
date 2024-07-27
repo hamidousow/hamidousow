@@ -1,7 +1,13 @@
 .mb-30 {
     margin-bottom: 30px;
 }
+.mb-60 {
+    margin-bottom: 60px;
+}
 
+.mb-100 {
+    margin-bottom: 100px;
+}
 .mb-150 {
     margin-bottom: 150px;
 }
@@ -19,6 +25,9 @@
     margin-top: 100px;
 }
 
+.mt-130 {
+    margin-top: 130px;
+}
 .mt-160 {
     margin-top: 160px;
 }

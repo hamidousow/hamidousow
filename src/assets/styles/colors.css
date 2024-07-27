@@ -1,3 +1,21 @@
+
+
+:root {
+
+    --clr-black: #15181f;
+    --clr-grey-darker: #bababa;    
+    --clr-grey: #e5e5e5;
+    --clr-green-darker: #27633d;
+    --clr-green: #399259;
+    --clr-green-flashy: #54DD85;
+    --clr-cyan: #54c4c2;
+    --clr-purple: #5726a7;
+    --clr-purple-flashy: #DD2CE0;
+    --clr-yellow: #dfc349;
+    --clr-white: #ffffff;
+    --clr-grey-light: #f2f2f2;
+}
+
 .background-green {
     background: var(--clr-green);
 }

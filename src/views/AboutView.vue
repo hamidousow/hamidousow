@@ -61,7 +61,7 @@ const skillsArray = [
 </script>
 
 <template>
-  <section class="mt-100 mb-150">   
+  <section class="mt-100 mb-100">   
     <div class="section-about ">
       <div class="about__left">
         <div class="carousel border-3 box-shadow">                            
