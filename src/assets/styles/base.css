@@ -29,11 +29,11 @@ html {
 body {
   min-height: 100dvh;
   color: var(--clr-black);
-  background: var(--color-background);
+  background: var(--clr-white);
   position: relative;
-  /* transition:
+  transition:
     color 0.5s,
-    background-color 0.5s; */
+    background-color 0.5s;
   /* line-height: 1.6; */
   font-family:
     Inter,
