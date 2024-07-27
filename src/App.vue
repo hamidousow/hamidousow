@@ -16,7 +16,8 @@ import FooterComponent from './components/FooterComponent.vue'
         margin-top: auto;
         min-height: 100dvh;
         display: flex;
-        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
 </style>
