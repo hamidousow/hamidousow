@@ -81,9 +81,7 @@ defineProps<{
     }
     
     .card__background img {
-        height: 100%;
         width: 100%;
-        object-fit: cover;
         /* z-index: -1;
         position: inherit; */
 				flex: 1;
