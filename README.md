@@ -16,7 +16,7 @@ This section highlights my technical and professional skills. I detail the progr
 
 ## Performance
 
-![alt text](https://github.com/hamidousow/hamidousow/blob/vuejs/speedpage-screenshot.jpg?raw=true)
+![alt text](https://github.com/hamidousow/hamidousow/blob/vuejs/public/pagespeed-screenshot.jpg?raw=true)
 
 Performance is a critical aspect of my portfolio. I have tested it using SpeedPage to ensure fast loading times and a smooth user experience. The portfolio is optimized for both desktop and mobile devices, ensuring accessibility and efficiency across all platforms.
 
