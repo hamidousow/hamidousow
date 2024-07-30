@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Pixelify Sans';
-    font-display: optional;
     src: url("../fonts/PixelifySans-VariableFont_wght.ttf");
+    font-display: swap;
 }
 
 .pixelify-font-regular {
