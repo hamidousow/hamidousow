@@ -90,7 +90,8 @@ const skillsArray = [
             <span class="border-3 box-shadow ">Esprit d'équipe</span>
             <span class="border-3 box-shadow ">Organisé</span>
             <span class="border-3 box-shadow ">Créatif</span>
-            <span class="border-3 box-shadow ">Curieux</span>
+	          <span class="border-3 box-shadow ">Curieux</span>
+						<span class="border-3 box-shadow ">Scrum</span>
           </div>
           
         </div>
