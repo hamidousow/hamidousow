@@ -112,13 +112,15 @@ let project: Project | null = projectArray[0]
         justify-content: center;
         align-items: center;
         /*height: 100%;*/
-				padding: 3px 7px;
+				padding: 3px 10px;
 				width: fit-content;
+				color: var(--clr-white);
 
 				img {
 					display: block;
-					height: 30px;
-					width: 30px;
+					height: 20px;
+					width: 20px;
+					margin-rigth: 5px;
 				}
     }
 
