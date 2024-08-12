@@ -1,7 +1,7 @@
 import pricingComponentScreenShot from '@/assets/images/pricing-component.jpg'
 import sliderComponentScreenShot from '@/assets/images/slider-component.jpg'
 import lhamidouPortfolio from '@/assets/images/lhamidou-portfolio.jpg'
-import nisaaMockUp from '@/assets/images/nisaa-mockup.jpg'
+import nisaaMockUp from '@/assets/images/nisaa-mockup-1.jpg'
 import type { Project } from '@/types/Project';
 
 const projects: Array<Project> = [
