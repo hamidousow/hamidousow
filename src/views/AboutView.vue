@@ -12,10 +12,10 @@
   import Postgresql from '@/assets/images/postgresql.svg';
 
 const skillsArray = [
-  {
-    imgSrc: Java,
-    imgAlt: 'java logo',
-    title: "java"
+	{
+    imgSrc: VueJs,
+    imgAlt: 'VueJs logo',
+    title: "VueJs"
   },
   {
     imgSrc: Javascript,
@@ -27,22 +27,7 @@ const skillsArray = [
     imgAlt: 'Typescript logo',
     title: "Typescript"
   },
-  {
-    imgSrc: SpringBoot,
-    imgAlt: 'Spring Boot logo',
-    title: "Spring Boot"
-  },
-  {
-    imgSrc: VueJs,
-    imgAlt: 'VueJs logo',
-    title: "VueJs"
-  },
-  {
-    imgSrc: Postgresql,
-    imgAlt: 'PostgreSQL logo',
-    title: "PostgreSQL"
-  },
-  {
+	{
     imgSrc: Html,
     imgAlt: 'Html logo',
     title: "Html"
@@ -53,10 +38,25 @@ const skillsArray = [
     title: "Css"
   },
   {
+    imgSrc: SpringBoot,
+    imgAlt: 'Spring Boot logo',
+    title: "Spring Boot"
+  },
+	{
+    imgSrc: Java,
+    imgAlt: 'java logo',
+    title: "java"
+  },
+  {
+    imgSrc: Postgresql,
+    imgAlt: 'PostgreSQL logo',
+    title: "PostgreSQL"
+  },
+  {
     imgSrc: Figma,
     imgAlt: 'Figma logo',
     title: "Figma"
-  },
+  }
 ]
 </script>
 
