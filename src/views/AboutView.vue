@@ -75,7 +75,7 @@ const skillsArray = [
           <p class="text">
               Moi c'est Hamidou, je suis développeur full-stack. Mon appétence pour l’interface et l’expérience utilisateur m’a poussé à développer une expertise en développement front-end. Les technos que j’utilise quotidiennement sont JavaScript, Html, Css3 et particulièrement VueJs. 
 <br/>
-Passionné de technologie, de design ou encore d'animés, j'aime réaliser des projets créatifs, du design jusqu'au déploiement. En parallèle de ma profession je conçois des sites vitrines en et des logos en freelance. 
+Passionné de technologie, de design ou encore d'animés, j'aime réaliser des projets créatifs, du design jusqu'au déploiement. En parallèle de ma profession je conçois des sites vitrines et des logos en freelance. 
  Je suis toujours curieux de m'informer et d'apprendre de nouvelles technologies.                   
           </p>
         </div>          
