@@ -43,7 +43,7 @@ let project: Project | null = projectArray[0]
                     </a>
                     <div class="container-button">
                         <a :href="project.link" class="button project-link-btn live-link" target="_blank" rel="noopener noreferrer">
-                            <img :src="openNewIcon" alt="open blanck page">
+                            voir le projet en ligne <img :src="openNewIcon" alt="open blanck page">
                         </a>
                     </div>
                 </div>
@@ -102,8 +102,8 @@ let project: Project | null = projectArray[0]
     .container-button {
         
         background-color: var(--clr-green);
-        width: 47px;
-        height: 47px;
+        /*width: 47px;
+        height: 47px;*/
         border-radius: 5px;
         margin: 5px 0;
     }
@@ -111,7 +111,15 @@ let project: Project | null = projectArray[0]
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        /*height: 100%;*/
+				padding: 3px 7px;
+				width: fit-content;
+
+				img {
+					display: block;
+					height: 30px;
+					width: 30px;
+				}
     }
 
     .link-to-projects {
