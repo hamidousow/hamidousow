@@ -1,6 +1,7 @@
 import pricingComponentScreenShot from '@/assets/images/pricing-component.jpg'
 import sliderComponentScreenShot from '@/assets/images/slider-component.jpg'
 import lhamidouPortfolio from '@/assets/images/lhamidou-portfolio.jpg'
+import nisaaMockUp from '@/assets/images/nisaa-mockup.jpg'
 import type { Project } from '@/types/Project';
 
 const projects: Array<Project> = [
@@ -18,6 +19,17 @@ const projects: Array<Project> = [
     },   
     {
         id: 2,
+        title: "Nisaa box",
+        subtitle: "website",   
+        description: "Le projet consiste en la création d'un slider responsive pour afficher les commentaires et témoignages des utilisateurs de manière attrayante et interactive. Ce composant clé a été conçu pour offrir une expérience utilisateur fluide, quel que soit l'appareil utilisé.",     
+        imageSource: sliderComponentScreenShot,
+        imageAlt: "nisaa box in a screen",
+        link: "https://nisaabox.netlify.app",
+        keywords: ["VueJs", "Gsap", "Netlify", "Figma"],
+        isOnline: true
+    },   
+    {
+        id: 3,
         title: "Bootcamp slider",
         subtitle: "Component",   
         description: "Le projet consiste en la création d'un slider responsive pour afficher les commentaires et témoignages des utilisateurs de manière attrayante et interactive. Ce composant clé a été conçu pour offrir une expérience utilisateur fluide, quel que soit l'appareil utilisé.",     
@@ -26,7 +38,7 @@ const projects: Array<Project> = [
         link: "https://hamidousow.github.io/bootcamp-coding-slider/",
         keywords: ["javascript", "html", "css"],
         isOnline: false
-    },   
+    },
     {
         id: 3,
         title: "Pricing component",
