@@ -102,16 +102,12 @@ let project: Project | null = projectArray[0]
     .container-button {
         
         background-color: var(--clr-green);
-        /*width: 47px;
-        height: 47px;*/
-        border-radius: 5px;
         margin: 5px 0;
     }
     .container-button .button {
         display: flex;
-        justify-content: center;
         align-items: center;
-        /*height: 100%;*/
+				column-gap: 5px;
 				padding: 3px 10px;
 				width: fit-content;
 				color: var(--clr-white);
@@ -121,7 +117,6 @@ let project: Project | null = projectArray[0]
 					display: block;
 					height: 20px;
 					width: 20px;
-					margin-rigth: 5px;
 				}
     }
 
