@@ -8,7 +8,7 @@ const projects: Array<Project> = [
         id: 1,
         title: "L'Hamidou",
         subtitle: "Site",   
-        description: "À côté de ma carrière de développeur, je conçois des logos et des sites vitrines. Lhamidou est un portfolio que j'ai developpé pour presenter les projets emblématiques que j'ai réalisé en freelance.",     
+        description: "À côté de ma carrière de développeur, je conçois des logos et des sites vitrines. Lhamidou est un portfolio que j'ai developpé pour presenter les projets emblématiques que j'ai réalisés en freelance.",     
         imageSource: lhamidouPortfolio,
         imageAlt: "projet slider bootcamp coding",
         link: "https://lhamidou.pages.dev",
