@@ -5,8 +5,20 @@ import nisaaMockUp from '@/assets/images/nisaa-mockup.jpg'
 import type { Project } from '@/types/Project';
 
 const projects: Array<Project> = [
+       
     {
         id: 1,
+        title: "Nisaa box",
+        subtitle: "website",   
+        description: "a venir",     
+        imageSource: nisaaMockUp,
+        imageAlt: "nisaa box in a screen",
+        link: "https://nisaabox.netlify.app",
+        keywords: ["VueJs", "Gsap", "Netlify", "Figma"],
+        isOnline: true
+    },   
+    {
+        id: 2,
         title: "L'Hamidou",
         subtitle: "Site",   
         description: "À côté de ma carrière de développeur, je conçois des logos et des sites vitrines. Lhamidou est un portfolio que j'ai developpé pour presenter les projets emblématiques que j'ai réalisés en freelance.",     
@@ -16,18 +28,7 @@ const projects: Array<Project> = [
         keywords: ["nuxt Js", "serverless", "full stack", "sql","supabase"],
         isOnline: false
 
-    },   
-    {
-        id: 2,
-        title: "Nisaa box",
-        subtitle: "website",   
-        description: "Le projet consiste en la création d'un slider responsive pour afficher les commentaires et témoignages des utilisateurs de manière attrayante et interactive. Ce composant clé a été conçu pour offrir une expérience utilisateur fluide, quel que soit l'appareil utilisé.",     
-        imageSource: sliderComponentScreenShot,
-        imageAlt: "nisaa box in a screen",
-        link: "https://nisaabox.netlify.app",
-        keywords: ["VueJs", "Gsap", "Netlify", "Figma"],
-        isOnline: true
-    },   
+    },
     {
         id: 3,
         title: "Bootcamp slider",
@@ -40,7 +41,7 @@ const projects: Array<Project> = [
         isOnline: false
     },
     {
-        id: 3,
+        id: 4,
         title: "Pricing component",
         subtitle: "Component",
         description: "Le projet consiste en la création d'un composant interactif de type pricing, permettant aux utilisateurs de sélectionner un prix ou un plan tarifaire à l'aide d'un système de bouton glissant. Ce composant est conçu pour offrir une expérience utilisateur intuitive et moderne.",
