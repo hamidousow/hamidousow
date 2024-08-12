@@ -115,6 +115,7 @@ let project: Project | null = projectArray[0]
 				padding: 3px 10px;
 				width: fit-content;
 				color: var(--clr-white);
+				text-decoration: none;
 
 				img {
 					display: block;
