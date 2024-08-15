@@ -41,7 +41,7 @@ import gmail from "@/assets/images/Gmail-Logo.wine.svg"
 
     .social-link {
         color: var(--clr-black);
-        font-size: 16px;
+        font-size: 21px;
         text-transform: uppercase;
         width: fit-content;
         text-decoration: none;
