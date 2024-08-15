@@ -2,7 +2,7 @@ type Project = {
     id: number;
     title: string;
     subtitle: string;
-    description: string;     
+    description: string[];     
     imageSource: string;
     imageAlt: string;
     link: string;
