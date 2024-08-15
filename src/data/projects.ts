@@ -10,7 +10,13 @@ const projects: Array<Project> = [
         id: 1,
         title: "Nisaa box",
         subtitle: "website",   
-        description: "a venir",     
+        description: "La Nisaa Box est un concept innovant qui allie promotion de produits bio de qualité et enrichissement spirituel. Le projet de redesign de leur site internet vise à atteindre plusieurs objectifs clés :
+
+- Développer une charte graphique qui reflète à la fois l’esthétique naturelle et l'engagement écologique de la marque.
+- Concevoir une interface utilisateur moderne et intuitive, offrant une navigation fluide et agréable, développée avec Vue.js pour une performance optimale.
+- Intégrer des animations fluides et engageantes à l'aide de GSAP (GreenSock Animation Platform) pour dynamiser l'expérience utilisateur.
+- Mettre en avant chaque box mensuelle en créant un espace dédié pour présenter en détail les articles qu'elle contient.
+- Adopter des bonnes pratiques en matière de performance web, notamment en utilisant des images au format WebP pour une optimisation du temps de chargement et de la qualité visuelle.",
         imageSource: nisaaMockUp,
         imageAlt: "nisaa box in a screen",
         link: "https://nisaabox.netlify.app",
