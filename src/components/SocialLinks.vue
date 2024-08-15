@@ -25,15 +25,6 @@ import gmail from "@/assets/images/Gmail-Logo.wine.svg"
 
 <style scoped>
 
-    a {
-        color: var(--clr-black);
-        text-decoration: none;
-    }
-    a:hover {
-        color: var(--clr-purple-flashy);
-        text-decoration: line-through;
-    }
-
     .container-social-links {
         display: flex;
         flex-direction: row;
@@ -49,15 +40,17 @@ import gmail from "@/assets/images/Gmail-Logo.wine.svg"
     }
 
     .social-link {
+        color: var(--clr-black);
         font-size: 16px;
         text-transform: uppercase;
         width: fit-content;
+        text-decoration: none;
     }
     .social-link:hover {
-        font-size: 24px;
         text-transform: uppercase;
         width: fit-content;
         text-decoration: line-through;
+        color: var(--clr-purple-flashy);
     }
 
     .link-wrapper img {
