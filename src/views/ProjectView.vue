@@ -23,7 +23,7 @@ let project: Project | null = projectArray[0]
 
 <template>
     <div class="mb-150 mt-60">
-        <div v-if="project" class="content">
+        <div v-if="project" class="content mt-60">
             <a :href="project.link" class="background-image border-3 box-shadow" target="_blank"  rel="noopener noreferrer">
                 <div class="project-image">
                     <img :src="project.imageSource" :alt="project.imageAlt">
@@ -35,17 +35,20 @@ let project: Project | null = projectArray[0]
                         <span v-for="keyword in project.keywords" :key="keyword" class="keyword pixelly-font-medium">{{ keyword }}</span>
                     </div>
                     <h1 class="project-details__title pixelify-font-bold">{{ project.title }} </h1>
-                    <p class="project-details__description">{{  project.description }}</p>
+                    
                 </div>
                 <div class="container-buttons">
-                    <a href="" class="project-link-btn github-link">
+                    <!-- <a href="" class="project-link-btn github-link">
 
-                    </a>
+                    </a> -->
                     <div class="container-button">
                         <a :href="project.link" class="button project-link-btn live-link" target="_blank" rel="noopener noreferrer">
                             voir le projet en ligne <img :src="openNewIcon" alt="open blanck page">
                         </a>
                     </div>
+                </div>
+                <div>
+                    <p v-for="paragraph, index in project.description" :key="index" class="project-details__description">{{  paragraph }}</p>
                 </div>
             </div>
         </div>
