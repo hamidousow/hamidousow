@@ -48,6 +48,13 @@ defineProps<{
         cursor: pointer;
         position: relative;
         overflow: hidden;
+        transition: all .5s;
+    }
+
+    .card:hover {
+        box-shadow: none;
+        translate: 5px -5px;
+        border: 3px solid transparent;
     }
 
     .card img {
