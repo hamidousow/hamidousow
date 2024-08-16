@@ -79,6 +79,10 @@ defineProps<{
         opacity: .9;
     }
 
+    .keyword {
+        text-transform: capitalize;
+    }
+
     .card__button {
         text-decoration: none;
         color: var(--clr-black);
