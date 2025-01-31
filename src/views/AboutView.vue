@@ -73,7 +73,7 @@ const skillsArray = [
         <h1 class=" big-title mb-30 pixelify-font-bold">À propos</h1>
         <div>
           <p class="text">
-              Moi, c’est Hamidou, je suis développeur frontend avec une expertise en UI/UX design. Mon appétence pour l’interface et l’expérience utilisateur m’a poussé à développer une expertise en développement front-end. 
+              Moi, c’est Hamidou, je suis développeur frontend avec une expertise en UI/UX design.
 <br/>
 Mon expertise m’a permis de mener à bien des missions diverses et variées, allant du site vitrine au développement de dashboards, avec pour objectif de concevoir des interfaces épurées, intuitives et performantes. 
 <br/>
