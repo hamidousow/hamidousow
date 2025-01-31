@@ -73,10 +73,11 @@ const skillsArray = [
         <h1 class=" big-title mb-30 pixelify-font-bold">À propos</h1>
         <div>
           <p class="text">
-              Moi c'est Hamidou, je suis développeur full-stack. Mon appétence pour l’interface et l’expérience utilisateur m’a poussé à développer une expertise en développement front-end. Les technos que j’utilise quotidiennement sont JavaScript, Html, Css3 et particulièrement VueJs. 
+              Moi, c’est Hamidou, je suis développeur frontend avec une expertise en UI/UX design. Mon appétence pour l’interface et l’expérience utilisateur m’a poussé à développer une expertise en développement front-end. 
 <br/>
-Passionné de technologie, de design ou encore d'animés, j'aime réaliser des projets créatifs, du design jusqu'au déploiement. En parallèle de ma profession je conçois des sites vitrines et des logos en freelance. 
- Je suis toujours curieux de m'informer et d'apprendre de nouvelles technologies.                   
+Mon expertise m’a permis de mener à bien des missions diverses et variées, allant du site vitrine au développement de dashboards, avec pour objectif de concevoir des interfaces épurées, intuitives et performantes. 
+<br/>
+Convaincu que la technologie doit avant tout servir les utilisateurs, je mets un point d’honneur à comprendre leurs besoins et attentes afin de proposer des solutions adaptées. Mon approche centrée sur l’utilisateur me permet d’allier esthétique et ergonomie pour offrir des expériences fluides et satisfaisantes, répondant ainsi aux exigences des clients.                    
           </p>
         </div>          
       </div>
